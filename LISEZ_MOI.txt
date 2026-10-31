@@ -1,0 +1,38 @@
+CHEMIN DE FOI — DÉMONSTRATION V0.1 / LOT 1
+=========================================
+
+Ce paquet contient une première application fonctionnelle (accueil, 16 prières,
+5 mini-leçons, 3 extraits bibliques Louis Segond 1910, favoris, prières
+personnelles, choix de taille, thème et synthèse vocale si disponible).
+
+ESSAI SUR PC
+1. Décompresser le fichier ZIP.
+2. Ouvrir « index.html » dans Edge ou Chrome.
+3. Cliquer sur les menus ; tester les boutons A+ et Réglages.
+
+ESSAI SUR TÉLÉPHONE
+Le meilleur moyen est de publier ultérieurement le dossier sur un hébergement
+HTTPS (par exemple GitHub Pages), puis d'ouvrir l'adresse dans Chrome Android.
+La fonctionnalité installation PWA / hors ligne n'est disponible que via HTTPS
+ou localhost. L'ouverture d'un fichier HTML local ne la garantit pas.
+
+PRÉCAUTIONS
+- Prototype local, non publié sur Internet.
+- Prières originales et explications pédagogiques à relire par le prêtre
+  et les accompagnateurs avant diffusion publique.
+- Traduction des extraits bibliques : Louis Segond 1910 (domaine public).
+- Les prières personnelles restent sur l'appareil via stockage navigateur.
+  Ne pas écrire de texte confidentiel si l'appareil est partagé. Effacer les
+  données du navigateur peut détruire ces textes.
+- Synthèse vocale dépend des appareils/voix installées ; offline non garanti.
+- Visuel original « Chemin de Foi » approuvé par CJ pour ce prototype.
+- Icône provisoire simplifiée pour petite taille ; la marque complète reste
+  le visuel approuvé avec colombe, montagnes et croix.
+
+TESTS À FAIRE ENSEMBLE
+- Lisibilité avec lunettes, grandes tailles, paysage et portrait.
+- Navigation prières > Famille et relations (sous-menu seulement).
+- Lecture audio, favoris et sauvegarde locale.
+- Qualité doctrinale des textes en préparation du rendez-vous.
+
+Aucune monnaie CJ, aucun compte, aucune publicité, aucun système de séries.
