@@ -1,10 +1,18 @@
-Chemin de Foi — V0.1 Lot 2
+Chemin de Foi — V0.1 Lot 3.1
 Ouvrir index.html dans Edge ou Chrome, ou utiliser le HTML autonome livré séparément. Pour le cache hors ligne, servir le projet sur une adresse locale HTTP ou HTTPS.
 
-16 prières originales, 3 extraits Louis Segond 1910 et 7 leçons : un parcours de 6 leçons et la leçon Bible du Lot 1 conservée. Les nouveaux textes restent à relire par un prêtre avant publication.
+24 prières originales, 5 psaumes complets et 2 extraits des Évangiles en Louis Segond 1910. Dix leçons de découverte de la tradition chrétienne catholique, plus le repère Bible du Lot 1 conservé hors parcours. Tous les contenus éditoriaux restent à relire par un prêtre avant publication.
 
 Lecture : toucher « Aa Taille du texte » pour déplier ou replier les réglages, puis utiliser −, curseur ou + (20 à 36 px). Le choix et le repli sont mémorisés.
 
 Favoris, prières personnelles, taille et thème sont stockés dans le navigateur, sous la clé existante chemin-de-foi-demo-v01. Pour retrouver vos données, conserver le même navigateur et la même adresse d'ouverture. Une copie HTML ou un changement de dossier/adresse peut disposer d'un stockage séparé. Aucun effacement des données existantes n'est effectué par cette mise à jour.
 
 Aucun compte, aucune monnaie, aucun suivi. Lecture vocale selon les voix de l'appareil. Ne pas publier sans validation.
+
+Lot 2.4 : finitions de défilement, safe areas et textes secondaires. Identité cinématographique et contenus conservés. La réserve sous les pages suit la hauteur réelle de la navigation. À 320 px, les cartes d’accueil passent sur deux colonnes.
+
+Lot 3 : les huit prières ajoutées et quatre leçons complémentaires sont des propositions originales. Sources bibliques : édition eBible fraLSG, Louis Segond 1910, domaine public. La Segond n’est pas la traduction liturgique officielle catholique. Les sources et leurs empreintes sont recensées dans Sources_Lot3.json. Le dossier relecture contient les textes et points doctrinaux à relire.
+
+Lot 3.1 — Bibliothèques : recherche par titre/thème dans Prières et dans chaque catégorie ; listes de dix résultats maximum ; Les Psaumes accessible depuis Bible et lecture, recherche par numéro ou mots-clés, filtre thématique. Pour ouvrir directement un psaume, saisir son numéro puis Ouvrir le numéro (ou Entrée). Les numéros absents ne créent aucun texte.
+Bible : livres, puis chapitres et lecteur ; seuls les passages intégrés sont activés. Matthieu 11 et Jean 14 restent des extraits limités aux versets annoncés. Découvrir : deux parcours, puis listes de leçons libres, sans progression imposée.
+Retour : bouton de la page et précédent/suivant du navigateur préservent la recherche, le filtre, la page de résultats et la position. Ces états de navigation sont enregistrés séparément dans la session de cet onglet ; ils ne modifient pas les favoris, les prières personnelles ou les réglages existants.

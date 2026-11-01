@@ -1,0 +1,146 @@
+{
+  "edition": "Louis Segond 1910 — eBible fraLSG",
+  "checked": "2026-11-01",
+  "publicDomain": "https://ebible.org/fraLSG/copyright.htm",
+  "psalms": [
+    {
+      "number": 23,
+      "url": "https://ebible.org/fraLSG/PSA023.htm",
+      "sha256": "e34d3cb81dda79ef86c5dd35052e35ac4b540daff9476049b071d4ff21099738",
+      "verseCount": 6
+    },
+    {
+      "number": 27,
+      "url": "https://ebible.org/fraLSG/PSA027.htm",
+      "sha256": "da2160b7ae906898047b93fcd02c2ded9f9dd88aff11757a7323464ccb0120ff",
+      "verseCount": 14
+    },
+    {
+      "number": 46,
+      "url": "https://ebible.org/fraLSG/PSA046.htm",
+      "sha256": "f92fe729368198ae8997d2dd2a1ab1a06e43870220f74df21c4800b1627f67ad",
+      "verseCount": 12
+    },
+    {
+      "number": 91,
+      "url": "https://ebible.org/fraLSG/PSA091.htm",
+      "sha256": "79bd1caa0a0491fc8ae5572753560af9b780833a43ef0412bfd754cfd7078f9c",
+      "verseCount": 16
+    },
+    {
+      "number": 121,
+      "url": "https://ebible.org/fraLSG/PSA121.htm",
+      "sha256": "4dd5b64235a24920f8ec983ddc1326875374fe668d24d0e1787805679396093b",
+      "verseCount": 8
+    }
+  ],
+  "references": [
+    {
+      "source": "CEC, nos 232–234 ; Matthieu 28,19.",
+      "references": [
+        {
+          "label": "CEC 232–234",
+          "url": "https://www.vatican.va/archive/FRA0013/__P18.HTM"
+        }
+      ]
+    },
+    {
+      "source": "CEC, nos 464–469 ; Luc 10,25–37.",
+      "references": [
+        {
+          "label": "CEC 464–469",
+          "url": "https://www.vatican.va/archive/FRA0013/__P1G.HTM"
+        }
+      ]
+    },
+    {
+      "source": "CEC, nos 2558–2565 ; Luc 11,1–4.",
+      "references": [
+        {
+          "label": "CEC 2558–2565",
+          "url": "https://www.vatican.va/archive/FRA0013/__P8U.HTM"
+        }
+      ]
+    },
+    {
+      "source": "CEC, nos 2700–2704 ; Luc 11,1–4.",
+      "references": [
+        {
+          "label": "CEC 2700–2704",
+          "url": "https://www.vatican.va/archive/FRA0013/__P9F.HTM"
+        }
+      ]
+    },
+    {
+      "source": "CEC, nos 109–114 et 125–127 ; Luc 10,25–37.",
+      "references": [
+        {
+          "label": "CEC 109–114",
+          "url": "https://www.vatican.va/archive/FRA0013/__PR.HTM"
+        },
+        {
+          "label": "CEC 125–127",
+          "url": "https://www.vatican.va/archive/FRA0013/__PS.HTM"
+        }
+      ]
+    },
+    {
+      "source": "CEC, nos 158–160 ; Marc 9,24.",
+      "references": [
+        {
+          "label": "CEC 158–160",
+          "url": "https://www.vatican.va/archive/FRA0013/__PY.HTM"
+        }
+      ]
+    },
+    {
+      "source": "Catéchisme de l’Église catholique (CEC), nos 150, 153–160 ; Marc 9,24.",
+      "references": [
+        {
+          "label": "CEC 150–152",
+          "url": "https://www.vatican.va/archive/FRA0013/__PX.HTM"
+        },
+        {
+          "label": "CEC 153–160",
+          "url": "https://www.vatican.va/archive/FRA0013/__PY.HTM"
+        }
+      ]
+    },
+    {
+      "source": "CEC, nos 2585–2589 ; Psaumes 23, 27, 46, 91 et 121, numérotation Louis Segond 1910.",
+      "references": [
+        {
+          "label": "CEC 2585–2589",
+          "url": "https://www.vatican.va/archive/FRA0013/__P8W.HTM"
+        }
+      ]
+    },
+    {
+      "source": "CEC, nos 1500–1509, notamment 1503 et 1508 ; Matthieu 25,36.",
+      "references": [
+        {
+          "label": "CEC 1500–1509",
+          "url": "https://www.vatican.va/archive/FRA0013/__P4F.HTM"
+        }
+      ]
+    },
+    {
+      "source": "CEC, nos 1822–1825 et 2839–2845 ; Jean 13,34 ; Luc 15,11–32.",
+      "references": [
+        {
+          "label": "CEC 1822–1825",
+          "url": "https://www.vatican.va/archive/FRA0013/__P60.HTM"
+        },
+        {
+          "label": "CEC 2839–2845",
+          "url": "https://www.vatican.va/archive/FRA0013/__PA5.HTM"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Textes bibliques conservés sans modification lexicale ; retours à la ligne et espaces normalisés, numéros de versets ajoutés ; renvois de notes hors texte exclus.",
+    "Le repère Bible du Lot 1 est conservé hors des dix leçons.",
+    "Les prières originales ne sont pas des formules liturgiques approuvées."
+  ]
+}
