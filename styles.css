@@ -177,3 +177,23 @@ body.theme-light:not([data-section="accueil"]) .content>.library-note{font-size:
 .library-actions{display:flex;flex-wrap:wrap;gap:10px;grid-column:1/-1}.library-actions button{flex:1 1 110px;min-height:46px;font-size:16px}.library-tools #psalm-jump-message{grid-column:1/-1;color:#fff3df;margin:0}.library-tools #psalm-jump-message:empty{display:none}
 
 @media(min-width:700px){.library-actions button{flex:0 1 auto;min-width:130px}}
+
+/* Lot 3.2 — recherche compacte ; décor et palette inchangés */
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.library-tools.library-compact{display:block;padding:0;margin:10px 0;background:none;border:0;border-radius:0;box-shadow:none;backdrop-filter:none}
+.library-search-line{display:flex;align-items:center;gap:2px;min-height:52px;padding:3px 5px 3px 10px;background:linear-gradient(125deg,#634a36ed,#282e3eeb);border:1px solid #ecd4a6b3;border-radius:17px;box-shadow:inset 0 1px 1px #fff0ce55,0 7px 20px #121b2c33;backdrop-filter:blur(15px)}
+.library-search-icon{display:flex;flex:0 0 22px;color:#ffe0a0}.library-search-icon svg{width:22px;height:22px}
+.library-tools.library-compact input{flex:1;min-width:0;min-height:46px;padding:8px;border:0;border-radius:11px;background:transparent;color:#fff8eb;font-size:18px;line-height:1.4}.library-tools.library-compact input::placeholder{color:#fff0d9;opacity:.9}.library-tools input::-webkit-search-cancel-button{-webkit-appearance:none}
+.library-tools .library-query-clear{flex:0 0 44px;min-height:44px;border:0;border-radius:12px;background:transparent;color:#fff0d9;font-size:26px;line-height:1;cursor:pointer}
+.library-tools .library-filter-toggle{flex:0 0 auto;min-height:44px;font-size:16px;padding:8px 10px;border-radius:12px;white-space:nowrap}
+.library-tools [hidden]{display:none!important}.library-filter-panel{padding:14px 16px;margin-top:8px;background:linear-gradient(125deg,#634a36ed,#282e3eeb);border:1px solid #ecd4a6b3;border-radius:18px;box-shadow:0 7px 20px #121b2c33;backdrop-filter:blur(15px)}
+.library-filter-panel .field{margin:0 0 12px}.library-filter-panel select{min-height:48px}.library-filter-panel label,.library-category-nav>p{font-size:18px;font-weight:650;color:#fff4df;margin:0 0 8px}.library-category-nav{margin-bottom:14px}.library-category-nav>div{display:grid;grid-template-columns:1fr 1fr;gap:8px}.library-category-option{font-size:16px;font-weight:500;line-height:1.35;padding:9px 10px;min-height:48px;height:auto}
+.library-filter-panel [data-filters-reset]{font-size:16px;min-height:44px}
+.library-summary{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin:8px 0 10px}.library-summary .library-status{margin:0;padding:5px 10px;border-radius:12px;background:#292e3ff0;color:#fff3df;font-size:16px;line-height:1.5;text-shadow:none}.library-number-open{font-size:16px;min-height:44px;padding:8px 12px}
+body[data-library="true"] .section-intro{padding:13px 16px;margin-bottom:10px}body[data-library="true"] .section-intro .eyebrow{margin-bottom:5px}body[data-library="true"] .section-intro h1{margin-bottom:6px}body[data-library="true"] .section-intro .subtle{line-height:1.45}
+body[data-library="true"] main>.content{padding-top:14px}body[data-library="true"] .back{padding-bottom:6px}
+body[data-library="true"] main>.content:before{height:32px;margin:0}
+.library-tools #psalm-jump-message{padding:0;margin:8px 0;font-size:16px;line-height:1.5;background:#292e3ff0;border-radius:10px}.library-tools #psalm-jump-message:not(:empty){padding:10px 12px}
+.library-search-line:focus-within{box-shadow:0 0 0 2px #edca8655,inset 0 1px 1px #fff0ce55}.library-search-line button:focus-visible,.library-filter-panel select:focus-visible{outline:3px solid #edca86;outline-offset:2px}
+@media(min-width:700px){body[data-library="true"] main>.content:before{height:65px}.library-filter-panel{max-width:650px}.library-search-line{max-width:800px}}
+@media(max-width:350px){.library-search-line{padding-left:8px;gap:0}.library-tools .library-filter-toggle{padding-left:8px;padding-right:8px}.library-search-icon{flex-basis:20px}.library-search-icon svg{width:20px}.library-tools.library-compact input{padding-left:6px;padding-right:4px}}

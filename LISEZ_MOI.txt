@@ -1,4 +1,4 @@
-Chemin de Foi — V0.1 Lot 3.1
+Chemin de Foi — V0.1 Lot 3.2
 Ouvrir index.html dans Edge ou Chrome, ou utiliser le HTML autonome livré séparément. Pour le cache hors ligne, servir le projet sur une adresse locale HTTP ou HTTPS.
 
 24 prières originales, 5 psaumes complets et 2 extraits des Évangiles en Louis Segond 1910. Dix leçons de découverte de la tradition chrétienne catholique, plus le repère Bible du Lot 1 conservé hors parcours. Tous les contenus éditoriaux restent à relire par un prêtre avant publication.
@@ -16,3 +16,7 @@ Lot 3 : les huit prières ajoutées et quatre leçons complémentaires sont des 
 Lot 3.1 — Bibliothèques : recherche par titre/thème dans Prières et dans chaque catégorie ; listes de dix résultats maximum ; Les Psaumes accessible depuis Bible et lecture, recherche par numéro ou mots-clés, filtre thématique. Pour ouvrir directement un psaume, saisir son numéro puis Ouvrir le numéro (ou Entrée). Les numéros absents ne créent aucun texte.
 Bible : livres, puis chapitres et lecteur ; seuls les passages intégrés sont activés. Matthieu 11 et Jean 14 restent des extraits limités aux versets annoncés. Découvrir : deux parcours, puis listes de leçons libres, sans progression imposée.
 Retour : bouton de la page et précédent/suivant du navigateur préservent la recherche, le filtre, la page de résultats et la position. Ces états de navigation sont enregistrés séparément dans la session de cet onglet ; ils ne modifient pas les favoris, les prières personnelles ou les réglages existants.
+
+Lot 3.2 — Recherches compactes : la barre de recherche reste visible, les options secondaires sont derrière Filtrer. Dans Prières, les 24 prières sont proposées immédiatement ; Filtrer permet de choisir les catégories existantes ou un thème. Dans une catégorie ouverte, ce contexte n’est pas répété comme filtre. Le bouton × efface les mots ; Réinitialiser les filtres conserve les mots.
+Bible et lecture recherche aussi les passages intégrés. Découvrir permet de trouver directement une leçon ou de filtrer par parcours. Dans un livre ou un parcours déjà choisi, seule la recherche utile est conservée. Les résultats sont comptés et les listes restent paginées par dix.
+Pour un psaume, saisir un numéro puis choisir Ouvrir [numéro] ou appuyer sur Entrée. Les numéros absents restent sans texte.
