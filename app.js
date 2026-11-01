@@ -1,4 +1,4 @@
-/* Chemin de Foi — prototype local V0.1 / Lot 3. Aucun serveur ni suivi. */
+/* Chemin de Foi — prototype local V0.1 / Lot 3.3. Aucun serveur ni suivi. */
 'use strict';
 const CATEGORY = [
  {id:'quotidien',name:'Prières quotidiennes',desc:'Matin, soir et confiance',icon:'☀'},
@@ -338,6 +338,268 @@ const PSALM_RECORDS=[
 ];
 for(const p of PSALM_RECORDS){const i=READINGS.findIndex(r=>r.id===p.id);if(i>=0)READINGS[i]=p;else READINGS.push(p)}
 
+
+// Lot 3.3 : propositions éditoriales à relire, sans changement des contenus antérieurs.
+PRAYERS.push(...[
+  {
+    "id": "confiance-foi-hesitante",
+    "category": "paix",
+    "title": "Pour confier à Dieu une foi hésitante",
+    "themes": [
+      "Confiance",
+      "Doute"
+    ],
+    "text": "Mon Dieu,\nIl y a des jours où je voudrais te faire confiance, mais où tes silences me déconcertent. Je ne veux ni cacher mes questions ni faire semblant de croire plus facilement que je ne le peux.\nAccueille ce désir fragile de te chercher. Aide-moi à reconnaître ce qui me trouble, à écouter sans me comparer aux autres et à demander des éclaircissements quand une parole me blesse ou m'échappe.\nQuand je ne ressens rien, apprends-moi à ne pas me juger trop vite. Qu'une rencontre honnête, une lecture ou un instant de silence puisse ouvrir un peu d'espace en moi.\nJe te confie ma recherche telle qu'elle est aujourd'hui. Accompagne mon pas, même hésitant, dans la liberté et la vérité.\nAmen."
+  },
+  {
+    "id": "pardon-mots-manquent",
+    "category": "epreuves",
+    "title": "Quand les mots manquent pour demander pardon",
+    "themes": [
+      "Pardon"
+    ],
+    "text": "Seigneur,\nJe sais que j'ai blessé quelqu'un, mais je ne trouve pas les mots pour m'approcher de cette personne. J'ai peur de sa réaction et je voudrais parfois expliquer ma faute avant même d'avoir écouté sa peine.\nAide-moi à préparer une parole simple, qui reconnaisse ce que j'ai fait sans réclamer d'être rassuré. Donne-moi le courage de nommer le tort causé et d'entendre ce que l'autre souhaite me dire.\nSi ma demande ne reçoit pas de réponse immédiate, apprends-moi à respecter ce temps. Que mes excuses ne deviennent pas une pression de plus.\nMontre-moi les gestes de réparation possibles et aide-moi à les tenir dans la durée. Je te confie ce chemin avec humilité, sans chercher à décider du pardon de l'autre.\nAmen."
+  },
+  {
+    "id": "patience-reponse-douce",
+    "category": "paix",
+    "title": "Pour répondre avec patience et douceur",
+    "themes": [
+      "Patience",
+      "Douceur"
+    ],
+    "text": "Seigneur,\nQuand je suis pressé ou fatigué, une petite contrariété peut prendre toute la place. Je réponds parfois trop sèchement à une personne qui ne connaît pas ce que je porte.\nAide-moi à reconnaître ce moment avant que mes mots ne dépassent ma pensée. Donne-moi la liberté de faire une pause, de parler moins vite et de demander un peu de temps si j'en ai besoin.\nApprends-moi à écouter la personne devant moi, sans la réduire à ce qui m'agace. Que ma douceur reste sincère, capable de dire aussi une limite ou un désaccord avec respect.\nSi je manque de patience, aide-moi à le reconnaître et à recommencer. Que mes gestes ordinaires puissent offrir aux autres un peu de cette attention que j'espère recevoir moi-même.\nAmen."
+  },
+  {
+    "id": "proche-presence-souffrance",
+    "category": "epreuves",
+    "title": "Auprès d’un proche qui souffre",
+    "themes": [
+      "Souffrance",
+      "Proches",
+      "Accompagnement"
+    ],
+    "text": "Seigneur,\nUne personne que j'aime traverse une souffrance que je ne peux pas enlever. Je voudrais trouver une phrase qui réconforte, mais je crains de parler trop vite ou de ne pas savoir rester présent.\nAide-moi à lui demander ce qui lui ferait du bien, puis à respecter sa réponse. Apprends-moi à offrir une aide précise, un repas, un trajet ou un moment d'écoute, sans imposer ma présence.\nSoutiens les personnes qui prennent soin d'elle et celles qui cherchent avec elle les soins adaptés. Donne-moi aussi de reconnaître ma fatigue et de prendre le relais avec d'autres.\nJe ne te demande pas de garantir une issue que je ne connais pas. Je te confie cette personne, son courage et ses questions. Que notre affection demeure attentive et respectueuse.\nAmen."
+  },
+  {
+    "id": "journee-contretemps",
+    "category": "quotidien",
+    "title": "Quand la journée commence de travers",
+    "themes": [
+      "Courage",
+      "Confiance"
+    ],
+    "text": "Mon Dieu,\nCette journée semble déjà trop lourde. Un imprévu, une mauvaise nouvelle ou une tâche de plus me donne l'impression de ne plus savoir par où commencer.\nAide-moi à distinguer ce qui est urgent de ce qui peut attendre. Donne-moi le courage de choisir une première action à ma portée, puis d'avancer sans exiger de tout résoudre à la fois.\nSi je dois demander de l'aide ou reconnaître une limite, apprends-moi à le faire sans honte. Rappelle-moi aussi que les personnes autour de moi portent peut-être une journée difficile.\nQuand la tension monte, ouvre une petite place pour respirer et reprendre mes mots avec respect. Je te confie ce jour imparfait, ses obstacles et ses rencontres. Accompagne mon désir d'y faire quelque chose de bon.\nAmen."
+  },
+  {
+    "id": "joies-accueillir-partager",
+    "category": "gratitude",
+    "title": "Pour accueillir une petite joie et la partager",
+    "themes": [
+      "Gratitude",
+      "Petites joies"
+    ],
+    "text": "Seigneur,\nAujourd'hui, une chose simple m'a fait sourire : une lumière sur le chemin, une conversation inattendue, une musique ou un geste d'amitié. Je prends un moment pour accueillir cette joie au lieu de passer aussitôt à la suite.\nMerci pour ce qui rend la vie plus douce et pour les personnes qui y contribuent, souvent sans le savoir. Aide-moi à leur témoigner ma reconnaissance avec des mots précis et une attention vraie.\nQue cette joie ne m'éloigne pas de ceux qui peinent. Qu'elle m'apprenne plutôt à partager ce que je peux offrir, sans demander aux autres d'être heureux sur commande.\nJe te confie ce souvenir léger. Apprends-moi à le recevoir comme un cadeau de ce jour, sans vouloir le retenir ni mesurer ma vie à ce seul instant.\nAmen."
+  }
+]);
+LESSONS.push(...[
+  {
+    "id": "lire-un-psaume",
+    "title": "Comment lire un psaume ?",
+    "intro": "Une méthode simple pour entrer dans une prière poétique.",
+    "paragraphs": [
+      "Un psaume est un poème de prière transmis dans la Bible. Issus de la prière d'Israël, les psaumes expriment des expériences très diverses : gratitude, détresse, confiance ou recherche de justice. Dans la tradition catholique, ils sont reçus comme Écriture sainte et utilisés dans la liturgie comme dans la prière personnelle.",
+      "Pour commencer, lis un court psaume une première fois. Repère qui parle, ce qui est demandé et les images employées. Relis ensuite un verset qui te touche ou t'interroge. Tu peux répondre avec tes propres mots, ou simplement garder un silence.",
+      "Il n'est pas nécessaire de retrouver tous les sentiments du poème. Certains mots appartiennent à un monde ancien ; un passage difficile peut être discuté avec un prêtre. Les images de protection n'offrent pas une assurance contre les accidents ou la maladie."
+    ],
+    "example": "Tu peux lire le psaume 23, remarquer l'image du berger puis celle de la vallée sombre. Demande-toi ce que chacune fait entendre, avant de choisir un verset pour une courte prière.",
+    "question": "Quel mot du psaume aimerais-tu reprendre, ou faire expliquer, sans obligation de ressentir quelque chose ?",
+    "source": "CEC, nos 2585–2589 ; Psaume 23,1–4 (Louis Segond 1910).",
+    "references": [
+      {
+        "label": "CEC 2585–2589",
+        "url": "https://www.vatican.va/archive/FRA0013/__P8W.HTM"
+      },
+      {
+        "label": "Psaume 23 — Louis Segond 1910",
+        "url": "https://ebible.org/fraLSG/PSA023.htm"
+      }
+    ],
+    "review": "Valider la présentation des racines juives des psaumes et de leur usage catholique ; distinguer méthode de lecture, prière et garantie de protection."
+  },
+  {
+    "id": "quatre-evangiles",
+    "title": "Découvrir les quatre Évangiles",
+    "intro": "Quatre témoignages pour découvrir un même Jésus.",
+    "paragraphs": [
+      "La Bible chrétienne contient quatre Évangiles, traditionnellement désignés par les noms de Matthieu, Marc, Luc et Jean. Dans la foi catholique, ils occupent une place centrale : ils témoignent de la vie, de l'enseignement, de la mort et de la résurrection de Jésus.",
+      "Matthieu donne notamment une grande place aux enseignements de Jésus, comme le discours sur la montagne. Marc raconte de nombreuses rencontres et actions de Jésus, avec un récit vivant, par exemple la rencontre de Bartimée.",
+      "Luc propose des récits marquants sur la miséricorde et l'accueil, comme la parabole du père et de ses deux fils. Jean développe des dialogues et des signes qui invitent à reconnaître qui est Jésus, comme le récit de Cana.",
+      "Ces repères n'épuisent pas la richesse de chaque livre. Les quatre voix se complètent dans la lecture de l'Église ; tu peux découvrir un petit passage à la fois, sans devoir commencer les quatre livres ensemble."
+    ],
+    "example": "Tu peux choisir Luc 15,11–32 et observer comment le père accueille chacun de ses fils. Une autre fois, lis une rencontre dans Marc et demande-toi comment Jésus écoute la personne qui l'appelle.",
+    "question": "Quelle porte d’entrée t’attire aujourd’hui : un enseignement, une rencontre, une parabole ou un dialogue ?",
+    "source": "CEC, nos 125–127 ; Matthieu 5,1–12 ; Marc 10,46–52 ; Luc 15,11–32 ; Jean 2,1–11. Références bibliques, Louis Segond 1910.",
+    "references": [
+      {
+        "label": "CEC 125–127",
+        "url": "https://www.vatican.va/archive/FRA0013/__PS.HTM"
+      },
+      {
+        "label": "Matthieu 5",
+        "url": "https://ebible.org/fraLSG/MAT05.htm"
+      },
+      {
+        "label": "Marc 10",
+        "url": "https://ebible.org/fraLSG/MRK10.htm"
+      },
+      {
+        "label": "Luc 15",
+        "url": "https://ebible.org/fraLSG/LUK15.htm"
+      },
+      {
+        "label": "Jean 2",
+        "url": "https://ebible.org/fraLSG/JHN02.htm"
+      }
+    ],
+    "review": "Relire les accents pédagogiques attribués aux quatre Évangiles, sans les enfermer dans un portrait réducteur. Vérifier la distinction entre noms traditionnels, histoire de rédaction et témoignage reçu par l’Église."
+  },
+  {
+    "id": "prier-mots-personnels",
+    "title": "Prier avec ses propres mots",
+    "intro": "Parler simplement à Dieu, même quand on hésite.",
+    "paragraphs": [
+      "Dans la tradition catholique, la prière est une relation avec Dieu. On peut commencer avec des mots très simples, sans connaître de longues formules. Une joie, une inquiétude ou une question peuvent devenir le point de départ d'une parole adressée à Dieu.",
+      "Tu peux dire ce que tu vis, ce que tu espères et ce qui reste difficile. Si tu doutes, tu peux nommer ce doute honnêtement. La prière ne demande pas de fabriquer une émotion ou de réussir une belle phrase.",
+      "Les prières reçues de l'Église, notamment le Notre Père, gardent aussi leur place. Les mots personnels peuvent les accompagner. Avec l'aide d'un prêtre, on peut découvrir peu à peu cette prière partagée et sa dimension de rencontre avec Dieu."
+    ],
+    "example": "Tu peux commencer ainsi : « Mon Dieu, je suis fatigué et je ne sais pas bien quoi te dire. Voici ce qui me préoccupe. Aide-moi à écouter et à demander le soutien dont j'ai besoin. » Puis tu peux t'arrêter en silence.",
+    "question": "Si tu le souhaites, quelle phrase sincère pourrais-tu adresser à Dieu à partir de ta journée ?",
+    "source": "CEC, nos 2558–2565 et 2700–2704 ; Matthieu 6,7–9 ; Marc 9,24. Références bibliques, Louis Segond 1910.",
+    "references": [
+      {
+        "label": "CEC 2558–2565",
+        "url": "https://www.vatican.va/archive/FRA0013/__P8U.HTM"
+      },
+      {
+        "label": "CEC 2700–2704",
+        "url": "https://www.vatican.va/archive/FRA0013/__P9F.HTM"
+      },
+      {
+        "label": "Matthieu 6",
+        "url": "https://ebible.org/fraLSG/MAT06.htm"
+      },
+      {
+        "label": "Marc 9",
+        "url": "https://ebible.org/fraLSG/MRK09.htm"
+      }
+    ],
+    "review": "Valider la liberté des mots personnels et l’accueil du doute, sans réduire la prière à une technique de bien-être ni opposer parole personnelle, Notre Père et prière de l’Église."
+  }
+]);
+COMPLEMENTARY_PATH.push(...["lire-un-psaume","quatre-evangiles","prier-mots-personnels"]);
+const PSALM_NOTES={
+  "23": {
+    "contextTheme": "Ce poème de confiance est présenté comme un cantique de David dans le texte. Deux images se succèdent : le berger qui conduit et l'hôte qui accueille à sa table. La vallée sombre fait partie du chemin évoqué ; le psaume n'annonce pas une vie sans épreuve.",
+    "feelings": "La confiance et le sentiment d'être accueilli traversent le poème, avec la peur que peut évoquer la vallée. La dernière parole ouvre une espérance de demeurer auprès de Dieu.",
+    "takeaway": "Un lecteur peut retenir l'image d'une présence qui accompagne. Dans la lecture chrétienne, elle peut nourrir une prière au milieu des difficultés, tout en laissant une place aux aides concrètes.",
+    "reflection": "Quelle image te rejoint le plus : le chemin, la table ou la maison ? Tu peux aussi garder une question ouverte.",
+    "source": "Psaume 23,1–6, notamment versets 1–4, 5 et 6 ; CEC 2585–2589.",
+    "review": "Relire le sens de l’attribution à David et des images d’accompagnement ; ne pas transformer la confiance en promesse de confort ou de réussite.",
+    "references": [
+      {
+        "label": "Psaume 23 — Louis Segond 1910",
+        "url": "https://ebible.org/fraLSG/PSA023.htm"
+      },
+      {
+        "label": "CEC 2585–2589",
+        "url": "https://www.vatican.va/archive/FRA0013/__P8W.HTM"
+      }
+    ]
+  },
+  "27": {
+    "contextTheme": "Cette prière, placée sous le nom de David, associe confiance, recherche de la présence de Dieu et supplication. Elle évoque le sanctuaire, des adversaires et l'attente d'un secours, sans permettre à elle seule de reconstruire une circonstance historique précise.",
+    "feelings": "Le courage côtoie l'inquiétude, la peur d'être abandonné et le désir d'être accueilli. Le psaume montre qu'une prière peut porter plusieurs sentiments, même contradictoires en apparence.",
+    "takeaway": "Il est possible de confier à Dieu une peur réelle tout en cherchant un chemin de droiture. Les mots sur les ennemis n'autorisent pas à désigner quelqu'un à la haine ou à lui faire violence.",
+    "reflection": "Y a-t-il une inquiétude ou une demande que tu aimerais formuler simplement, sans devoir la résoudre tout de suite ?",
+    "source": "Psaume 27,1–14, notamment versets 4, 7–10 et 14 ; CEC 2585–2589.",
+    "review": "Valider l’explication des images de sanctuaire, d’abandon et d’ennemis ; éviter toute identification automatique des adversaires bibliques aux proches du lecteur.",
+    "references": [
+      {
+        "label": "Psaume 27 — Louis Segond 1910",
+        "url": "https://ebible.org/fraLSG/PSA027.htm"
+      },
+      {
+        "label": "CEC 2585–2589",
+        "url": "https://www.vatican.va/archive/FRA0013/__P8W.HTM"
+      }
+    ]
+  },
+  "46": {
+    "contextTheme": "Le titre ancien présente un cantique des fils de Koré. Cette prière collective évoque les bouleversements de la terre, une cité soutenue par Dieu et la fin des combats. Le refrain souligne la présence du Dieu de Jacob au milieu du peuple.",
+    "feelings": "Le texte fait entendre l'effroi que suscite un monde instable, puis une assurance partagée et un appel à reconnaître Dieu. Cette confiance n'efface pas la violence des images employées.",
+    "takeaway": "Le lecteur peut retenir le désir d'un appui et d'une paix qui dépassent ses seules forces. Le poème invite à une confiance spirituelle ; il ne garantit pas l'absence de guerre, de catastrophe ou de détresse.",
+    "reflection": "Quelle présence t'aide à ne pas porter seul une période de bouleversement ? Tu peux en faire une demande ou un merci.",
+    "source": "Psaume 46,1–12, titre compris dans la numérotation Segond 1910 ; notamment versets 2–4, 8 et 10–12 ; CEC 2585–2589.",
+    "review": "Vérifier les termes collectifs et la lecture des images de guerre ; confirmer la numérotation de douze versets, dont le titre ancien.",
+    "references": [
+      {
+        "label": "Psaume 46 — Louis Segond 1910",
+        "url": "https://ebible.org/fraLSG/PSA046.htm"
+      },
+      {
+        "label": "CEC 2585–2589",
+        "url": "https://www.vatican.va/archive/FRA0013/__P8W.HTM"
+      }
+    ]
+  },
+  "91": {
+    "contextTheme": "Ce poème exprime une confiance en Dieu par les images de l'abri, des ailes et du refuge. Plusieurs voix se répondent ; les derniers versets présentent une parole divine de présence dans la détresse. Le langage de protection est celui d'une prière poétique.",
+    "feelings": "La peur de la nuit et des dangers se mêle au besoin de sécurité et à une grande confiance. Le texte prend au sérieux ce qui inquiète la personne qui prie.",
+    "takeaway": "Dans cette proposition de lecture chrétienne, on peut recevoir une invitation à confier sa peur, sans lire ces images comme une assurance contre les accidents ou la maladie. Matthieu 4,5–7 met précisément en scène une citation du psaume à laquelle Jésus répond en refusant de mettre Dieu à l'épreuve. Prudence et soins restent nécessaires.",
+    "reflection": "Quel souci voudrais-tu confier, tout en gardant les gestes de prudence et les soutiens dont tu as besoin ?",
+    "source": "Psaume 91,1–16, notamment versets 1–4 et 14–16 ; Matthieu 4,5–7 ; CEC 2585–2589.",
+    "review": "Relire en priorité le langage de protection et le lien avec Matthieu 4. Écarter toute promesse de guérison, d’invulnérabilité ou de faute imputée à la personne malade.",
+    "references": [
+      {
+        "label": "Psaume 91 — Louis Segond 1910",
+        "url": "https://ebible.org/fraLSG/PSA091.htm"
+      },
+      {
+        "label": "CEC 2585–2589",
+        "url": "https://www.vatican.va/archive/FRA0013/__P8W.HTM"
+      },
+      {
+        "label": "Matthieu 4,5–7",
+        "url": "https://ebible.org/fraLSG/MAT04.htm"
+      }
+    ]
+  },
+  "121": {
+    "contextTheme": "Le titre parle d'un cantique des degrés. Dans la tradition de lecture des psaumes, ce groupe de chants est associé au pèlerinage. Le poème regarde vers les montagnes, puis évoque le secours et la vigilance de Dieu au départ comme à l'arrivée.",
+    "feelings": "Une question ouvre le texte, suivie d'une confiance apaisée. Les images du jour et de la nuit expriment le désir d'une présence attentive dans la durée.",
+    "takeaway": "Un lecteur peut y trouver des mots pour accompagner un départ ou une étape de vie. La confiance exprimée ne dispense pas de préparer son chemin, de rester prudent et d'accepter l'aide d'autres personnes.",
+    "reflection": "Quelle étape te semble être un départ aujourd'hui ? Quelle aide concrète et quelle parole d'espérance souhaiterais-tu accueillir ?",
+    "source": "Psaume 121,1–8 ; CEC 2585–2589. Benoît XVI, audience générale du 4 mai 2005 (psaume 120 liturgique, 121 dans la Segond).",
+    "review": "Confirmer le sens traditionnel des cantiques des degrés et la prudence historique ; distinguer confiance spirituelle et garantie de sécurité pendant un voyage.",
+    "references": [
+      {
+        "label": "Psaume 121 — Louis Segond 1910",
+        "url": "https://ebible.org/fraLSG/PSA121.htm"
+      },
+      {
+        "label": "CEC 2585–2589",
+        "url": "https://www.vatican.va/archive/FRA0013/__P8W.HTM"
+      },
+      {
+        "label": "Benoît XVI, audience du 4 mai 2005 — psaume 120 liturgique / 121 Segond",
+        "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2005/documents/hf_ben-xvi_aud_20050504.html"
+      }
+    ]
+  }
+};
+for(const p of READINGS){if(p.psalm&&PSALM_NOTES[p.psalm])p.psalmNote=PSALM_NOTES[p.psalm]}
+
 const STORE='chemin-de-foi-demo-v01';const defaults={size:24,theme:'light',favorites:[],personal:[],sizeOpen:false};
 let saved;try{saved=JSON.parse(localStorage.getItem(STORE)||'{}')}catch{saved={}}
 if(!saved||typeof saved!=='object')saved={};
@@ -394,7 +656,7 @@ function availableChapters(book){return (book.chapters||[]).filter(c=>c.readings
 function availableBooks(){return BIBLE_BOOKS.filter(book=>book.psalms?psalmItems().length:availableChapters(book).length)}
 function bible(){const books=availableBooks();return head('Bible et lecture','Choisir un livre, puis un chapitre réellement intégré.')+searchControls('Rechercher un livre ou un passage')+`<div id="library-results">${libraryResults()}</div><div class="notice small">Louis Segond 1910, domaine public. Les cinq psaumes sont complets ; Matthieu 11 et Jean 14 sont des extraits, pas des chapitres complets. Cette traduction n’est pas la traduction liturgique officielle catholique.</div></div>`}
 function book(){const book=BIBLE_BOOKS.find(b=>b.id===state.active);if(!book)return bible();if(book.psalms)return psalms();const chapters=availableChapters(book);return head(book.name,'Chapitres disponibles · Louis Segond 1910.')+libraryBack('Retour aux livres','bible')+`${searchControls("Rechercher un chapitre ou un passage")}<div id="library-results">${libraryResults()}</div><p class="editorial-note">Seul le passage indiqué est intégré. Aucun chapitre absent n’est activé.</p></div>`}
-function discover(){return head('Découvrir la foi','Choisir un parcours ou trouver une leçon, librement.')+searchControls('Rechercher une leçon ou un parcours')+`<div id="library-results">${libraryResults()}</div><p class="editorial-note">Dix leçons de découverte de la tradition chrétienne catholique. Propositions éditoriales à relire avec un prêtre. Aucun ordre ni progression obligatoire.</p></div>`}
+function discover(){return head('Découvrir la foi','Choisir un parcours ou trouver une leçon, librement.')+searchControls('Rechercher une leçon ou un parcours')+`<div id="library-results">${libraryResults()}</div><p class="editorial-note">${LESSONS.length} leçons de découverte de la tradition chrétienne catholique. Propositions éditoriales à relire avec un prêtre. Aucun ordre ni progression obligatoire.</p></div>`}
 function course(){const c=COURSES.find(c=>c.id===state.active);if(!c)return discover();return head(c.title,c.description)+libraryBack('Retour aux parcours','decouvrir')+searchControls('Rechercher dans ce parcours')+`<div id="library-results">${libraryResults()}</div><p class="editorial-note library-note">Tu peux choisir n’importe quelle leçon et revenir à cette liste à tout moment.</p></div>`}
 function favorites(){const items=PRAYERS.filter(p=>state.favorites.includes(p.id));return head('Mes favoris','Ces préférences restent sur cet appareil.')+libraryBack('Retour aux prières','prieres')+(items.length?searchControls('Rechercher dans mes favoris',prayerThemes(items))+`<div id="library-results">${libraryResults()}</div>`:'<p class="empty">Aucun favori pour le moment. Ouvre une prière puis choisis « Ajouter aux favoris ».</p>')+'</div>'}
 document.addEventListener('input',e=>{if(e.target.id==='library-query'){const message=document.querySelector('#psalm-jump-message');if(message)message.textContent='';libraryView().query=e.target.value;libraryView().page=1;refreshLibrary()}});
@@ -407,7 +669,9 @@ function homeIcon(name){const paths={prayer:'M10 21V11L7 15 4 17l-2-2 4-4 3-8c1-
 function home(){const cards=[['prieres','Prières','Se confier à Dieu','prayer',''],['bible','Bible et lecture','Lire et méditer','book',''],['decouvrir','Découvrir la foi','Comprendre pas à pas','sprout',''],['reading','Réflexion du jour','Un extrait à méditer','sun','mat11'],['prayer','Recueillement','Un instant de paix','peace','paix'],['plus','Plus','Favoris et préférences','more','']];return `<div class="cinema-home"><section class="home-scene" aria-label="Bienvenue dans Chemin de Foi"><div class="home-wordmark"><span class="home-emblem" aria-hidden="true">✧</span><h1>Chemin <em>de Foi</em></h1><p>Prier · Lire · Découvrir · Grandir</p></div><div class="home-welcome"><h2>Un chemin de paix</h2><p>Découvrir, prier et avancer,<br>librement, à ton rythme.</p></div></section><div class="home-cards">${cards.map(([route,title,desc,icon,id])=>`<button type="button" class="home-card" data-go="${route}" ${id?'data-id="'+id+'"':''}>${homeIcon(icon)}<strong>${title.replace("Recueillement","Recueil&shy;lement")}</strong><small>${desc}</small></button>`).join('')}</div><div class="home-foot"><button class="home-intro" data-go="lesson" data-id="dieu">Découvrir en 3 minutes →</button><p>Aucun compte · Aucune obligation</p></div></div>`}
 function textSizeControl(){return `<details class="text-size" id="text-size-panel" ${state.sizeOpen?'open':''}><summary><span class="text-size-label"><span aria-hidden="true">Aa</span> Taille du texte <output id="size-value" for="reading-size">${state.size} px</output></span><span class="size-chevron" aria-hidden="true">⌄</span></summary><div class="text-size-controls"><button type="button" data-size="-2" aria-label="Réduire la taille du texte" ${state.size<=20?'disabled':''}>−</button><input id="reading-size" type="range" min="20" max="36" step="2" value="${state.size}" aria-label="Taille du texte" aria-valuetext="${state.size} pixels"><button type="button" data-size="2" aria-label="Agrandir la taille du texte" ${state.size>=36?'disabled':''}>+</button></div></details>`}
 function setReadingSize(value){state.size=Math.max(20,Math.min(36,Number(value)));document.documentElement.style.setProperty('--reading',state.size+'px');persist();const range=document.querySelector('#reading-size');if(range){range.value=state.size;range.setAttribute('aria-valuetext',state.size+' pixels');document.querySelector('#size-value').value=state.size+' px';document.querySelector('[data-size="-2"]').disabled=state.size<=20;document.querySelector('[data-size="2"]').disabled=state.size>=36;}}
-function reader(type){const p=(type==='prayer'?PRAYERS:type==='reading'?READINGS:[...LESSONS,BIBLE_GUIDE]).find(p=>p.id===state.active);if(!p)return type==='lesson'?discover():type==='reading'?bible():prayers();const own=type==='prayer';const isFav=state.favorites.includes(p.id);const contents=type==='lesson'?`<p class="small">Repères de tradition chrétienne catholique — proposition éditoriale à relire.</p>`+p.paragraphs.map(x=>`<p>${esc(x)}</p>`).join('')+(p.example?`<p><strong>Exemple concret :</strong><br>${esc(p.example)}</p>`:''):`<p>${esc(p.text)}</p>`;const parentCourse=type==='lesson'?COURSES.find(c=>c.lessons.includes(p.id)):null;const parentBook=type==='reading'&&!p.psalm?BIBLE_BOOKS.find(b=>b.chapters?.some(c=>c.readings.includes(p.id))):null;const back=type==='lesson'?(parentCourse?'course':'decouvrir'):type==='reading'?(p.psalm?'psalms':parentBook?'book':'bible'):'category';const backId=type==='prayer'?p.category:parentCourse?.id||parentBook?.id||'';return `<div class="content">${libraryBack("Retour à la liste",back,backId)}<section class="reading-stage">${textSizeControl()}<div class="reading-card"><p class="eyebrow">${type==='lesson'?'Découvrir la foi':type==='reading'?'La Bible':'Prière'}</p><h1>${esc(type==='lesson'?(PATH_TITLES[p.id]||p.title):p.title)}</h1>${p.psalm?`<p class="small">Titre thématique et introduction : repères éditoriaux de Chemin de Foi, distincts du texte biblique.</p>`:''}${p.intro?`<p class="small">${esc(p.intro)}</p>`:''}<div class="divider" style="background:#9b78546e"></div><div class="lesson-body">${contents}</div>${type==='lesson'?`<div class="notice"><strong>Pour réfléchir, sans obligation :</strong><br>${esc(p.question)}</div><p class="editorial-note">Texte de découverte à relire avec un prêtre avant publication.</p>`:''}${p.source?`<p class="source">${esc(p.source)}${p.references?'<br>'+p.references.map(r=>`<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.label)}</a>`).join(' · '):''}</p>`:''}${own?`<p class="source">Prière originale rédigée pour Chemin de Foi. Proposition éditoriale à relire avant publication.</p>`:''}</div><div class="reading-actions"><div class="actions"><button class="action" id="speak" type="button">▶ Écouter</button><button class="action secondary" id="stop-speak" type="button">■ Arrêter</button>${own?`<button class="heart-btn" data-fav="${esc(p.id)}" type="button" aria-pressed="${isFav}">${isFav?'★ Favori':'☆ Ajouter aux favoris'}</button>`:''}</div><p class="small" id="speech-message">La lecture vocale dépend des voix disponibles sur ton appareil.</p></div></section></div>`}
+function psalmNoteText(p){const note=p.psalmNote;if(!note)return '';return ['Commentaire original de Chemin de Foi, distinct du texte biblique.','Contexte et thème. '+note.contextTheme,'Sentiments exprimés. '+note.feelings,'À retenir. '+note.takeaway,'Réflexion facultative. '+note.reflection,'Références. '+note.source].join('. ')}
+function psalmNoteMarkup(p){const note=p.psalmNote;if(!note)return '';return `<section class="lesson-body" aria-labelledby="psalm-note-title"><div class="divider"></div><h2 id="psalm-note-title">Pour comprendre ce psaume</h2><p class="small">Commentaire original de Chemin de Foi, distinct du texte biblique. Proposition éditoriale à relire avec un prêtre.</p><p><strong>Contexte et thème :</strong><br>${esc(note.contextTheme)}</p><p><strong>Sentiments exprimés :</strong><br>${esc(note.feelings)}</p><p><strong>À retenir :</strong><br>${esc(note.takeaway)}</p><p><strong>Réflexion facultative :</strong><br>${esc(note.reflection)}</p><p class="source">${esc(note.source)}<br>${note.references.map(r=>`<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.label)}</a>`).join(' · ')}</p></section>`}
+function reader(type){const p=(type==='prayer'?PRAYERS:type==='reading'?READINGS:[...LESSONS,BIBLE_GUIDE]).find(p=>p.id===state.active);if(!p)return type==='lesson'?discover():type==='reading'?bible():prayers();const own=type==='prayer';const isFav=state.favorites.includes(p.id);const contents=type==='lesson'?`<p class="small">Repères de tradition chrétienne catholique — proposition éditoriale à relire.</p>`+p.paragraphs.map(x=>`<p>${esc(x)}</p>`).join('')+(p.example?`<p><strong>Exemple concret :</strong><br>${esc(p.example)}</p>`:''):`<p>${esc(p.text)}</p>`;const parentCourse=type==='lesson'?COURSES.find(c=>c.lessons.includes(p.id)):null;const parentBook=type==='reading'&&!p.psalm?BIBLE_BOOKS.find(b=>b.chapters?.some(c=>c.readings.includes(p.id))):null;const back=type==='lesson'?(parentCourse?'course':'decouvrir'):type==='reading'?(p.psalm?'psalms':parentBook?'book':'bible'):'category';const backId=type==='prayer'?p.category:parentCourse?.id||parentBook?.id||'';return `<div class="content">${libraryBack("Retour à la liste",back,backId)}<section class="reading-stage">${textSizeControl()}<div class="reading-card"><p class="eyebrow">${type==='lesson'?'Découvrir la foi':type==='reading'?'La Bible':'Prière'}</p><h1>${esc(type==='lesson'?(PATH_TITLES[p.id]||p.title):p.title)}</h1>${p.psalm?`<p class="small">Titre thématique et introduction : repères éditoriaux de Chemin de Foi, distincts du texte biblique.</p>`:''}${p.intro?`<p class="small">${esc(p.intro)}</p>`:''}<div class="divider" style="background:#9b78546e"></div><div class="lesson-body">${contents}</div>${type==='lesson'?`<div class="notice"><strong>Pour réfléchir, sans obligation :</strong><br>${esc(p.question)}</div><p class="editorial-note">Texte de découverte à relire avec un prêtre avant publication.</p>`:''}${p.source?`<p class="source">${esc(p.source)}${p.references?'<br>'+p.references.map(r=>`<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.label)}</a>`).join(' · '):''}</p>`:''}${p.psalmNote?psalmNoteMarkup(p):''}${own?`<p class="source">Prière originale rédigée pour Chemin de Foi. Proposition éditoriale à relire avant publication.</p>`:''}</div><div class="reading-actions"><div class="actions"><button class="action" id="speak" type="button">▶ Écouter</button><button class="action secondary" id="stop-speak" type="button">■ Arrêter</button>${own?`<button class="heart-btn" data-fav="${esc(p.id)}" type="button" aria-pressed="${isFav}">${isFav?'★ Favori':'☆ Ajouter aux favoris'}</button>`:''}</div><p class="small" id="speech-message">La lecture vocale dépend des voix disponibles sur ton appareil.</p></div></section></div>`}
 function personal(){return head('Mes prières personnelles','Tes textes restent uniquement dans ce navigateur. Aucun envoi à un serveur.')+`<button class="back" data-go="plus">← Mon espace</button><div class="actions"><button class="action" data-go="edit-personal">+ Écrire une prière</button></div>${state.personal.length?`<div class="card-list">${state.personal.map(x=>button('view-personal',x.title,'Prière personnelle • Sur cet appareil','✎',x.id)).join('')}</div>`:'<p class="empty">Tu n’as pas encore écrit de prière personnelle.</p>'}<div class="notice small">Attention : effacer les données du navigateur ou changer de téléphone peut supprimer ces textes. Ils ne sont pas synchronisés.</div></div>`}
 function editPersonal(){const p=state.personal.find(x=>x.id===state.editing)||{title:'',text:''};return head(state.editing?'Modifier ma prière':'Écrire une prière','Il n’y a pas de bonne ou de mauvaise façon d’exprimer tes pensées.')+`<button class="back" data-go="personal">← Retour</button><form id="personal-form"><div class="field"><label for="ptitle">Titre</label><input id="ptitle" maxlength="90" required value="${esc(p.title)}" placeholder="Une prière du soir…"></div><div class="field"><label for="ptext">Ma prière</label><textarea id="ptext" maxlength="8000" required placeholder="Seigneur…">${esc(p.text)}</textarea></div><button class="action" type="submit">Enregistrer sur cet appareil</button></form></div>`}
 function viewPersonal(){const p=state.personal.find(x=>x.id===state.active);if(!p)return personal();return `<div class="content"><button class="back" data-go="personal">← Mes prières personnelles</button><section class="reading-stage">${textSizeControl()}<div class="reading-card"><p class="eyebrow">Ma prière personnelle</p><h1>${esc(p.title)}</h1><div class="divider"></div><p>${esc(p.text)}</p></div><div class="reading-actions actions"><button class="action" id="speak">▶ Écouter</button><button class="action secondary" id="stop-speak">■ Arrêter</button><button class="action secondary" id="edit-this">✎ Modifier</button><button class="action secondary" id="delete-this">Supprimer</button></div></section></div>`}
@@ -416,7 +680,7 @@ function plus(){return head('Mon espace','Tout est facultatif, tu es libre d’a
 function about(){return head('À propos','Une application pour découvrir et approfondir la foi chrétienne.')+`<div class="panel"><h2>Une porte ouverte, jamais une obligation.</h2><p>Chemin de Foi est un projet indépendant d'inspiration chrétienne : des prières, des textes et de courtes explications proposés dans un cadre paisible et bienveillant.</p><p>La version actuelle est un prototype de démonstration. Les textes pédagogiques et les contenus religieux feront l'objet d'une relecture avec des accompagnateurs compétents avant une diffusion au public.</p><p>Aucune affiliation officielle avec l'Église n'est revendiquée. Cette application ne remplace pas un accompagnement spirituel, médical ou psychologique lorsque cela est nécessaire.</p></div></div>`}
 function render(){document.body.classList.add('theme-light');document.body.classList.toggle('theme-cream',state.theme==='dark');main.dataset.section=state.route;document.body.dataset.section=state.route;document.body.dataset.library=String(['prieres','category','favorites','psalms','bible','book','decouvrir','course'].includes(state.route));document.documentElement.style.setProperty('--reading',state.size+'px');main.innerHTML=({accueil:home,prieres:prayers,category,bible,psalms,book,course,decouvrir:discover,prayer:()=>reader('prayer'),reading:()=>reader('reading'),lesson:()=>reader('lesson'),favorites,personal,'edit-personal':editPersonal,'view-personal':viewPersonal,settings,plus,about}[state.route]||home)();document.querySelectorAll('.nav-button').forEach(b=>{const r=b.dataset.route;const active=state.route===r||(['prayer','category','favorites','personal','edit-personal','view-personal'].includes(state.route)&&r==='prieres')||(['reading','psalms','book'].includes(state.route)&&r==='bible')||(['lesson','course'].includes(state.route)&&r==='decouvrir')||(['settings','about'].includes(state.route)&&r==='plus');b.classList.toggle('selected',active);if(active)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});}
 let toastTimer;function showToast(msg){let n=document.querySelector('#toast');if(!n){n=document.createElement('div');n.id='toast';n.setAttribute('role','status');n.style.cssText='position:fixed;left:50%;transform:translateX(-50%);bottom:93px;z-index:30;max-width:min(90vw,500px);padding:12px 18px;border-radius:15px;color:#213145;background:#ffe7bd;box-shadow:0 6px 30px #0008;text-align:center';document.body.append(n)}n.textContent=msg;clearTimeout(toastTimer);toastTimer=setTimeout(()=>n.remove(),3400)}
-function speak(){if(!('speechSynthesis'in window)){showToast('La lecture vocale n’est pas disponible sur cet appareil.');return;}let p=(state.route==='prayer'?PRAYERS:state.route==='reading'?READINGS:state.route==='lesson'?[...LESSONS,BIBLE_GUIDE]:state.personal).find(x=>x.id===state.active);if(!p)return;window.speechSynthesis.cancel();const text=state.route==='lesson'?[...(p.paragraphs||[]),p.example?'Exemple concret. '+p.example:'',p.question?'Pour réfléchir, sans obligation. '+p.question:'',p.source||''].filter(Boolean).join('. '):state.route==='reading'?[p.intro,p.text,p.source].filter(Boolean).join('. '):p.text;const u=new SpeechSynthesisUtterance(p.title+'. '+text);u.lang='fr-FR';u.rate=.86;u.pitch=1;u.onerror=()=>showToast('Lecture vocale indisponible : vérifier les voix françaises installées.');window.speechSynthesis.speak(u);showToast('Lecture vocale démarrée si une voix française est disponible.');}
+function speak(){if(!('speechSynthesis'in window)){showToast('La lecture vocale n’est pas disponible sur cet appareil.');return;}let p=(state.route==='prayer'?PRAYERS:state.route==='reading'?READINGS:state.route==='lesson'?[...LESSONS,BIBLE_GUIDE]:state.personal).find(x=>x.id===state.active);if(!p)return;window.speechSynthesis.cancel();const text=state.route==='lesson'?[...(p.paragraphs||[]),p.example?'Exemple concret. '+p.example:'',p.question?'Pour réfléchir, sans obligation. '+p.question:'',p.source||''].filter(Boolean).join('. '):state.route==='reading'?[p.intro,p.text,p.source,psalmNoteText(p)].filter(Boolean).join('. '):p.text;const u=new SpeechSynthesisUtterance(p.title+'. '+text);u.lang='fr-FR';u.rate=.86;u.pitch=1;u.onerror=()=>showToast('Lecture vocale indisponible : vérifier les voix françaises installées.');window.speechSynthesis.speak(u);showToast('Lecture vocale démarrée si une voix française est disponible.');}
 document.addEventListener('click',e=>{if(handleLibraryClick(e))return;if(e.target.closest('#text-size-panel summary')){e.preventDefault();const panel=document.querySelector('#text-size-panel');panel.open=!panel.open;state.sizeOpen=panel.open;persist();return}const goEl=e.target.closest('[data-go]');if(goEl){if(goEl.dataset.go!=='edit-personal')state.editing=null;go(goEl.dataset.go,goEl.dataset.id||null);return}const nav=e.target.closest('[data-route]');if(nav){go(nav.dataset.route);return}const f=e.target.closest('[data-fav]');if(f){let id=f.dataset.fav;state.favorites=state.favorites.includes(id)?state.favorites.filter(x=>x!==id):[...state.favorites,id];persist();render();return}const siz=e.target.closest('[data-size]');if(siz){setReadingSize(state.size+Number(siz.dataset.size));return}if(e.target.closest('#speak')){speak();return}if(e.target.closest('#stop-speak')){if('speechSynthesis' in window)window.speechSynthesis.cancel();return}if(e.target.closest('#header-settings')){go('settings');return}if(e.target.closest('#edit-this')){state.editing=state.active;go('edit-personal');return}if(e.target.closest('#delete-this')){if(confirm('Supprimer définitivement cette prière personnelle de cet appareil ?')){state.personal=state.personal.filter(x=>x.id!==state.active);persist();go('personal')}return}if(e.target.closest('#clear-storage')){if(confirm('Supprimer tous les favoris, prières personnelles et réglages de ce navigateur ?')){state.personal=[];state.favorites=[];state.size=24;state.theme='light';libraryViews.clear();navigationViews.clear();recentViews.clear();try{sessionStorage.removeItem(NAVIGATION_STORE)}catch{}persist();go('settings');showToast('Données locales effacées.')}return}});
 document.addEventListener('toggle',e=>{if(e.target.id==='text-size-panel'&&e.target.isConnected){state.sizeOpen=e.target.open;persist()}},true);
 document.addEventListener('input',e=>{if(e.target.id==='reading-size')setReadingSize(e.target.value)});

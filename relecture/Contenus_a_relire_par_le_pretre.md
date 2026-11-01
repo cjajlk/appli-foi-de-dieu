@@ -1,18 +1,18 @@
 # Contenus à relire par le prêtre
 
-Chemin de Foi - V0.1 - Lot 3 - 1er novembre 2026
+Chemin de Foi - V0.1 - Lot 3.3 - 1er novembre 2026
 
 Propositions éditoriales, sans approbation religieuse ni affiliation officielle.
 
 ### Périmètre de la relecture
 
-24 prières originales : les 16 textes antérieurs sont conservés intégralement ; 8 propositions sont ajoutées.
+30 prières originales : les 24 textes antérieurs sont conservés intégralement ; 6 propositions de 122 à 130 mots sont ajoutées dans ce lot.
 
-10 leçons : les 6 leçons du parcours initial, enrichies d'un exemple et de références, puis 4 compléments. Le repère Bible du Lot 1 demeure séparé, sans être compté comme une onzième leçon.
+13 leçons : les dix leçons précédentes et trois nouvelles propositions pratiques (lire un psaume, découvrir les quatre Évangiles, prier avec ses propres mots). Le repère Bible du Lot 1 demeure séparé et n'est pas compté comme une leçon supplémentaire.
 
 5 psaumes intégraux : 23, 27, 46, 91 et 121, Louis Segond 1910. Les deux extraits d'Évangiles existants sont aussi reproduits à la fin du dossier.
 
-Les explications et introductions sont des formulations originales de découverte de la tradition chrétienne catholique. Elles ne prétendent pas démontrer les croyances ni imposer un cheminement.
+Cinq fiches de compréhension des psaumes sont ajoutées : contexte et thème, sentiments, pistes de lecture et réflexion facultative. Les explications et introductions sont des formulations originales de découverte de la tradition chrétienne catholique. Elles ne prétendent pas démontrer les croyances ni imposer un cheminement.
 
 ### Points d’attention prioritaires
 
@@ -272,6 +272,96 @@ Référence : CEC, nos 1822–1825 et 2839–2845 ; Jean 13,34 ; Luc 15,11–32.
 
 À vérifier : Valider les distinctions entre pardon, oubli, réconciliation, réparation et absolution sacramentelle, en protégeant les personnes victimes de violence.
 
+## Leçon 11 - Comment lire un psaume ?
+
+Une méthode simple pour entrer dans une prière poétique.
+
+Un psaume est un poème de prière transmis dans la Bible. Issus de la prière d'Israël, les psaumes expriment des expériences très diverses : gratitude, détresse, confiance ou recherche de justice. Dans la tradition catholique, ils sont reçus comme Écriture sainte et utilisés dans la liturgie comme dans la prière personnelle.
+
+Pour commencer, lis un court psaume une première fois. Repère qui parle, ce qui est demandé et les images employées. Relis ensuite un verset qui te touche ou t'interroge. Tu peux répondre avec tes propres mots, ou simplement garder un silence.
+
+Il n'est pas nécessaire de retrouver tous les sentiments du poème. Certains mots appartiennent à un monde ancien ; un passage difficile peut être discuté avec un prêtre. Les images de protection n'offrent pas une assurance contre les accidents ou la maladie.
+
+### Exemple concret
+
+Tu peux lire le psaume 23, remarquer l'image du berger puis celle de la vallée sombre. Demande-toi ce que chacune fait entendre, avant de choisir un verset pour une courte prière.
+
+### Réflexion facultative
+
+Quel mot du psaume aimerais-tu reprendre, ou faire expliquer, sans obligation de ressentir quelque chose ?
+
+Référence : CEC, nos 2585–2589 ; Psaume 23,1–4 (Louis Segond 1910).
+
+- [CEC 2585–2589](https://www.vatican.va/archive/FRA0013/__P8W.HTM)
+
+- [Psaume 23 — Louis Segond 1910](https://ebible.org/fraLSG/PSA023.htm)
+
+À vérifier : Valider la présentation des racines juives des psaumes et de leur usage catholique ; distinguer méthode de lecture, prière et garantie de protection.
+
+## Leçon 12 - Découvrir les quatre Évangiles
+
+Quatre témoignages pour découvrir un même Jésus.
+
+La Bible chrétienne contient quatre Évangiles, traditionnellement désignés par les noms de Matthieu, Marc, Luc et Jean. Dans la foi catholique, ils occupent une place centrale : ils témoignent de la vie, de l'enseignement, de la mort et de la résurrection de Jésus.
+
+Matthieu donne notamment une grande place aux enseignements de Jésus, comme le discours sur la montagne. Marc raconte de nombreuses rencontres et actions de Jésus, avec un récit vivant, par exemple la rencontre de Bartimée.
+
+Luc propose des récits marquants sur la miséricorde et l'accueil, comme la parabole du père et de ses deux fils. Jean développe des dialogues et des signes qui invitent à reconnaître qui est Jésus, comme le récit de Cana.
+
+Ces repères n'épuisent pas la richesse de chaque livre. Les quatre voix se complètent dans la lecture de l'Église ; tu peux découvrir un petit passage à la fois, sans devoir commencer les quatre livres ensemble.
+
+### Exemple concret
+
+Tu peux choisir Luc 15,11–32 et observer comment le père accueille chacun de ses fils. Une autre fois, lis une rencontre dans Marc et demande-toi comment Jésus écoute la personne qui l'appelle.
+
+### Réflexion facultative
+
+Quelle porte d’entrée t’attire aujourd’hui : un enseignement, une rencontre, une parabole ou un dialogue ?
+
+Référence : CEC, nos 125–127 ; Matthieu 5,1–12 ; Marc 10,46–52 ; Luc 15,11–32 ; Jean 2,1–11. Références bibliques, Louis Segond 1910.
+
+- [CEC 125–127](https://www.vatican.va/archive/FRA0013/__PS.HTM)
+
+- [Matthieu 5](https://ebible.org/fraLSG/MAT05.htm)
+
+- [Marc 10](https://ebible.org/fraLSG/MRK10.htm)
+
+- [Luc 15](https://ebible.org/fraLSG/LUK15.htm)
+
+- [Jean 2](https://ebible.org/fraLSG/JHN02.htm)
+
+À vérifier : Relire les accents pédagogiques attribués aux quatre Évangiles, sans les enfermer dans un portrait réducteur. Vérifier la distinction entre noms traditionnels, histoire de rédaction et témoignage reçu par l’Église.
+
+## Leçon 13 - Prier avec ses propres mots
+
+Parler simplement à Dieu, même quand on hésite.
+
+Dans la tradition catholique, la prière est une relation avec Dieu. On peut commencer avec des mots très simples, sans connaître de longues formules. Une joie, une inquiétude ou une question peuvent devenir le point de départ d'une parole adressée à Dieu.
+
+Tu peux dire ce que tu vis, ce que tu espères et ce qui reste difficile. Si tu doutes, tu peux nommer ce doute honnêtement. La prière ne demande pas de fabriquer une émotion ou de réussir une belle phrase.
+
+Les prières reçues de l'Église, notamment le Notre Père, gardent aussi leur place. Les mots personnels peuvent les accompagner. Avec l'aide d'un prêtre, on peut découvrir peu à peu cette prière partagée et sa dimension de rencontre avec Dieu.
+
+### Exemple concret
+
+Tu peux commencer ainsi : « Mon Dieu, je suis fatigué et je ne sais pas bien quoi te dire. Voici ce qui me préoccupe. Aide-moi à écouter et à demander le soutien dont j'ai besoin. » Puis tu peux t'arrêter en silence.
+
+### Réflexion facultative
+
+Si tu le souhaites, quelle phrase sincère pourrais-tu adresser à Dieu à partir de ta journée ?
+
+Référence : CEC, nos 2558–2565 et 2700–2704 ; Matthieu 6,7–9 ; Marc 9,24. Références bibliques, Louis Segond 1910.
+
+- [CEC 2558–2565](https://www.vatican.va/archive/FRA0013/__P8U.HTM)
+
+- [CEC 2700–2704](https://www.vatican.va/archive/FRA0013/__P9F.HTM)
+
+- [Matthieu 6](https://ebible.org/fraLSG/MAT06.htm)
+
+- [Marc 9](https://ebible.org/fraLSG/MRK09.htm)
+
+À vérifier : Valider la liberté des mots personnels et l’accueil du doute, sans réduire la prière à une technique de bien-être ni opposer parole personnelle, Notre Père et prière de l’Église.
+
 ## Repère conservé - Comment commencer la Bible ?
 
 La Bible réunit des textes de différents genres : récits, lois, poèmes, prières, prophéties, lettres et Évangiles. Elle ne se lit pas toujours comme un roman, de la première à la dernière page.
@@ -470,7 +560,7 @@ Amen.
 
 ### 17 - Pour accueillir les rencontres du matin
 
-Prières quotidiennes - Nouvelle proposition du Lot 3
+Prières quotidiennes - Texte antérieur conservé
 
 Seigneur,
 Avant de commencer, je te confie les personnes que je vais rencontrer.
@@ -482,7 +572,7 @@ Amen.
 
 ### 18 - Pour déposer une journée inachevée
 
-Prières quotidiennes - Nouvelle proposition du Lot 3
+Prières quotidiennes - Texte antérieur conservé
 
 Seigneur,
 Tout n'est pas terminé et je n'ai pas trouvé toutes les réponses.
@@ -496,7 +586,7 @@ Amen.
 
 ### 19 - Pour la bonté reçue en silence
 
-Remerciements - Nouvelle proposition du Lot 3
+Remerciements - Texte antérieur conservé
 
 Mon Dieu,
 Je pense aux gestes qui m'ont soutenu sans faire de bruit : une présence, un repas partagé, un service rendu.
@@ -508,7 +598,7 @@ Amen.
 
 ### 20 - Pour trouver un geste de réparation
 
-Dans les épreuves - Nouvelle proposition du Lot 3
+Dans les épreuves - Texte antérieur conservé
 
 Seigneur,
 Je pense à une parole que je regrette.
@@ -520,7 +610,7 @@ Amen.
 
 ### 21 - Pour traverser une attente inquiète
 
-Paix et espérance - Nouvelle proposition du Lot 3
+Paix et espérance - Texte antérieur conservé
 
 Seigneur,
 Quand j'attends une nouvelle, mes pensées vont parfois trop loin.
@@ -534,7 +624,7 @@ Amen.
 
 ### 22 - Pour discerner un choix avec confiance
 
-Prières quotidiennes - Nouvelle proposition du Lot 3
+Prières quotidiennes - Texte antérieur conservé
 
 Mon Dieu,
 Une décision m'attend et je crains de me tromper.
@@ -546,7 +636,7 @@ Amen.
 
 ### 23 - Pour partager les charges en famille
 
-Famille et relations - Nouvelle proposition du Lot 3
+Famille et relations - Texte antérieur conservé
 
 Seigneur,
 Dans notre maison, chacun porte des tâches, des soucis et parfois une fatigue invisible.
@@ -558,7 +648,7 @@ Amen.
 
 ### 24 - Pour garder une espérance dans la souffrance
 
-Dans les épreuves - Nouvelle proposition du Lot 3
+Dans les épreuves - Texte antérieur conservé
 
 Seigneur,
 Je te confie ce qui fait mal et ce que je ne comprends pas.
@@ -566,6 +656,78 @@ Je n'ai pas à te cacher mes larmes ni à trouver de belles paroles.
 Aide-moi à accueillir les soins, l'aide et les présences qui peuvent me soutenir.
 Quand l'avenir paraît fermé, garde en moi la possibilité d'un prochain petit pas.
 Que ton amour puisse être accueilli dans les gestes de ceux qui m'accompagnent.
+Amen.
+
+## Prières originales - 25 à 26
+
+### 25 - Pour confier à Dieu une foi hésitante
+
+Paix et espérance - Nouvelle proposition du Lot 3.3
+
+Mon Dieu,
+Il y a des jours où je voudrais te faire confiance, mais où tes silences me déconcertent. Je ne veux ni cacher mes questions ni faire semblant de croire plus facilement que je ne le peux.
+Accueille ce désir fragile de te chercher. Aide-moi à reconnaître ce qui me trouble, à écouter sans me comparer aux autres et à demander des éclaircissements quand une parole me blesse ou m'échappe.
+Quand je ne ressens rien, apprends-moi à ne pas me juger trop vite. Qu'une rencontre honnête, une lecture ou un instant de silence puisse ouvrir un peu d'espace en moi.
+Je te confie ma recherche telle qu'elle est aujourd'hui. Accompagne mon pas, même hésitant, dans la liberté et la vérité.
+Amen.
+
+### 26 - Quand les mots manquent pour demander pardon
+
+Dans les épreuves - Nouvelle proposition du Lot 3.3
+
+Seigneur,
+Je sais que j'ai blessé quelqu'un, mais je ne trouve pas les mots pour m'approcher de cette personne. J'ai peur de sa réaction et je voudrais parfois expliquer ma faute avant même d'avoir écouté sa peine.
+Aide-moi à préparer une parole simple, qui reconnaisse ce que j'ai fait sans réclamer d'être rassuré. Donne-moi le courage de nommer le tort causé et d'entendre ce que l'autre souhaite me dire.
+Si ma demande ne reçoit pas de réponse immédiate, apprends-moi à respecter ce temps. Que mes excuses ne deviennent pas une pression de plus.
+Montre-moi les gestes de réparation possibles et aide-moi à les tenir dans la durée. Je te confie ce chemin avec humilité, sans chercher à décider du pardon de l'autre.
+Amen.
+
+## Prières originales - 27 à 28
+
+### 27 - Pour répondre avec patience et douceur
+
+Paix et espérance - Nouvelle proposition du Lot 3.3
+
+Seigneur,
+Quand je suis pressé ou fatigué, une petite contrariété peut prendre toute la place. Je réponds parfois trop sèchement à une personne qui ne connaît pas ce que je porte.
+Aide-moi à reconnaître ce moment avant que mes mots ne dépassent ma pensée. Donne-moi la liberté de faire une pause, de parler moins vite et de demander un peu de temps si j'en ai besoin.
+Apprends-moi à écouter la personne devant moi, sans la réduire à ce qui m'agace. Que ma douceur reste sincère, capable de dire aussi une limite ou un désaccord avec respect.
+Si je manque de patience, aide-moi à le reconnaître et à recommencer. Que mes gestes ordinaires puissent offrir aux autres un peu de cette attention que j'espère recevoir moi-même.
+Amen.
+
+### 28 - Auprès d’un proche qui souffre
+
+Dans les épreuves - Nouvelle proposition du Lot 3.3
+
+Seigneur,
+Une personne que j'aime traverse une souffrance que je ne peux pas enlever. Je voudrais trouver une phrase qui réconforte, mais je crains de parler trop vite ou de ne pas savoir rester présent.
+Aide-moi à lui demander ce qui lui ferait du bien, puis à respecter sa réponse. Apprends-moi à offrir une aide précise, un repas, un trajet ou un moment d'écoute, sans imposer ma présence.
+Soutiens les personnes qui prennent soin d'elle et celles qui cherchent avec elle les soins adaptés. Donne-moi aussi de reconnaître ma fatigue et de prendre le relais avec d'autres.
+Je ne te demande pas de garantir une issue que je ne connais pas. Je te confie cette personne, son courage et ses questions. Que notre affection demeure attentive et respectueuse.
+Amen.
+
+## Prières originales - 29 à 30
+
+### 29 - Quand la journée commence de travers
+
+Prières quotidiennes - Nouvelle proposition du Lot 3.3
+
+Mon Dieu,
+Cette journée semble déjà trop lourde. Un imprévu, une mauvaise nouvelle ou une tâche de plus me donne l'impression de ne plus savoir par où commencer.
+Aide-moi à distinguer ce qui est urgent de ce qui peut attendre. Donne-moi le courage de choisir une première action à ma portée, puis d'avancer sans exiger de tout résoudre à la fois.
+Si je dois demander de l'aide ou reconnaître une limite, apprends-moi à le faire sans honte. Rappelle-moi aussi que les personnes autour de moi portent peut-être une journée difficile.
+Quand la tension monte, ouvre une petite place pour respirer et reprendre mes mots avec respect. Je te confie ce jour imparfait, ses obstacles et ses rencontres. Accompagne mon désir d'y faire quelque chose de bon.
+Amen.
+
+### 30 - Pour accueillir une petite joie et la partager
+
+Remerciements - Nouvelle proposition du Lot 3.3
+
+Seigneur,
+Aujourd'hui, une chose simple m'a fait sourire : une lumière sur le chemin, une conversation inattendue, une musique ou un geste d'amitié. Je prends un moment pour accueillir cette joie au lieu de passer aussitôt à la suite.
+Merci pour ce qui rend la vie plus douce et pour les personnes qui y contribuent, souvent sans le savoir. Aide-moi à leur témoigner ma reconnaissance avec des mots précis et une attention vraie.
+Que cette joie ne m'éloigne pas de ceux qui peinent. Qu'elle m'apprenne plutôt à partager ce que je peux offrir, sans demander aux autres d'être heureux sur commande.
+Je te confie ce souvenir léger. Apprends-moi à le recevoir comme un cadeau de ce jour, sans vouloir le retenir ni mesurer ma vie à ce seul instant.
 Amen.
 
 ## Psaume 23 — Le Seigneur est mon berger
@@ -809,6 +971,140 @@ Référence : Psaume 121, versets 1 à 8 — Louis Segond 1910, domaine public. 
 
 - [Édition Louis Segond 1910 — eBible](https://ebible.org/fraLSG/PSA121.htm)
 
+## Fiche de compréhension - Psaume 23
+
+### Contexte et thème
+
+Ce poème de confiance est présenté comme un cantique de David dans le texte. Deux images se succèdent : le berger qui conduit et l'hôte qui accueille à sa table. La vallée sombre fait partie du chemin évoqué ; le psaume n'annonce pas une vie sans épreuve.
+
+### Sentiments exprimés
+
+La confiance et le sentiment d'être accueilli traversent le poème, avec la peur que peut évoquer la vallée. La dernière parole ouvre une espérance de demeurer auprès de Dieu.
+
+### À retenir
+
+Un lecteur peut retenir l'image d'une présence qui accompagne. Dans la lecture chrétienne, elle peut nourrir une prière au milieu des difficultés, tout en laissant une place aux aides concrètes.
+
+### Réflexion facultative
+
+Quelle image te rejoint le plus : le chemin, la table ou la maison ? Tu peux aussi garder une question ouverte.
+
+Référence : Psaume 23,1–6, notamment versets 1–4, 5 et 6 ; CEC 2585–2589.
+
+- [Psaume 23 — Louis Segond 1910](https://ebible.org/fraLSG/PSA023.htm)
+
+- [CEC 2585–2589](https://www.vatican.va/archive/FRA0013/__P8W.HTM)
+
+À vérifier : Relire le sens de l’attribution à David et des images d’accompagnement ; ne pas transformer la confiance en promesse de confort ou de réussite.
+
+## Fiche de compréhension - Psaume 27
+
+### Contexte et thème
+
+Cette prière, placée sous le nom de David, associe confiance, recherche de la présence de Dieu et supplication. Elle évoque le sanctuaire, des adversaires et l'attente d'un secours, sans permettre à elle seule de reconstruire une circonstance historique précise.
+
+### Sentiments exprimés
+
+Le courage côtoie l'inquiétude, la peur d'être abandonné et le désir d'être accueilli. Le psaume montre qu'une prière peut porter plusieurs sentiments, même contradictoires en apparence.
+
+### À retenir
+
+Il est possible de confier à Dieu une peur réelle tout en cherchant un chemin de droiture. Les mots sur les ennemis n'autorisent pas à désigner quelqu'un à la haine ou à lui faire violence.
+
+### Réflexion facultative
+
+Y a-t-il une inquiétude ou une demande que tu aimerais formuler simplement, sans devoir la résoudre tout de suite ?
+
+Référence : Psaume 27,1–14, notamment versets 4, 7–10 et 14 ; CEC 2585–2589.
+
+- [Psaume 27 — Louis Segond 1910](https://ebible.org/fraLSG/PSA027.htm)
+
+- [CEC 2585–2589](https://www.vatican.va/archive/FRA0013/__P8W.HTM)
+
+À vérifier : Valider l’explication des images de sanctuaire, d’abandon et d’ennemis ; éviter toute identification automatique des adversaires bibliques aux proches du lecteur.
+
+## Fiche de compréhension - Psaume 46
+
+### Contexte et thème
+
+Le titre ancien présente un cantique des fils de Koré. Cette prière collective évoque les bouleversements de la terre, une cité soutenue par Dieu et la fin des combats. Le refrain souligne la présence du Dieu de Jacob au milieu du peuple.
+
+### Sentiments exprimés
+
+Le texte fait entendre l'effroi que suscite un monde instable, puis une assurance partagée et un appel à reconnaître Dieu. Cette confiance n'efface pas la violence des images employées.
+
+### À retenir
+
+Le lecteur peut retenir le désir d'un appui et d'une paix qui dépassent ses seules forces. Le poème invite à une confiance spirituelle ; il ne garantit pas l'absence de guerre, de catastrophe ou de détresse.
+
+### Réflexion facultative
+
+Quelle présence t'aide à ne pas porter seul une période de bouleversement ? Tu peux en faire une demande ou un merci.
+
+Référence : Psaume 46,1–12, titre compris dans la numérotation Segond 1910 ; notamment versets 2–4, 8 et 10–12 ; CEC 2585–2589.
+
+- [Psaume 46 — Louis Segond 1910](https://ebible.org/fraLSG/PSA046.htm)
+
+- [CEC 2585–2589](https://www.vatican.va/archive/FRA0013/__P8W.HTM)
+
+À vérifier : Vérifier les termes collectifs et la lecture des images de guerre ; confirmer la numérotation de douze versets, dont le titre ancien.
+
+## Fiche de compréhension - Psaume 91
+
+### Contexte et thème
+
+Ce poème exprime une confiance en Dieu par les images de l'abri, des ailes et du refuge. Plusieurs voix se répondent ; les derniers versets présentent une parole divine de présence dans la détresse. Le langage de protection est celui d'une prière poétique.
+
+### Sentiments exprimés
+
+La peur de la nuit et des dangers se mêle au besoin de sécurité et à une grande confiance. Le texte prend au sérieux ce qui inquiète la personne qui prie.
+
+### À retenir
+
+Dans cette proposition de lecture chrétienne, on peut recevoir une invitation à confier sa peur, sans lire ces images comme une assurance contre les accidents ou la maladie. Matthieu 4,5–7 met précisément en scène une citation du psaume à laquelle Jésus répond en refusant de mettre Dieu à l'épreuve. Prudence et soins restent nécessaires.
+
+### Réflexion facultative
+
+Quel souci voudrais-tu confier, tout en gardant les gestes de prudence et les soutiens dont tu as besoin ?
+
+Référence : Psaume 91,1–16, notamment versets 1–4 et 14–16 ; Matthieu 4,5–7 ; CEC 2585–2589.
+
+- [Psaume 91 — Louis Segond 1910](https://ebible.org/fraLSG/PSA091.htm)
+
+- [CEC 2585–2589](https://www.vatican.va/archive/FRA0013/__P8W.HTM)
+
+- [Matthieu 4,5–7](https://ebible.org/fraLSG/MAT04.htm)
+
+À vérifier : Relire en priorité le langage de protection et le lien avec Matthieu 4. Écarter toute promesse de guérison, d’invulnérabilité ou de faute imputée à la personne malade.
+
+## Fiche de compréhension - Psaume 121
+
+### Contexte et thème
+
+Le titre parle d'un cantique des degrés. Dans la tradition de lecture des psaumes, ce groupe de chants est associé au pèlerinage. Le poème regarde vers les montagnes, puis évoque le secours et la vigilance de Dieu au départ comme à l'arrivée.
+
+### Sentiments exprimés
+
+Une question ouvre le texte, suivie d'une confiance apaisée. Les images du jour et de la nuit expriment le désir d'une présence attentive dans la durée.
+
+### À retenir
+
+Un lecteur peut y trouver des mots pour accompagner un départ ou une étape de vie. La confiance exprimée ne dispense pas de préparer son chemin, de rester prudent et d'accepter l'aide d'autres personnes.
+
+### Réflexion facultative
+
+Quelle étape te semble être un départ aujourd'hui ? Quelle aide concrète et quelle parole d'espérance souhaiterais-tu accueillir ?
+
+Référence : Psaume 121,1–8 ; CEC 2585–2589. Benoît XVI, audience générale du 4 mai 2005 (psaume 120 liturgique, 121 dans la Segond).
+
+- [Psaume 121 — Louis Segond 1910](https://ebible.org/fraLSG/PSA121.htm)
+
+- [CEC 2585–2589](https://www.vatican.va/archive/FRA0013/__P8W.HTM)
+
+- [Benoît XVI, audience du 4 mai 2005 — psaume 120 liturgique / 121 Segond](https://www.vatican.va/content/benedict-xvi/fr/audiences/2005/documents/hf_ben-xvi_aud_20050504.html)
+
+À vérifier : Confirmer le sens traditionnel des cantiques des degrés et la prudence historique ; distinguer confiance spirituelle et garantie de sécurité pendant un voyage.
+
 ## Extraits d’Évangiles conservés
 
 ### Une invitation au repos
@@ -857,11 +1153,11 @@ Référence : Psaume 121, versets 1 à 8 — Louis Segond 1910, domaine public. 
 
 Numéros de versets affichés explicitement. Texte lexical, titres anciens et indications de pause conservés ; espaces et retours à la ligne normalisés. Les renvois éditoriaux de notes de l'éditeur ne sont pas inclus dans le corps biblique.
 
-L'ancien extrait du psaume 23, versets 1 à 3, est remplacé par le psaume complet sous le même identifiant ps23. Les deux extraits d'Évangiles et les 16 prières restent inchangés.
+L'ancien extrait du psaume 23, versets 1 à 3, est remplacé par le psaume complet sous le même identifiant ps23. Les deux extraits d'Évangiles et les 24 prières antérieures restent inchangés. Les cinq textes bibliques du Lot 3 sont conservés mot pour mot dans le Lot 3.3.
 
 Les correspondances couramment utilisées en liturgie catholique sont 23 (22), 27 (26), 46 (45), 91 (90), 121 (120). Elles sont fournies ici pour discussion avec le prêtre ; l'application conserve la numérotation de la Segond.
 
-La sélection n'est ni un lectionnaire ni une Bible catholique complète. Les introductions ne sont pas une interprétation officielle de l'Église.
+La sélection n'est ni un lectionnaire ni une Bible catholique complète. Les introductions et les nouvelles fiches de compréhension ne sont pas une interprétation officielle de l'Église. Les références d'Évangiles des trois nouvelles leçons sont des renvois de lecture ; aucun nouveau chapitre n'a été activé dans l'application.
 
 ### Décision de relecture
 

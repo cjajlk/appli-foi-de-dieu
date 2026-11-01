@@ -1,0 +1,92 @@
+{
+  "checked": "2026-11-01",
+  "status": "Propositions éditoriales à relire par un prêtre, sans approbation officielle",
+  "sources": [
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P8W.HTM",
+      "status": 200,
+      "sha256": "2e333f2a0f67ebb995d5158c332588920312eef114fbadfabf9209560c933658"
+    },
+    {
+      "url": "https://ebible.org/fraLSG/PSA023.htm",
+      "status": 200,
+      "sha256": "e34d3cb81dda79ef86c5dd35052e35ac4b540daff9476049b071d4ff21099738"
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__PS.HTM",
+      "status": 200,
+      "sha256": "bc6da9c21427e6b01267e7283346afe6178617464cf4128e817c91b7d4990411"
+    },
+    {
+      "url": "https://ebible.org/fraLSG/MAT05.htm",
+      "status": 200,
+      "sha256": "f4837f3540feb9530229285ad964b382afa7a887b243ca7ab102a49c0eb30e3e"
+    },
+    {
+      "url": "https://ebible.org/fraLSG/MRK10.htm",
+      "status": 200,
+      "sha256": "2e5185d83efb4be56b61adacf790ca9f2baa2e066c4dfaa5ef74be452ed748dd"
+    },
+    {
+      "url": "https://ebible.org/fraLSG/LUK15.htm",
+      "status": 200,
+      "sha256": "f9af0b8f07ca906173cdc84e2073007ad4bd29846a31a2cb19d864312e392e63"
+    },
+    {
+      "url": "https://ebible.org/fraLSG/JHN02.htm",
+      "status": 200,
+      "sha256": "1be4583b8852a81a40952f369e9eee2964a754f5dd2b72df3e29775ad402be49"
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P8U.HTM",
+      "status": 200,
+      "sha256": "8aa4ae7729dd62f6e60a461834c572dee5602db1a192bf634731f2821f583c47"
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P9F.HTM",
+      "status": 200,
+      "sha256": "dc7626b8c343d79812f91453ba14707574611a2174e825fc4db7613c2d9518d5"
+    },
+    {
+      "url": "https://ebible.org/fraLSG/MAT06.htm",
+      "status": 200,
+      "sha256": "d909ac678d205c953d93920d9a8adef6ceab5c4548d0dc09669f4d07589dec22"
+    },
+    {
+      "url": "https://ebible.org/fraLSG/MRK09.htm",
+      "status": 200,
+      "sha256": "940fa0117728fc145b7e95e18a9dd2e68900692f0378c9095068ab186fa14c50"
+    },
+    {
+      "url": "https://ebible.org/fraLSG/PSA027.htm",
+      "status": 200,
+      "sha256": "da2160b7ae906898047b93fcd02c2ded9f9dd88aff11757a7323464ccb0120ff"
+    },
+    {
+      "url": "https://ebible.org/fraLSG/PSA046.htm",
+      "status": 200,
+      "sha256": "f92fe729368198ae8997d2dd2a1ab1a06e43870220f74df21c4800b1627f67ad"
+    },
+    {
+      "url": "https://ebible.org/fraLSG/PSA091.htm",
+      "status": 200,
+      "sha256": "79bd1caa0a0491fc8ae5572753560af9b780833a43ef0412bfd754cfd7078f9c"
+    },
+    {
+      "url": "https://ebible.org/fraLSG/MAT04.htm",
+      "status": 200,
+      "sha256": "c2cb2574e0e4a63f6079b6a9bbbc26fec24acae347c54bf8fa7663754f89ae11"
+    },
+    {
+      "url": "https://ebible.org/fraLSG/PSA121.htm",
+      "status": 200,
+      "sha256": "4dd5b64235a24920f8ec983ddc1326875374fe668d24d0e1787805679396093b"
+    },
+    {
+      "url": "https://www.vatican.va/content/benedict-xvi/fr/audiences/2005/documents/hf_ben-xvi_aud_20050504.html",
+      "status": 200,
+      "sha256": "ff8bb8df384b6e366911d430b03c0ec194f642008a3a9e7ab0c7b5e5ca24f848"
+    }
+  ],
+  "notes": "Aucun nouveau texte biblique traduit ajouté ; cinq textes Louis Segond 1910 antérieurs inchangés. Les nouvelles références d’Évangiles sont des liens de vérification, pas de nouveaux chapitres activés."
+}
