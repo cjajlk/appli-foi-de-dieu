@@ -1,7 +1,7 @@
-Chemin de Foi — V0.1 Lot 3.3
+Chemin de Foi — V0.1 — Enrichissement du 4 novembre 2026
 Ouvrir index.html dans Edge ou Chrome, ou utiliser le HTML autonome livré séparément. Pour le cache hors ligne, servir le projet sur une adresse locale HTTP ou HTTPS.
 
-30 prières originales, 5 psaumes complets et 2 extraits des Évangiles en Louis Segond 1910. Treize leçons de découverte de la tradition chrétienne catholique, plus le repère Bible du Lot 1 conservé hors parcours. Tous les contenus éditoriaux restent à relire par un prêtre avant publication.
+30 prières originales, 5 psaumes complets et 2 extraits des Évangiles en Louis Segond 1910. Vingt-trois leçons de découverte de la tradition chrétienne catholique, plus le repère Bible du Lot 1 conservé hors parcours. Tous les contenus éditoriaux restent à relire par un prêtre avant publication.
 
 Lecture : toucher « Aa Taille du texte » pour déplier ou replier les réglages, puis utiliser −, curseur ou + (20 à 36 px). Le choix et le repli sont mémorisés.
 
@@ -26,3 +26,9 @@ Lot 3.3 — Six prières originales de 122 à 130 mots, trois leçons pratiques 
 
 
 4 novembre 2026 — Lectures du jour AELF, sous l’identité CJAJLK : ouvrir Bible et lecture > Lectures du jour. Consultation en ligne uniquement, source AELF visible, aucune synthèse vocale sur ces textes. Aucun cache persistant des réponses AELF. Les autres contenus locaux et leurs voix sont conservés. Conditions et documentation : INTEGRATION_AELF.md. Ne pas publier sans accord de CJ.
+
+
+4 novembre 2026 — Enrichissement spirituel pour la présentation du 12 novembre : 10 nouvelles leçons de 391 à 425 mots, ajoutées sans remplacer les 13 leçons précédentes, dans Les essentiels de la foi catholique. Total actuel : 30 prières, 23 leçons et 8 réponses dans Mes questions sur la foi, en plus des lectures bibliques et de la rubrique AELF. Les contenus restent des propositions à relire par un prêtre.
+Mes lectures : historique facultatif des leçons originales sur cet appareil, avec reprise de position. Aucune progression exigée. On peut désactiver ou effacer ce suivi sans supprimer les favoris, réglages ni prières personnelles. Le suivi conserve uniquement des identifiants, positions et dates de consultation sous chemin-de-foi-learning-v1 ; aucun texte AELF ni réponse personnelle. Aucun envoi à un serveur.
+Relecture : relecture/Relecture_Enrichissement_12_novembre_2026.pdf et version Markdown ; ce complément contient les nouveaux textes, leurs références et points doctrinaux. Les dossiers antérieurs sont conservés. Sources_Enrichissement_2026-11-04.json recense les 55 pages vérifiées.
+Livraison locale sous CJAJLK, distincte de CJAJLK Games. Aucun commit, push ou publication pour cet enrichissement sans validation.

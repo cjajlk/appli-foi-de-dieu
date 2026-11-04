@@ -1,0 +1,462 @@
+{
+  "checked": "2026-11-04",
+  "sources": [
+    {
+      "url": "https://ebible.org/fraLSG/1CO11.htm",
+      "status": 200,
+      "sha256": "d87e24ed3e72cecc577e56c1e39e2d2286acff2ca37ea2a58c72247ae41e886d",
+      "labels": [
+        "1 Corinthiens 11, 23–26"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/1JN04.htm",
+      "status": 200,
+      "sha256": "e2750891135342c0543706610346243556a67e759c9f8ea46a655bc166f62f3f",
+      "labels": [
+        "1 Jean 4, 7–16"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/ACT02.htm",
+      "status": 200,
+      "sha256": "61633552b20a608364a93c08fa9e343051e3d49ff6eb67064ad8156529f7df75",
+      "labels": [
+        "Actes 2, 1–11",
+        "Actes 2, 42–47"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/GAL05.htm",
+      "status": 200,
+      "sha256": "bc04c62dd87c68e418a0207b6abe37319290b661e598e5c8ba1690211efcb361",
+      "labels": [
+        "Galates 5, 22–23"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/JAS02.htm",
+      "status": 200,
+      "sha256": "832a473de2129a51b6bbf2e26f6b5219b13a7931f38f64c3b30fc72694a6d7d0",
+      "labels": [
+        "Jacques 2, 14–18",
+        "Jacques 2, 14–18"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/JAS05.htm",
+      "status": 200,
+      "sha256": "1a0bdeaa11fb2fa63f37776d89221268bb110b62f7476020183647f954c3b316",
+      "labels": [
+        "Jacques 5, 14–15"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/JHN01.htm",
+      "status": 200,
+      "sha256": "1ba55860dd78756b4da23ae92ba662a232f4c664b74b560c42ee50f323f9ee99",
+      "labels": [
+        "Jean 1, 1–18"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/JHN11.htm",
+      "status": 200,
+      "sha256": "dafb176404c61fa7c00366f5e659f5d78ccf5bbd5b33534effa90854928f85fa",
+      "labels": [
+        "Jean 11, 32–36"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/JHN14.htm",
+      "status": 200,
+      "sha256": "2e6e6c4cd0069c3e71007b2c2b24951cd25fd80f6469c60aa0a123ee0180b8fa",
+      "labels": [
+        "Jean 14, 16–17"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/JHN20.htm",
+      "status": 200,
+      "sha256": "fc3d594c1f9e06d39ebd5c627fd38696250d4c4b91d7eb645ac9cfd7a02a3632",
+      "labels": [
+        "Jean 20, 19–23",
+        "Jean 20, 24–29"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/LUK10.htm",
+      "status": 200,
+      "sha256": "4380ce46532e8c8dd21bccc5730629306c3442ce39aa2088c633d265d5e77785",
+      "labels": [
+        "Luc 10, 25–37"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/LUK11.htm",
+      "status": 200,
+      "sha256": "f7c739392684d683c9fea5cbbb225fa529ab1b93b5fb089e670534d7404c791d",
+      "labels": [
+        "Luc 11, 1–4",
+        "Luc 11, 1–4"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/LUK15.htm",
+      "status": 200,
+      "sha256": "ad4a35656149f14b0dfc2d5b219a80e862bdfb6903896b8203169354ebeda9bb",
+      "labels": [
+        "Luc 15, 11–32",
+        "Luc 15, 11–32",
+        "Luc 15, 11–32",
+        "Luc 15, 11–32"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/LUK19.htm",
+      "status": 200,
+      "sha256": "79fb377def7ff9fb3a24559ec4bd731d7e5754e0921be3669cfa1aa54bd9139e",
+      "labels": [
+        "Luc 19, 1–10"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/LUK23.htm",
+      "status": 200,
+      "sha256": "ffd214970a9fccd283d697002d69de6728eac7094b418c8543e02c2bef58b490",
+      "labels": [
+        "Luc 23, 44–56"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/LUK24.htm",
+      "status": 200,
+      "sha256": "19582251d6c301d68449305aca23a018cb1543206a46c43c16f4e544785286c4",
+      "labels": [
+        "Luc 24, 13–35",
+        "Luc 24, 13–35"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/MAT03.htm",
+      "status": 200,
+      "sha256": "c32464e483efc251714d60747f1527e6219e8211833c1e1a3d7b5d4664a3a0f4",
+      "labels": [
+        "Matthieu 3, 13–17"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/MAT06.htm",
+      "status": 200,
+      "sha256": "ba0e6e6a038c7819a12bd1f12531cd3b5a8926693f55da7c5f6942b3739bb088",
+      "labels": [
+        "Matthieu 6, 5–13"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/MAT28.htm",
+      "status": 200,
+      "sha256": "fef3fd53945677f9a0c9ce10c99e6d34e144d09931306cf8ea70a6d9fa52e9f2",
+      "labels": [
+        "Matthieu 28, 19–20",
+        "Matthieu 28, 19–20"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/MRK14.htm",
+      "status": 200,
+      "sha256": "a302447faf24cf44f8224cd506f7028051d514262a76fdc7dd27aca9e747df77",
+      "labels": [
+        "Marc 14, 32–36"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/ROM08.htm",
+      "status": 200,
+      "sha256": "60eb9844b0891e57a09372caf224e824a9abaf17820a1095647ad9920b7c88f9",
+      "labels": [
+        "Romains 8, 22–27",
+        "Romains 8, 26–27"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P10.HTM",
+      "status": 200,
+      "sha256": "4dd58a1db29fbe103f11ddb9aa3c4e306178a08db1024ccc1d3cbbccbb1787c3",
+      "labels": [
+        "CEC 168–169"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P17.HTM",
+      "status": 200,
+      "sha256": "7bee9de26e253cbea116dcacac454f7226d58ee38f93f7b146f299ea07e01aef",
+      "labels": [
+        "CEC 199–221"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P18.HTM",
+      "status": 200,
+      "sha256": "25c13223d34036475e71d3aecabacb302cc1336257598117b5a62c3fe8e11a24",
+      "labels": [
+        "CEC 239",
+        "CEC 232–260"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P1A.HTM",
+      "status": 200,
+      "sha256": "edc4b3a016531aa9a941324aa65096dbc138df943922991a2724ac67073c2a22",
+      "labels": [
+        "CEC 309–314"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P1G.HTM",
+      "status": 200,
+      "sha256": "761fcd3c7f8f9e88cde1293bf8cf30c3e8f62e0f683e0fec86594171c371fcc2",
+      "labels": [
+        "CEC 456–469"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P1L.HTM",
+      "status": 200,
+      "sha256": "a038679f7159de4cfbaf8c165e6bb6954c4036cd611854153d761f7d215fb776",
+      "labels": [
+        "CEC 597–618"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P1P.HTM",
+      "status": 200,
+      "sha256": "af09d71a9a7e43022970adce325d1622ff6a91c70eb2f0955621f96622293869",
+      "labels": [
+        "CEC 638–658"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P1U.HTM",
+      "status": 200,
+      "sha256": "045fa647bdd57752a4323494a356d2bf702953bcd92aba79d1569237ca5945d5",
+      "labels": [
+        "CEC 689–690"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P1Y.HTM",
+      "status": 200,
+      "sha256": "5c04f856d959cbf06086a0b4cce4b4d079473cf60691502b4042470b072c731a",
+      "labels": [
+        "CEC 731–741"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P29.HTM",
+      "status": 200,
+      "sha256": "ea99202c0429f91f274690ca9b8014e38e66abd0e4c213553a3f346d69e04051",
+      "labels": [
+        "CEC 982–983"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P39.HTM",
+      "status": 200,
+      "sha256": "8ac1f207a2c5aa91c50b1f2f69504bf8fd0b418769cee72e327ea69a844a2223",
+      "labels": [
+        "CEC 1210–1211"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P3E.HTM",
+      "status": 200,
+      "sha256": "67d900aa3520f24ae8b8dbab679118ec9bec8b269dbc3c6d1d8c90e26183d2de",
+      "labels": [
+        "CEC 1239–1243"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P3N.HTM",
+      "status": 200,
+      "sha256": "199076b3b1175b150d95975143054b41a8a745d976166da0b7649dfec5b31a71",
+      "labels": [
+        "CEC 1302–1305"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P3S.HTM",
+      "status": 200,
+      "sha256": "a2b7f7e256749717169244a9e0db8ae4129976d61468d9178b8ed3c3653265c2",
+      "labels": [
+        "CEC 1324–1327"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P3V.HTM",
+      "status": 200,
+      "sha256": "526603ffd352736a074491a90570e3c6bc0f10abcd59bf559a1da53ce3925395",
+      "labels": [
+        "CEC 1345–1355"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P3W.HTM",
+      "status": 200,
+      "sha256": "088de1f6fb8a794e834f41293666681b801c1e1b106eff5b3aba01f8ce677f07",
+      "labels": [
+        "CEC 1362–1377"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P41.HTM",
+      "status": 200,
+      "sha256": "92e31fa6da07c17f24586e9c68b950591792bba9c65cb65b62ff3fe47ce840e0",
+      "labels": [
+        "CEC 1422"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P42.HTM",
+      "status": 200,
+      "sha256": "1b7e470c67bfc74cba80f4bebaa9df508d84ada2867a5166642be9ede18ffdf0",
+      "labels": [
+        "CEC 1423–1424"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P48.HTM",
+      "status": 200,
+      "sha256": "8c4e720d20a58aa95196449d7af203fdf2e7e89a8533c3cabdc2fe6e7e801a8e",
+      "labels": [
+        "CEC 1450–1460"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P49.HTM",
+      "status": 200,
+      "sha256": "278020447a2b694af7e5fb0a254ec284d8ad6f28b7eb45f5f5839b1da5d3fb03",
+      "labels": [
+        "CEC 1467"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P4F.HTM",
+      "status": 200,
+      "sha256": "4a8eccf0197203c0783d5e3af01cc476879bf7fe061360facef0c32eafb983f6",
+      "labels": [
+        "CEC 1511–1513"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P4G.HTM",
+      "status": 200,
+      "sha256": "f3a8aee29c8bd04b99a91a0fccb01a79519a4de1c6cddd0f6b3c4a25058a1bd2",
+      "labels": [
+        "CEC 1514–1515"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P4U.HTM",
+      "status": 200,
+      "sha256": "3362eeb9c87842f60d6499bd8e8f55d3b1eb341eca1cbed3e82c76695ac682ab",
+      "labels": [
+        "CEC 1601"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P4V.HTM",
+      "status": 200,
+      "sha256": "170691613a95f1947fc44e8a65340dcabe1d79da5f7f3757bfe8921d8e1d291c",
+      "labels": [
+        "CEC 1602–1605"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P60.HTM",
+      "status": 200,
+      "sha256": "42db8ebe6312859d47f7a88c05a70fbaf33d2555373ef4aec680549099540a25",
+      "labels": [
+        "CEC 1812–1829",
+        "CEC 1814–1816"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P66.HTM",
+      "status": 200,
+      "sha256": "77fe927ac9f99ae31d1efd3cb28974943b2ec763a1c1f645102bad2e64faa0c4",
+      "labels": [
+        "CEC 1864"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P77.HTM",
+      "status": 200,
+      "sha256": "e1cec0387443672f26727f04e40ef5c8badc9fdbac00dcc4631c5412584eb990",
+      "labels": [
+        "CEC 2088"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P7J.HTM",
+      "status": 200,
+      "sha256": "8c11cbc8fa447b876fa2038eb65d4bcdf634d6547948b541e4189193803d9648",
+      "labels": [
+        "CEC 2177–2183",
+        "CEC 2177–2183"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P8U.HTM",
+      "status": 200,
+      "sha256": "8aa4ae7729dd62f6e60a461834c572dee5602db1a192bf634731f2821f583c47",
+      "labels": [
+        "CEC 2558–2565"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P9F.HTM",
+      "status": 200,
+      "sha256": "dc7626b8c343d79812f91453ba14707574611a2174e825fc4db7613c2d9518d5",
+      "labels": [
+        "CEC 2700–2704",
+        "CEC 2700–2704"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P9L.HTM",
+      "status": 200,
+      "sha256": "1a610ddbd2a2f0527fc07d98411a505db536dfa45ee99c3c3e93b3892213c78e",
+      "labels": [
+        "CEC 2729"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P9M.HTM",
+      "status": 200,
+      "sha256": "04d5997558caf21e377d6b613a88f52fdb9dfd4050c0e77e0e02a0a7342bdb10",
+      "labels": [
+        "CEC 2734–2741"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__PY.HTM",
+      "status": 200,
+      "sha256": "0a9cdd4e7721078d9f53cd6273355fec47a064b912922f0d9a05b0322803b272",
+      "labels": [
+        "CEC 160",
+        "CEC 153–159"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__PZ.HTM",
+      "status": 200,
+      "sha256": "a316cae98971a6c3595b8418d1c3bd60aa134bb75fdfea7ad879bafdfa46bd07",
+      "labels": [
+        "CEC 166",
+        "CEC 166–167"
+      ]
+    }
+  ],
+  "note": "Vérifications documentaires ; aucune reproduction des sources protégées, aucune réponse AELF archivée."
+}

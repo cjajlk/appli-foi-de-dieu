@@ -600,6 +600,874 @@ const PSALM_NOTES={
 };
 for(const p of READINGS){if(p.psalm&&PSALM_NOTES[p.psalm])p.psalmNote=PSALM_NOTES[p.psalm]}
 
+// Enrichissement original préparé pour la relecture du 12 novembre 2026.
+LESSONS.push(...[
+  {
+    "id": "ess-dieu",
+    "title": "Qui est Dieu ?",
+    "intro": "Tu peux commencer avec tes questions, sans devoir déjà savoir ce que tu crois.",
+    "sections": [
+      {
+        "title": "Une présence à découvrir",
+        "text": "Dans la foi catholique, Dieu est à l’origine de tout ce qui existe et appelle chaque personne à une relation libre avec lui. Il n’est pas décrit comme un objet caché quelque part dans l’univers. Dire qu’il est Créateur, c’est reconnaître que la vie est reçue et qu’elle a une dignité. Cette conviction religieuse ne remplace pas la recherche scientifique sur le fonctionnement du monde."
+      },
+      {
+        "title": "L’amour au cœur de la foi",
+        "text": "Les chrétiens découvrent le visage de Dieu à travers l’histoire biblique et, de manière centrale, à travers Jésus. Ils croient que Dieu aime avant que l’être humain ait réussi à devenir parfait. Cet amour invite à répondre, à apprendre à aimer et à reconnaître ses erreurs. Il ne signifie pas que tout ce qui arrive serait bon, ni que les personnes croyantes seraient épargnées par les épreuves."
+      },
+      {
+        "title": "Que veut dire appeler Dieu Père ?",
+        "text": "Jésus parle de Dieu comme de son Père et invite ses disciples à lui faire confiance. Le mot évoque une origine et une sollicitude, sans réduire Dieu à un homme ni à l’image d’un parent humain. Si une histoire familiale a été douloureuse, cette parole peut être difficile à accueillir. Il est possible de prendre le temps d’en parler, sans forcer une émotion ou nier ce qui a blessé."
+      },
+      {
+        "title": "Une relation qui se construit",
+        "text": "Chercher Dieu peut passer par la lecture d’un Évangile, une prière très simple, une rencontre avec une communauté ou l’attention à une personne fragile. Aucune de ces expériences ne fonctionne comme une preuve automatique. La tradition catholique associe la foi à une confiance éclairée, qui peut dialoguer avec la raison et se laisser questionner. On peut explorer cette proposition et rester honnête sur ses hésitations."
+      }
+    ],
+    "paragraphs": [
+      "Dans la foi catholique, Dieu est à l’origine de tout ce qui existe et appelle chaque personne à une relation libre avec lui. Il n’est pas décrit comme un objet caché quelque part dans l’univers. Dire qu’il est Créateur, c’est reconnaître que la vie est reçue et qu’elle a une dignité. Cette conviction religieuse ne remplace pas la recherche scientifique sur le fonctionnement du monde.",
+      "Les chrétiens découvrent le visage de Dieu à travers l’histoire biblique et, de manière centrale, à travers Jésus. Ils croient que Dieu aime avant que l’être humain ait réussi à devenir parfait. Cet amour invite à répondre, à apprendre à aimer et à reconnaître ses erreurs. Il ne signifie pas que tout ce qui arrive serait bon, ni que les personnes croyantes seraient épargnées par les épreuves.",
+      "Jésus parle de Dieu comme de son Père et invite ses disciples à lui faire confiance. Le mot évoque une origine et une sollicitude, sans réduire Dieu à un homme ni à l’image d’un parent humain. Si une histoire familiale a été douloureuse, cette parole peut être difficile à accueillir. Il est possible de prendre le temps d’en parler, sans forcer une émotion ou nier ce qui a blessé.",
+      "Chercher Dieu peut passer par la lecture d’un Évangile, une prière très simple, une rencontre avec une communauté ou l’attention à une personne fragile. Aucune de ces expériences ne fonctionne comme une preuve automatique. La tradition catholique associe la foi à une confiance éclairée, qui peut dialoguer avec la raison et se laisser questionner. On peut explorer cette proposition et rester honnête sur ses hésitations."
+    ],
+    "examples": [
+      "En regardant un paysage, tu peux remercier pour la beauté reçue, puis te demander quel geste concret aiderait à la préserver. Le regard de foi devient ainsi une invitation à prendre soin.",
+      "Si le mot Père te met mal à l’aise, tu peux commencer ta prière par Mon Dieu, ou simplement garder un silence. Une personne de confiance peut t’aider à comprendre ce qui te retient."
+    ],
+    "example": "En regardant un paysage, tu peux remercier pour la beauté reçue, puis te demander quel geste concret aiderait à la préserver. Le regard de foi devient ainsi une invitation à prendre soin.\n\nSi le mot Père te met mal à l’aise, tu peux commencer ta prière par Mon Dieu, ou simplement garder un silence. Une personne de confiance peut t’aider à comprendre ce qui te retient.",
+    "summary": [
+      "La foi catholique reconnaît Dieu comme Créateur et comme amour.",
+      "Jésus est au centre de la découverte chrétienne de Dieu.",
+      "La relation proposée laisse une place à la liberté, à la raison et aux questions."
+    ],
+    "question": "Quelle image de Dieu portes-tu aujourd’hui, et d’où te vient-elle ?",
+    "invitation": "Tu peux poursuivre avec la leçon sur la Trinité ou lire Luc 15, 11–32.",
+    "source": "CEC 199–221 et 239 ; Luc 15, 11–32 ; 1 Jean 4, 7–16. Références bibliques consultées dans Louis Segond 1910.",
+    "references": [
+      {
+        "label": "CEC 199–221",
+        "url": "https://www.vatican.va/archive/FRA0013/__P17.HTM"
+      },
+      {
+        "label": "CEC 239",
+        "url": "https://www.vatican.va/archive/FRA0013/__P18.HTM"
+      },
+      {
+        "label": "Luc 15, 11–32",
+        "url": "https://ebible.org/fraLSG/LUK15.htm"
+      },
+      {
+        "label": "1 Jean 4, 7–16",
+        "url": "https://ebible.org/fraLSG/1JN04.htm"
+      }
+    ],
+    "review": "Vérifier la distinction entre création, science et relation personnelle ; la paternité de Dieu face aux blessures familiales ; ne pas présenter une conviction de foi comme une démonstration."
+  },
+  {
+    "id": "ess-trinite",
+    "title": "Comprendre la Sainte Trinité",
+    "intro": "Ce mot peut sembler compliqué. On peut en découvrir le sens sans tout comprendre d’un seul coup.",
+    "sections": [
+      {
+        "title": "Un seul Dieu, trois Personnes",
+        "text": "La foi catholique confesse un seul Dieu : le Père, le Fils et le Saint-Esprit. Elle ne parle ni de trois dieux qui coopéreraient, ni d’un Dieu qui changerait simplement de masque. Le Père n’est pas le Fils, le Fils n’est pas l’Esprit ; chacun est pleinement Dieu. Le mot Personne est ici un terme de foi : il ne désigne pas trois individus séparés comme dans une famille humaine."
+      },
+      {
+        "title": "Partir de la vie de Jésus",
+        "text": "La Trinité se découvre dans le témoignage des Évangiles : Jésus s’adresse au Père, reçoit et accomplit sa mission, et promet l’Esprit Saint. Au baptême de Jésus, Matthieu met en scène Jésus, l’Esprit et la voix du Père. À la fin de cet Évangile, le baptême des disciples est lié au Père, au Fils et au Saint-Esprit. La doctrine cherche à accueillir ensemble ces témoignages."
+      },
+      {
+        "title": "Un mystère qui invite à entrer en relation",
+        "text": "Dans le langage chrétien, mystère ne signifie pas devinette réservée aux spécialistes. Il désigne une réalité que l’on reçoit dans la foi et que l’on n’épuise pas par une définition. Les images de l’eau, du soleil ou d’une famille peuvent parfois aider à poser une question, mais elles deviennent trompeuses si on les prend pour une explication exacte de Dieu. Mieux vaut accepter cette limite que fabriquer une comparaison parfaite."
+      },
+      {
+        "title": "Une foi présente dans la prière",
+        "text": "Le signe de croix et la prière chrétienne rappellent cette confession. Les catholiques prient le Père, par le Fils, dans l’Esprit ; ils peuvent aussi s’adresser à Jésus ou à l’Esprit Saint. Cette relation n’est pas un exercice à réussir. Elle invite à recevoir la vie comme un don et à grandir dans l’amour des autres, tout en respectant la différence entre Dieu et nos relations humaines."
+      }
+    ],
+    "paragraphs": [
+      "La foi catholique confesse un seul Dieu : le Père, le Fils et le Saint-Esprit. Elle ne parle ni de trois dieux qui coopéreraient, ni d’un Dieu qui changerait simplement de masque. Le Père n’est pas le Fils, le Fils n’est pas l’Esprit ; chacun est pleinement Dieu. Le mot Personne est ici un terme de foi : il ne désigne pas trois individus séparés comme dans une famille humaine.",
+      "La Trinité se découvre dans le témoignage des Évangiles : Jésus s’adresse au Père, reçoit et accomplit sa mission, et promet l’Esprit Saint. Au baptême de Jésus, Matthieu met en scène Jésus, l’Esprit et la voix du Père. À la fin de cet Évangile, le baptême des disciples est lié au Père, au Fils et au Saint-Esprit. La doctrine cherche à accueillir ensemble ces témoignages.",
+      "Dans le langage chrétien, mystère ne signifie pas devinette réservée aux spécialistes. Il désigne une réalité que l’on reçoit dans la foi et que l’on n’épuise pas par une définition. Les images de l’eau, du soleil ou d’une famille peuvent parfois aider à poser une question, mais elles deviennent trompeuses si on les prend pour une explication exacte de Dieu. Mieux vaut accepter cette limite que fabriquer une comparaison parfaite.",
+      "Le signe de croix et la prière chrétienne rappellent cette confession. Les catholiques prient le Père, par le Fils, dans l’Esprit ; ils peuvent aussi s’adresser à Jésus ou à l’Esprit Saint. Cette relation n’est pas un exercice à réussir. Elle invite à recevoir la vie comme un don et à grandir dans l’amour des autres, tout en respectant la différence entre Dieu et nos relations humaines."
+    ],
+    "examples": [
+      "En voyant quelqu’un faire le signe de croix, tu peux reconnaître une manière simple de rappeler le baptême et la foi trinitaire, plutôt qu’un geste magique.",
+      "Si tu ne sais pas à qui t’adresser dans la prière, tu peux simplement dire Mon Dieu. Tu pourras ensuite découvrir les paroles du Notre Père avec quelqu’un."
+    ],
+    "example": "En voyant quelqu’un faire le signe de croix, tu peux reconnaître une manière simple de rappeler le baptême et la foi trinitaire, plutôt qu’un geste magique.\n\nSi tu ne sais pas à qui t’adresser dans la prière, tu peux simplement dire Mon Dieu. Tu pourras ensuite découvrir les paroles du Notre Père avec quelqu’un.",
+    "summary": [
+      "Les catholiques croient en un seul Dieu, Père, Fils et Saint-Esprit.",
+      "Les trois Personnes sont réellement distinctes et ne sont pas trois parties de Dieu.",
+      "Les comparaisons humaines restent limitées."
+    ],
+    "question": "Quelle question aimerais-tu poser à propos du Père, du Fils ou de l’Esprit ?",
+    "invitation": "La leçon sur Jésus peut aider à poursuivre cette découverte.",
+    "source": "CEC 232–260 ; Matthieu 3, 13–17 et 28, 19–20 ; Jean 14, 16–17. Références bibliques : Louis Segond 1910.",
+    "references": [
+      {
+        "label": "CEC 232–260",
+        "url": "https://www.vatican.va/archive/FRA0013/__P18.HTM"
+      },
+      {
+        "label": "Matthieu 3, 13–17",
+        "url": "https://ebible.org/fraLSG/MAT03.htm"
+      },
+      {
+        "label": "Matthieu 28, 19–20",
+        "url": "https://ebible.org/fraLSG/MAT28.htm"
+      },
+      {
+        "label": "Jean 14, 16–17",
+        "url": "https://ebible.org/fraLSG/JHN14.htm"
+      }
+    ],
+    "review": "Relire les termes une nature/trois Personnes ; écarter modalisme, trithéisme et division de Dieu ; vérifier la pédagogie du mot mystère."
+  },
+  {
+    "id": "ess-jesus",
+    "title": "Qui est réellement Jésus ?",
+    "intro": "Tu peux découvrir Jésus par étapes, à partir de ses rencontres et de ses paroles.",
+    "sections": [
+      {
+        "title": "Une vie dans une histoire concrète",
+        "text": "Jésus est un Juif du premier siècle, vivant dans le contexte de la Galilée et de la Judée. Les Évangiles racontent son annonce du Royaume de Dieu, ses rencontres, sa prière et le chemin qui le conduit à Jérusalem. Ils sont des témoignages de foi enracinés dans une histoire, avec des intentions et des accents propres ; ils ne ressemblent pas à une biographie contemporaine qui expliquerait chaque détail de sa vie."
+      },
+      {
+        "title": "Plus qu’un maître de sagesse pour les chrétiens",
+        "text": "Pour les catholiques, Jésus est le Fils de Dieu devenu homme. Il est pleinement Dieu et pleinement homme, sans confusion entre les deux. Cela ne signifie pas qu’il jouerait à être humain : les récits montrent sa fatigue, son émotion, son amitié et sa souffrance. La foi chrétienne reconnaît en lui une humanité véritable, sans péché, et la présence de Dieu qui vient à la rencontre des êtres humains."
+      },
+      {
+        "title": "Un message qui touche les relations",
+        "text": "Jésus enseigne l’amour de Dieu et du prochain, appelle à la conversion et accueille des personnes tenues à distance. Ses paraboles donnent à réfléchir plutôt que de fournir un slogan pour chaque situation. Dans le récit de Zachée, l’accueil reçu conduit à envisager une réparation des torts. La miséricorde ne rend donc pas le mal insignifiant : elle ouvre une possibilité de changement et de justice."
+      },
+      {
+        "title": "Découvrir par la lecture",
+        "text": "Pour commencer, choisis un récit court et observe les personnes présentes, les gestes de Jésus et la réponse qu’ils suscitent. Une parole difficile mérite d’être replacée dans son contexte, avec un accompagnateur si besoin. La foi en Jésus comprend aussi sa mort et sa Résurrection : on ne peut pas réduire son message à une simple méthode de bien-être. Il est possible de s’approcher de cette confession avec des interrogations sincères."
+      }
+    ],
+    "paragraphs": [
+      "Jésus est un Juif du premier siècle, vivant dans le contexte de la Galilée et de la Judée. Les Évangiles racontent son annonce du Royaume de Dieu, ses rencontres, sa prière et le chemin qui le conduit à Jérusalem. Ils sont des témoignages de foi enracinés dans une histoire, avec des intentions et des accents propres ; ils ne ressemblent pas à une biographie contemporaine qui expliquerait chaque détail de sa vie.",
+      "Pour les catholiques, Jésus est le Fils de Dieu devenu homme. Il est pleinement Dieu et pleinement homme, sans confusion entre les deux. Cela ne signifie pas qu’il jouerait à être humain : les récits montrent sa fatigue, son émotion, son amitié et sa souffrance. La foi chrétienne reconnaît en lui une humanité véritable, sans péché, et la présence de Dieu qui vient à la rencontre des êtres humains.",
+      "Jésus enseigne l’amour de Dieu et du prochain, appelle à la conversion et accueille des personnes tenues à distance. Ses paraboles donnent à réfléchir plutôt que de fournir un slogan pour chaque situation. Dans le récit de Zachée, l’accueil reçu conduit à envisager une réparation des torts. La miséricorde ne rend donc pas le mal insignifiant : elle ouvre une possibilité de changement et de justice.",
+      "Pour commencer, choisis un récit court et observe les personnes présentes, les gestes de Jésus et la réponse qu’ils suscitent. Une parole difficile mérite d’être replacée dans son contexte, avec un accompagnateur si besoin. La foi en Jésus comprend aussi sa mort et sa Résurrection : on ne peut pas réduire son message à une simple méthode de bien-être. Il est possible de s’approcher de cette confession avec des interrogations sincères."
+    ],
+    "examples": [
+      "Tu peux lire Luc 19, 1–10 et regarder comment Zachée passe de la curiosité à une décision concrète. Puis te demander si un geste de justice serait possible dans ta propre journée.",
+      "Si une phrase sur Jésus te choque ou te paraît contradictoire, note-la avant de conclure. Comparer le récit entier avec un prêtre peut éclairer le sens des mots."
+    ],
+    "example": "Tu peux lire Luc 19, 1–10 et regarder comment Zachée passe de la curiosité à une décision concrète. Puis te demander si un geste de justice serait possible dans ta propre journée.\n\nSi une phrase sur Jésus te choque ou te paraît contradictoire, note-la avant de conclure. Comparer le récit entier avec un prêtre peut éclairer le sens des mots.",
+    "summary": [
+      "Jésus appartient à l’histoire juive du premier siècle.",
+      "Les catholiques le confessent vrai Dieu et vrai homme.",
+      "Son accueil appelle à aimer, à se convertir et à réparer."
+    ],
+    "question": "Dans les rencontres de Jésus, quel geste aimerais-tu mieux comprendre ?",
+    "invitation": "Tu peux poursuivre avec la leçon sur sa mort et sa Résurrection.",
+    "source": "CEC 456–469 ; Jean 1, 1–18 ; Luc 19, 1–10. Références bibliques : Louis Segond 1910.",
+    "references": [
+      {
+        "label": "CEC 456–469",
+        "url": "https://www.vatican.va/archive/FRA0013/__P1G.HTM"
+      },
+      {
+        "label": "Jean 1, 1–18",
+        "url": "https://ebible.org/fraLSG/JHN01.htm"
+      },
+      {
+        "label": "Luc 19, 1–10",
+        "url": "https://ebible.org/fraLSG/LUK19.htm"
+      }
+    ],
+    "review": "Vérifier l’unité de la Personne du Christ et ses deux natures ; distinguer recherche historique et confession chrétienne sans les opposer artificiellement."
+  },
+  {
+    "id": "ess-paques",
+    "title": "La mort et la Résurrection de Jésus",
+    "intro": "Ces événements sont au cœur de la foi chrétienne. On peut les aborder sans minimiser leur difficulté.",
+    "sections": [
+      {
+        "title": "Une mort réelle",
+        "text": "Les Évangiles racontent l’arrestation de Jésus, sa condamnation sous l’autorité de Ponce Pilate, sa crucifixion et sa mise au tombeau. Les chrétiens ne présentent pas cette souffrance comme une apparence. La lecture catholique de la Passion refuse d’attribuer collectivement la mort de Jésus aux Juifs de son époque, et plus encore aux Juifs d’aujourd’hui. Les récits demandent une lecture attentive de leur contexte."
+      },
+      {
+        "title": "Le sens chrétien de la croix",
+        "text": "Dans la foi catholique, Jésus donne librement sa vie par amour et ouvre un chemin de réconciliation avec Dieu. Dire qu’il meurt pour les péchés ne veut pas dire que la violence deviendrait bonne, ni que Dieu aurait besoin de notre souffrance. La croix révèle jusqu’où va l’amour au milieu du mal. Elle ne donne jamais à un proche ou à une autorité le droit d’exiger qu’une personne reste dans une situation de violence."
+      },
+      {
+        "title": "Ce que les chrétiens appellent Résurrection",
+        "text": "Les Évangiles témoignent du tombeau vide et de rencontres du Ressuscité avec ses disciples. La confession catholique ne réduit pas la Résurrection au souvenir de Jésus dans les cœurs, et ne la décrit pas comme un simple retour à la vie d’avant. Elle annonce que Jésus, avec son corps glorifié, entre dans une vie qui dépasse la mort. Ce cœur de la foi n’est pas présenté ici comme un résultat de laboratoire."
+      },
+      {
+        "title": "Une espérance, pas une explication à tout",
+        "text": "Pâques ne supprime pas la douleur du deuil ni les questions devant la mort. Les chrétiens y puisent l’espérance que le mal et la mort n’ont pas le dernier mot. Dans le récit d’Emmaüs, des disciples passent par la déception, l’écoute et une rencontre reconnue progressivement. On peut prendre le temps de lire ce récit sans s’obliger à ressentir immédiatement la joie qu’il annonce."
+      }
+    ],
+    "paragraphs": [
+      "Les Évangiles racontent l’arrestation de Jésus, sa condamnation sous l’autorité de Ponce Pilate, sa crucifixion et sa mise au tombeau. Les chrétiens ne présentent pas cette souffrance comme une apparence. La lecture catholique de la Passion refuse d’attribuer collectivement la mort de Jésus aux Juifs de son époque, et plus encore aux Juifs d’aujourd’hui. Les récits demandent une lecture attentive de leur contexte.",
+      "Dans la foi catholique, Jésus donne librement sa vie par amour et ouvre un chemin de réconciliation avec Dieu. Dire qu’il meurt pour les péchés ne veut pas dire que la violence deviendrait bonne, ni que Dieu aurait besoin de notre souffrance. La croix révèle jusqu’où va l’amour au milieu du mal. Elle ne donne jamais à un proche ou à une autorité le droit d’exiger qu’une personne reste dans une situation de violence.",
+      "Les Évangiles témoignent du tombeau vide et de rencontres du Ressuscité avec ses disciples. La confession catholique ne réduit pas la Résurrection au souvenir de Jésus dans les cœurs, et ne la décrit pas comme un simple retour à la vie d’avant. Elle annonce que Jésus, avec son corps glorifié, entre dans une vie qui dépasse la mort. Ce cœur de la foi n’est pas présenté ici comme un résultat de laboratoire.",
+      "Pâques ne supprime pas la douleur du deuil ni les questions devant la mort. Les chrétiens y puisent l’espérance que le mal et la mort n’ont pas le dernier mot. Dans le récit d’Emmaüs, des disciples passent par la déception, l’écoute et une rencontre reconnue progressivement. On peut prendre le temps de lire ce récit sans s’obliger à ressentir immédiatement la joie qu’il annonce."
+    ],
+    "examples": [
+      "Auprès d’un ami en deuil, la foi pascale peut inspirer une présence fidèle et une prière. Elle n’autorise pas à lui demander de cesser de pleurer.",
+      "Devant un crucifix, tu peux te demander quel amour cette image veut montrer, plutôt que chercher une raison de supporter une violence qu’il faudrait faire cesser."
+    ],
+    "example": "Auprès d’un ami en deuil, la foi pascale peut inspirer une présence fidèle et une prière. Elle n’autorise pas à lui demander de cesser de pleurer.\n\nDevant un crucifix, tu peux te demander quel amour cette image veut montrer, plutôt que chercher une raison de supporter une violence qu’il faudrait faire cesser.",
+    "summary": [
+      "La croix et la Résurrection forment le centre de la foi chrétienne.",
+      "Aucune responsabilité collective ne doit être imputée au peuple juif.",
+      "L’espérance pascale n’efface pas le deuil et ne justifie pas les violences."
+    ],
+    "question": "Quelle parole d’espérance pourrais-tu accueillir sans nier ce qui te fait souffrir ?",
+    "invitation": "Tu peux lire le récit d’Emmaüs, Luc 24, 13–35, à ton rythme.",
+    "source": "CEC 597–598, 599–618 et 638–658 ; Luc 23, 44–56 et 24, 13–35. Références : Louis Segond 1910.",
+    "references": [
+      {
+        "label": "CEC 597–618",
+        "url": "https://www.vatican.va/archive/FRA0013/__P1L.HTM"
+      },
+      {
+        "label": "CEC 638–658",
+        "url": "https://www.vatican.va/archive/FRA0013/__P1P.HTM"
+      },
+      {
+        "label": "Luc 23, 44–56",
+        "url": "https://ebible.org/fraLSG/LUK23.htm"
+      },
+      {
+        "label": "Luc 24, 13–35",
+        "url": "https://ebible.org/fraLSG/LUK24.htm"
+      }
+    ],
+    "review": "Prioritaire : rédemption, liberté du don du Christ, réalité corporelle et transcendante de la Résurrection ; refus de l’antijudaïsme et d’une valorisation de la violence."
+  },
+  {
+    "id": "ess-esprit",
+    "title": "Le Saint-Esprit dans notre vie",
+    "intro": "L’Esprit Saint peut sembler mystérieux. La tradition chrétienne le relie à la vie reçue et à l’amour qui grandit.",
+    "sections": [
+      {
+        "title": "Qui est l’Esprit Saint ?",
+        "text": "Dans la foi catholique, le Saint-Esprit est la troisième Personne de la Trinité, pleinement Dieu avec le Père et le Fils. Il n’est pas une énergie anonyme ni une simple émotion intérieure. Les images bibliques du souffle, du feu et de l’eau évoquent son action, mais ne sont pas des descriptions physiques de ce qu’il serait."
+      },
+      {
+        "title": "Dans la vie de Jésus et de l’Église",
+        "text": "Les Évangiles lient l’Esprit à la vie et à la mission de Jésus. Les Actes des Apôtres racontent qu’à la Pentecôte les disciples reçoivent l’Esprit et deviennent témoins de Jésus. L’Église catholique croit qu’il rassemble les croyants, les aide à prier et leur donne de participer à la vie du Christ. Son action ne se limite pas à des expériences spectaculaires ou à des personnes considérées comme exceptionnelles."
+      },
+      {
+        "title": "Des fruits qui se reconnaissent dans la durée",
+        "text": "La lettre aux Galates associe le fruit de l’Esprit notamment à l’amour, à la paix, à la patience et à la douceur. On peut se servir de ces repères pour discerner une orientation. Ils n’offrent pas un test permettant d’affirmer que chaque sentiment vient directement de Dieu. Une idée très intense peut demander du recul, un dialogue et une confrontation à l’Évangile, à la raison et au respect des personnes."
+      },
+      {
+        "title": "Demander de l’aide pour aimer",
+        "text": "Une prière à l’Esprit peut être très simple : demander la lumière pour choisir, la force pour faire le bien ou la disponibilité pour écouter. Cela ne garantit pas une décision sans erreur. Recevoir un conseil, reconnaître ses limites et chercher un soutien professionnel lorsqu’il est nécessaire restent des démarches responsables. Dans la foi catholique, la grâce ne dispense pas d’apprendre et de tenir compte du réel."
+      }
+    ],
+    "paragraphs": [
+      "Dans la foi catholique, le Saint-Esprit est la troisième Personne de la Trinité, pleinement Dieu avec le Père et le Fils. Il n’est pas une énergie anonyme ni une simple émotion intérieure. Les images bibliques du souffle, du feu et de l’eau évoquent son action, mais ne sont pas des descriptions physiques de ce qu’il serait.",
+      "Les Évangiles lient l’Esprit à la vie et à la mission de Jésus. Les Actes des Apôtres racontent qu’à la Pentecôte les disciples reçoivent l’Esprit et deviennent témoins de Jésus. L’Église catholique croit qu’il rassemble les croyants, les aide à prier et leur donne de participer à la vie du Christ. Son action ne se limite pas à des expériences spectaculaires ou à des personnes considérées comme exceptionnelles.",
+      "La lettre aux Galates associe le fruit de l’Esprit notamment à l’amour, à la paix, à la patience et à la douceur. On peut se servir de ces repères pour discerner une orientation. Ils n’offrent pas un test permettant d’affirmer que chaque sentiment vient directement de Dieu. Une idée très intense peut demander du recul, un dialogue et une confrontation à l’Évangile, à la raison et au respect des personnes.",
+      "Une prière à l’Esprit peut être très simple : demander la lumière pour choisir, la force pour faire le bien ou la disponibilité pour écouter. Cela ne garantit pas une décision sans erreur. Recevoir un conseil, reconnaître ses limites et chercher un soutien professionnel lorsqu’il est nécessaire restent des démarches responsables. Dans la foi catholique, la grâce ne dispense pas d’apprendre et de tenir compte du réel."
+    ],
+    "examples": [
+      "Avant une discussion tendue, tu peux demander à l’Esprit de t’aider à écouter, puis choisir de laisser l’autre terminer sa phrase. Le geste concret compte autant que l’élan ressenti.",
+      "Si quelqu’un affirme que Dieu lui demande d’imposer une décision qui t’effraie, tu peux prendre de la distance et demander conseil à une autre personne compétente."
+    ],
+    "example": "Avant une discussion tendue, tu peux demander à l’Esprit de t’aider à écouter, puis choisir de laisser l’autre terminer sa phrase. Le geste concret compte autant que l’élan ressenti.\n\nSi quelqu’un affirme que Dieu lui demande d’imposer une décision qui t’effraie, tu peux prendre de la distance et demander conseil à une autre personne compétente.",
+    "summary": [
+      "Le Saint-Esprit est une Personne divine, pas une force impersonnelle.",
+      "Ses fruits invitent à l’amour, à la paix et à la patience.",
+      "Le discernement ne consiste pas à suivre aveuglément une émotion."
+    ],
+    "question": "Quel fruit de l’Esprit aimerais-tu voir grandir dans une relation concrète ?",
+    "invitation": "Tu peux découvrir Actes 2, 1–11, puis en parler avec un accompagnateur.",
+    "source": "CEC 689–690 et 731–741 ; Actes 2, 1–11 ; Galates 5, 22–23. Références : Louis Segond 1910.",
+    "references": [
+      {
+        "label": "CEC 689–690",
+        "url": "https://www.vatican.va/archive/FRA0013/__P1U.HTM"
+      },
+      {
+        "label": "CEC 731–741",
+        "url": "https://www.vatican.va/archive/FRA0013/__P1Y.HTM"
+      },
+      {
+        "label": "Actes 2, 1–11",
+        "url": "https://ebible.org/fraLSG/ACT02.htm"
+      },
+      {
+        "label": "Galates 5, 22–23",
+        "url": "https://ebible.org/fraLSG/GAL05.htm"
+      }
+    ],
+    "review": "Relire la Personne divine de l’Esprit, son action ecclésiale et les critères de discernement ; ne pas assimiler automatiquement émotion, symptôme ou décision personnelle à une inspiration divine."
+  },
+  {
+    "id": "ess-prier",
+    "title": "Pourquoi et comment prier ?",
+    "intro": "Tu peux commencer avec des mots ordinaires, même si tu n’as pas prié depuis longtemps.",
+    "sections": [
+      {
+        "title": "Une relation avec Dieu",
+        "text": "Pour les catholiques, prier est entrer en relation avec Dieu qui prend l’initiative de nous aimer. On peut lui demander de l’aide, remercier, reconnaître une faute, intercéder pour quelqu’un ou simplement rester présent en silence. La prière personnelle et la prière de l’Église se nourrissent l’une l’autre. On n’a pas besoin de choisir entre des mots spontanés et les grandes prières reçues dans la tradition."
+      },
+      {
+        "title": "Un commencement très concret",
+        "text": "Tu peux chercher un endroit où tu te sens en sécurité, poser le téléphone et prendre quelques instants pour te rendre disponible. Puis nommer ce qui est là : une gratitude, une peur, une question. Une phrase suffit pour commencer. Lire quelques versets d’un Évangile et répondre avec tes propres mots est aussi possible. La posture, le calme et la durée peuvent aider, mais ne mesurent pas la valeur de ta prière."
+      },
+      {
+        "title": "Prier sans exiger un résultat",
+        "text": "Jésus enseigne le Notre Père à ses disciples : la prière y comprend la confiance en Dieu, les besoins de la vie, le pardon et le désir de faire sa volonté. Demander quelque chose avec confiance ne transforme pas Dieu en distributeur de réponses. La prière peut soutenir une démarche difficile sans garantir la guérison, la réussite ou la réaction d’une autre personne. Elle n’enlève pas notre responsabilité d’agir."
+      },
+      {
+        "title": "Quand les mots ou l’attention manquent",
+        "text": "Les distractions et les périodes sèches font partie de nombreuses expériences croyantes. Tu peux revenir doucement à une phrase, lire un psaume ou dire que tu ne sais pas prier. Il n’est pas utile de te juger à chaque pensée qui passe. Si une difficulté dure, parler avec un prêtre ou une personne de confiance peut aider. La liberté de cette application n’abolit pas les repères de la tradition ; elle te laisse les découvrir sans pression."
+      }
+    ],
+    "paragraphs": [
+      "Pour les catholiques, prier est entrer en relation avec Dieu qui prend l’initiative de nous aimer. On peut lui demander de l’aide, remercier, reconnaître une faute, intercéder pour quelqu’un ou simplement rester présent en silence. La prière personnelle et la prière de l’Église se nourrissent l’une l’autre. On n’a pas besoin de choisir entre des mots spontanés et les grandes prières reçues dans la tradition.",
+      "Tu peux chercher un endroit où tu te sens en sécurité, poser le téléphone et prendre quelques instants pour te rendre disponible. Puis nommer ce qui est là : une gratitude, une peur, une question. Une phrase suffit pour commencer. Lire quelques versets d’un Évangile et répondre avec tes propres mots est aussi possible. La posture, le calme et la durée peuvent aider, mais ne mesurent pas la valeur de ta prière.",
+      "Jésus enseigne le Notre Père à ses disciples : la prière y comprend la confiance en Dieu, les besoins de la vie, le pardon et le désir de faire sa volonté. Demander quelque chose avec confiance ne transforme pas Dieu en distributeur de réponses. La prière peut soutenir une démarche difficile sans garantir la guérison, la réussite ou la réaction d’une autre personne. Elle n’enlève pas notre responsabilité d’agir.",
+      "Les distractions et les périodes sèches font partie de nombreuses expériences croyantes. Tu peux revenir doucement à une phrase, lire un psaume ou dire que tu ne sais pas prier. Il n’est pas utile de te juger à chaque pensée qui passe. Si une difficulté dure, parler avec un prêtre ou une personne de confiance peut aider. La liberté de cette application n’abolit pas les repères de la tradition ; elle te laisse les découvrir sans pression."
+    ],
+    "examples": [
+      "Dans le bus avant un rendez-vous, tu peux confier ton inquiétude à Dieu, puis préparer une question utile à poser. La prière accompagne l’action au lieu de la remplacer.",
+      "Le soir, tu peux nommer une petite joie et une difficulté. Si tu n’as rien à dire, garder un instant de silence peut être une manière honnête de te présenter."
+    ],
+    "example": "Dans le bus avant un rendez-vous, tu peux confier ton inquiétude à Dieu, puis préparer une question utile à poser. La prière accompagne l’action au lieu de la remplacer.\n\nLe soir, tu peux nommer une petite joie et une difficulté. Si tu n’as rien à dire, garder un instant de silence peut être une manière honnête de te présenter.",
+    "summary": [
+      "Prier peut prendre la forme de mots, de silence ou d’une prière reçue.",
+      "Une demande n’est pas une garantie de résultat.",
+      "On peut revenir à la prière malgré les distractions et les doutes."
+    ],
+    "question": "Quels mots simples correspondraient aujourd’hui à ce que tu vis ?",
+    "invitation": "Tu peux poursuivre avec Prier avec ses propres mots ou le Notre Père dans Matthieu 6, 9–13.",
+    "source": "CEC 2558–2565 et 2700–2704 ; Matthieu 6, 5–13 ; Luc 11, 1–4. Références : Louis Segond 1910.",
+    "references": [
+      {
+        "label": "CEC 2558–2565",
+        "url": "https://www.vatican.va/archive/FRA0013/__P8U.HTM"
+      },
+      {
+        "label": "CEC 2700–2704",
+        "url": "https://www.vatican.va/archive/FRA0013/__P9F.HTM"
+      },
+      {
+        "label": "Matthieu 6, 5–13",
+        "url": "https://ebible.org/fraLSG/MAT06.htm"
+      },
+      {
+        "label": "Luc 11, 1–4",
+        "url": "https://ebible.org/fraLSG/LUK11.htm"
+      }
+    ],
+    "review": "Vérifier la primauté de la grâce et la relation entre prière personnelle et liturgique ; préciser l’absence de garantie matérielle sans nier la prière de demande."
+  },
+  {
+    "id": "ess-reconciliation",
+    "title": "Le pardon et la réconciliation",
+    "intro": "Il est possible de regarder une faute avec vérité sans réduire toute sa personne à cette faute.",
+    "sections": [
+      {
+        "title": "Une miséricorde qui appelle une réponse",
+        "text": "La tradition catholique annonce que Dieu désire le retour du pécheur et offre son pardon. Dans la parabole du fils retrouvé, l’accueil du père ne dépend pas d’un discours parfaitement réussi. Ce pardon invite pourtant à reconnaître le mal et à changer de direction. Il n’efface pas la responsabilité humaine ni la nécessité de protéger les personnes qui ont été blessées."
+      },
+      {
+        "title": "Que signifie se repentir ?",
+        "text": "Le repentir commence par reconnaître devant Dieu un acte mauvais, sans se chercher seulement des excuses. Il comprend le désir de ne pas recommencer et de réparer ce qui peut l’être. Une émotion très forte n’est pas indispensable : la sincérité et la volonté de se remettre en chemin comptent. On peut avoir besoin d’aide pour distinguer une faute réelle d’un sentiment de culpabilité envahissant ou d’une responsabilité que quelqu’un nous impose injustement."
+      },
+      {
+        "title": "Le sacrement de réconciliation",
+        "text": "Pour les baptisés catholiques, la confession est une rencontre sacramentelle avec le Christ dans l’Église. Elle comprend l’examen de conscience, le regret des péchés, leur aveu au prêtre et la démarche de réparation proposée. Le prêtre donne l’absolution au nom du Christ selon les conditions du sacrement. Si tu ne sais pas comment faire, tu peux le dire simplement. Un dialogue dans l’application ne remplace jamais cette célébration."
+      },
+      {
+        "title": "Pardon, réparation et sécurité",
+        "text": "Demander pardon à une personne ne lui impose ni une réponse immédiate ni le rétablissement de la relation. Rendre ce qui a été pris ou rectifier une rumeur peut être nécessaire. Le pardon n’oblige pas à oublier, à abandonner une démarche de justice ou à rester exposé à une violence. Le secret sacramentel engage strictement le confesseur ; la personne qui se confie reste libre de chercher protection, soins et recours appropriés."
+      }
+    ],
+    "paragraphs": [
+      "La tradition catholique annonce que Dieu désire le retour du pécheur et offre son pardon. Dans la parabole du fils retrouvé, l’accueil du père ne dépend pas d’un discours parfaitement réussi. Ce pardon invite pourtant à reconnaître le mal et à changer de direction. Il n’efface pas la responsabilité humaine ni la nécessité de protéger les personnes qui ont été blessées.",
+      "Le repentir commence par reconnaître devant Dieu un acte mauvais, sans se chercher seulement des excuses. Il comprend le désir de ne pas recommencer et de réparer ce qui peut l’être. Une émotion très forte n’est pas indispensable : la sincérité et la volonté de se remettre en chemin comptent. On peut avoir besoin d’aide pour distinguer une faute réelle d’un sentiment de culpabilité envahissant ou d’une responsabilité que quelqu’un nous impose injustement.",
+      "Pour les baptisés catholiques, la confession est une rencontre sacramentelle avec le Christ dans l’Église. Elle comprend l’examen de conscience, le regret des péchés, leur aveu au prêtre et la démarche de réparation proposée. Le prêtre donne l’absolution au nom du Christ selon les conditions du sacrement. Si tu ne sais pas comment faire, tu peux le dire simplement. Un dialogue dans l’application ne remplace jamais cette célébration.",
+      "Demander pardon à une personne ne lui impose ni une réponse immédiate ni le rétablissement de la relation. Rendre ce qui a été pris ou rectifier une rumeur peut être nécessaire. Le pardon n’oblige pas à oublier, à abandonner une démarche de justice ou à rester exposé à une violence. Le secret sacramentel engage strictement le confesseur ; la personne qui se confie reste libre de chercher protection, soins et recours appropriés."
+    ],
+    "examples": [
+      "Après avoir diffusé une information fausse sur un collègue, reconnaître l’erreur devant lui peut ne pas suffire : corriger l’information auprès de ceux qui l’ont reçue est un geste de réparation.",
+      "Après des années sans confession, tu peux demander un rendez-vous et dire au prêtre que tu as besoin d’être guidé. Tu n’as pas à préparer un texte parfait."
+    ],
+    "example": "Après avoir diffusé une information fausse sur un collègue, reconnaître l’erreur devant lui peut ne pas suffire : corriger l’information auprès de ceux qui l’ont reçue est un geste de réparation.\n\nAprès des années sans confession, tu peux demander un rendez-vous et dire au prêtre que tu as besoin d’être guidé. Tu n’as pas à préparer un texte parfait.",
+    "summary": [
+      "La miséricorde ouvre un avenir sans rendre le mal insignifiant.",
+      "Repentir, aveu, absolution et réparation ont leur place dans le sacrement.",
+      "Pardonner ne supprime ni la justice ni la protection des personnes."
+    ],
+    "question": "Quel premier pas de vérité ou de réparation serait juste et possible pour toi ?",
+    "invitation": "Un prêtre peut expliquer le déroulement du sacrement avant toute démarche.",
+    "source": "CEC 1422–1424, 1450–1460 et 1467 ; Luc 15, 11–32 ; Jean 20, 19–23. Références : Louis Segond 1910.",
+    "references": [
+      {
+        "label": "CEC 1422",
+        "url": "https://www.vatican.va/archive/FRA0013/__P41.HTM"
+      },
+      {
+        "label": "CEC 1423–1424",
+        "url": "https://www.vatican.va/archive/FRA0013/__P42.HTM"
+      },
+      {
+        "label": "CEC 1450–1460",
+        "url": "https://www.vatican.va/archive/FRA0013/__P48.HTM"
+      },
+      {
+        "label": "CEC 1467",
+        "url": "https://www.vatican.va/archive/FRA0013/__P49.HTM"
+      },
+      {
+        "label": "Luc 15, 11–32",
+        "url": "https://ebible.org/fraLSG/LUK15.htm"
+      },
+      {
+        "label": "Jean 20, 19–23",
+        "url": "https://ebible.org/fraLSG/JHN20.htm"
+      }
+    ],
+    "review": "Prioritaire : conditions de l’absolution, distinction contrition/culpabilité et pardon/réconciliation ; secret sacramentel ; protection des victimes et limites des conseils généraux."
+  },
+  {
+    "id": "ess-messe",
+    "title": "Comprendre la messe",
+    "intro": "Tu peux entrer dans une église sans connaître tous les gestes ni toutes les réponses.",
+    "sections": [
+      {
+        "title": "Se rassembler et écouter",
+        "text": "La messe est la célébration de l’Eucharistie, au cœur de la vie catholique. Elle commence par le rassemblement, des rites d’accueil et une prière. La liturgie de la Parole fait entendre des textes de l’Écriture, dont un passage d’Évangile. L’homélie aide à en accueillir le sens ; le Credo, lorsqu’il est prévu, exprime la foi, et la prière universelle confie les besoins de l’Église et du monde."
+      },
+      {
+        "title": "Rendre grâce avec le Christ",
+        "text": "Lors de la liturgie eucharistique, le pain et le vin sont apportés à l’autel. Dans la prière eucharistique, l’Église rend grâce au Père, invoque l’Esprit et fait mémoire de la mort et de la Résurrection de Jésus. Selon la foi catholique, par la consécration, le pain et le vin deviennent réellement le Corps et le Sang du Christ, tandis que leurs apparences demeurent. L’Eucharistie n’est donc pas comprise comme un simple symbole ou un souvenir affectif."
+      },
+      {
+        "title": "Le don du Christ rendu présent",
+        "text": "Le mot sacrifice ne signifie pas que Jésus serait crucifié une nouvelle fois à chaque messe. L’Église croit que son unique offrande est rendue présente sacramentellement. Après le Notre Père et les rites de communion, les fidèles disposés à recevoir le sacrement communient. La communion engage la foi et la vie de l’Église ; si tu te poses des questions sur ta situation, un prêtre peut t’accompagner sans que l’application décide à sa place."
+      },
+      {
+        "title": "Repartir pour vivre autrement",
+        "text": "La bénédiction et l’envoi rappellent que la célébration se prolonge dans la vie quotidienne. Une personne en découverte peut participer à l’écoute et à la prière sans communier. Ne pas connaître les réponses n’empêche pas d’être présent. Pour la tradition catholique, la messe dominicale a une place essentielle et relève d’un engagement ecclésial, avec des empêchements légitimes, notamment la maladie. Ce repère mérite une explication bienveillante, pas un jugement à distance."
+      }
+    ],
+    "paragraphs": [
+      "La messe est la célébration de l’Eucharistie, au cœur de la vie catholique. Elle commence par le rassemblement, des rites d’accueil et une prière. La liturgie de la Parole fait entendre des textes de l’Écriture, dont un passage d’Évangile. L’homélie aide à en accueillir le sens ; le Credo, lorsqu’il est prévu, exprime la foi, et la prière universelle confie les besoins de l’Église et du monde.",
+      "Lors de la liturgie eucharistique, le pain et le vin sont apportés à l’autel. Dans la prière eucharistique, l’Église rend grâce au Père, invoque l’Esprit et fait mémoire de la mort et de la Résurrection de Jésus. Selon la foi catholique, par la consécration, le pain et le vin deviennent réellement le Corps et le Sang du Christ, tandis que leurs apparences demeurent. L’Eucharistie n’est donc pas comprise comme un simple symbole ou un souvenir affectif.",
+      "Le mot sacrifice ne signifie pas que Jésus serait crucifié une nouvelle fois à chaque messe. L’Église croit que son unique offrande est rendue présente sacramentellement. Après le Notre Père et les rites de communion, les fidèles disposés à recevoir le sacrement communient. La communion engage la foi et la vie de l’Église ; si tu te poses des questions sur ta situation, un prêtre peut t’accompagner sans que l’application décide à sa place.",
+      "La bénédiction et l’envoi rappellent que la célébration se prolonge dans la vie quotidienne. Une personne en découverte peut participer à l’écoute et à la prière sans communier. Ne pas connaître les réponses n’empêche pas d’être présent. Pour la tradition catholique, la messe dominicale a une place essentielle et relève d’un engagement ecclésial, avec des empêchements légitimes, notamment la maladie. Ce repère mérite une explication bienveillante, pas un jugement à distance."
+    ],
+    "examples": [
+      "Lors d’une première visite, tu peux t’installer à un endroit qui te permet de suivre tranquillement et demander ensuite ce que signifie un geste qui t’a étonné.",
+      "Après la messe, prendre le temps d’aider un voisin isolé peut donner une forme concrète à ce que la célébration invite à vivre."
+    ],
+    "example": "Lors d’une première visite, tu peux t’installer à un endroit qui te permet de suivre tranquillement et demander ensuite ce que signifie un geste qui t’a étonné.\n\nAprès la messe, prendre le temps d’aider un voisin isolé peut donner une forme concrète à ce que la célébration invite à vivre.",
+    "summary": [
+      "La Parole et l’Eucharistie forment les deux grands moments de la messe.",
+      "Les catholiques croient à la présence réelle du Christ dans l’Eucharistie.",
+      "On peut découvrir la messe sans communier et demander un accompagnement."
+    ],
+    "question": "Quelle étape de la messe aimerais-tu mieux comprendre avant d’y participer ?",
+    "invitation": "Tu peux découvrir les sept sacrements ou préparer une visite avec ta paroisse.",
+    "source": "CEC 1345–1355, 1362–1377 et 2177–2183 ; Luc 24, 13–35 ; 1 Corinthiens 11, 23–26. Références : Louis Segond 1910.",
+    "references": [
+      {
+        "label": "CEC 1345–1355",
+        "url": "https://www.vatican.va/archive/FRA0013/__P3V.HTM"
+      },
+      {
+        "label": "CEC 1362–1377",
+        "url": "https://www.vatican.va/archive/FRA0013/__P3W.HTM"
+      },
+      {
+        "label": "CEC 2177–2183",
+        "url": "https://www.vatican.va/archive/FRA0013/__P7J.HTM"
+      },
+      {
+        "label": "Luc 24, 13–35",
+        "url": "https://ebible.org/fraLSG/LUK24.htm"
+      },
+      {
+        "label": "1 Corinthiens 11, 23–26",
+        "url": "https://ebible.org/fraLSG/1CO11.htm"
+      }
+    ],
+    "review": "Prioritaire : présence réelle et conversion eucharistique, unique sacrifice rendu présent, conditions de communion et obligation dominicale avec empêchements légitimes. Aucun texte du Missel n’est reproduit."
+  },
+  {
+    "id": "ess-sacrements",
+    "title": "Les sept sacrements",
+    "intro": "Les sacrements accompagnent la vie chrétienne. Tu peux d’abord repérer leur place, sans décider immédiatement d’une démarche.",
+    "sections": [
+      {
+        "title": "Des signes d’une rencontre",
+        "text": "Pour l’Église catholique, les sacrements sont des signes efficaces de la grâce : à travers des paroles et des gestes, le Christ agit dans son Église. Ils ne sont pas des récompenses pour les personnes irréprochables, ni des procédés magiques. Leur préparation aide à comprendre ce qui est reçu et à y répondre librement. Les catholiques reconnaissent sept sacrements, qui ont chacun une place propre et sont liés entre eux."
+      },
+      {
+        "title": "L’initiation chrétienne",
+        "text": "Le baptême unit au Christ, fait entrer dans l’Église et donne une vie nouvelle ; il est lié au pardon des péchés. La confirmation donne une effusion particulière de l’Esprit Saint et affermit le lien à l’Église et la mission du baptisé. L’Eucharistie nourrit la communion au Christ et à son Église. Pour un adulte en découverte, un parcours d’accompagnement permet de prendre le temps de connaître la foi et de discerner une demande de baptême."
+      },
+      {
+        "title": "La guérison et le relèvement",
+        "text": "La réconciliation donne au baptisé qui se repent de recevoir le pardon de Dieu dans une rencontre sacramentelle. L’onction des malades est destinée aux personnes gravement éprouvées par la maladie ou la fragilité liée à l’âge, selon le discernement pastoral. Elle apporte la grâce du Christ dans l’épreuve ; elle n’est pas réservée au tout dernier instant et ne garantit pas une guérison physique. Elle ne remplace jamais les soins."
+      },
+      {
+        "title": "Le service de la communion",
+        "text": "Le sacrement de l’ordre établit des évêques, des prêtres et des diacres pour des ministères distincts au service de l’Église. Dans la doctrine catholique, le mariage sacramentel unit un homme et une femme baptisés par leur consentement libre dans une alliance fidèle, indissoluble et ouverte à la vie. Cette présentation générale n’épuise pas les situations des couples : la préparation au mariage permet d’approfondir la liberté, le consentement, l’accueil de la vie et les questions concrètes avec des accompagnateurs."
+      }
+    ],
+    "paragraphs": [
+      "Pour l’Église catholique, les sacrements sont des signes efficaces de la grâce : à travers des paroles et des gestes, le Christ agit dans son Église. Ils ne sont pas des récompenses pour les personnes irréprochables, ni des procédés magiques. Leur préparation aide à comprendre ce qui est reçu et à y répondre librement. Les catholiques reconnaissent sept sacrements, qui ont chacun une place propre et sont liés entre eux.",
+      "Le baptême unit au Christ, fait entrer dans l’Église et donne une vie nouvelle ; il est lié au pardon des péchés. La confirmation donne une effusion particulière de l’Esprit Saint et affermit le lien à l’Église et la mission du baptisé. L’Eucharistie nourrit la communion au Christ et à son Église. Pour un adulte en découverte, un parcours d’accompagnement permet de prendre le temps de connaître la foi et de discerner une demande de baptême.",
+      "La réconciliation donne au baptisé qui se repent de recevoir le pardon de Dieu dans une rencontre sacramentelle. L’onction des malades est destinée aux personnes gravement éprouvées par la maladie ou la fragilité liée à l’âge, selon le discernement pastoral. Elle apporte la grâce du Christ dans l’épreuve ; elle n’est pas réservée au tout dernier instant et ne garantit pas une guérison physique. Elle ne remplace jamais les soins.",
+      "Le sacrement de l’ordre établit des évêques, des prêtres et des diacres pour des ministères distincts au service de l’Église. Dans la doctrine catholique, le mariage sacramentel unit un homme et une femme baptisés par leur consentement libre dans une alliance fidèle, indissoluble et ouverte à la vie. Cette présentation générale n’épuise pas les situations des couples : la préparation au mariage permet d’approfondir la liberté, le consentement, l’accueil de la vie et les questions concrètes avec des accompagnateurs."
+    ],
+    "examples": [
+      "Une personne adulte qui souhaite le baptême peut contacter une paroisse pour parler de son chemin. Demander des renseignements ne l’oblige pas à fixer immédiatement une date.",
+      "Un couple peut préparer un rendez-vous en notant ses questions sur le consentement, les enfants ou les différences de conviction, sans attendre d’avoir déjà toutes les réponses."
+    ],
+    "example": "Une personne adulte qui souhaite le baptême peut contacter une paroisse pour parler de son chemin. Demander des renseignements ne l’oblige pas à fixer immédiatement une date.\n\nUn couple peut préparer un rendez-vous en notant ses questions sur le consentement, les enfants ou les différences de conviction, sans attendre d’avoir déjà toutes les réponses.",
+    "summary": [
+      "Initiation : baptême, confirmation, Eucharistie.",
+      "Guérison : réconciliation et onction des malades.",
+      "Service de la communion : ordre et mariage."
+    ],
+    "question": "Quel sacrement aimerais-tu comprendre à partir de ta propre histoire ?",
+    "invitation": "Pour les questions de couple, retrouve aussi Famille et relations dans Mon espace.",
+    "source": "CEC 1210–1211, 1239–1243, 1302–1305, 1511–1515 et 1601–1605 ; Matthieu 28, 19–20 ; Jacques 5, 14–15. Références : Louis Segond 1910.",
+    "references": [
+      {
+        "label": "CEC 1210–1211",
+        "url": "https://www.vatican.va/archive/FRA0013/__P39.HTM"
+      },
+      {
+        "label": "CEC 1239–1243",
+        "url": "https://www.vatican.va/archive/FRA0013/__P3E.HTM"
+      },
+      {
+        "label": "CEC 1302–1305",
+        "url": "https://www.vatican.va/archive/FRA0013/__P3N.HTM"
+      },
+      {
+        "label": "CEC 1511–1513",
+        "url": "https://www.vatican.va/archive/FRA0013/__P4F.HTM"
+      },
+      {
+        "label": "CEC 1514–1515",
+        "url": "https://www.vatican.va/archive/FRA0013/__P4G.HTM"
+      },
+      {
+        "label": "CEC 1601",
+        "url": "https://www.vatican.va/archive/FRA0013/__P4U.HTM"
+      },
+      {
+        "label": "CEC 1602–1605",
+        "url": "https://www.vatican.va/archive/FRA0013/__P4V.HTM"
+      },
+      {
+        "label": "Matthieu 28, 19–20",
+        "url": "https://ebible.org/fraLSG/MAT28.htm"
+      },
+      {
+        "label": "Jacques 5, 14–15",
+        "url": "https://ebible.org/fraLSG/JAS05.htm"
+      }
+    ],
+    "review": "Prioritaire pour les accompagnateurs : grâce sacramentelle, préparation des adultes, confirmation, onction et critères pastoraux ; consentement matrimonial, unité, indissolubilité, ouverture à la vie et situations particulières. Ne pas transformer la liste des sacrements en conseil individuel."
+  },
+  {
+    "id": "ess-quotidien",
+    "title": "Vivre sa foi au quotidien",
+    "intro": "La vie chrétienne se découvre aussi dans les journées ordinaires, avec leurs joies et leurs limites.",
+    "sections": [
+      {
+        "title": "Croire, espérer, aimer",
+        "text": "La tradition catholique parle de foi, d’espérance et de charité. La foi est une confiance en Dieu et une réponse à ce qu’il révèle. L’espérance s’appuie sur sa fidélité et sa promesse, sans prédire un avenir matériel facile. La charité est l’amour de Dieu et du prochain reçu de Dieu et mis en actes. Ces dimensions ne se réduisent pas à être optimiste, à connaître des idées ou à se sentir généreux."
+      },
+      {
+        "title": "Des choix ordinaires qui comptent",
+        "text": "Dire la vérité, respecter une personne dont on ne partage pas les convictions, être juste dans son travail ou partager avec quelqu’un dans le besoin peuvent donner corps à la foi. Le récit du bon Samaritain invite à regarder celui qui est blessé et à devenir son prochain. Il ne demande pas de tout faire seul : appeler une aide compétente et accepter ses propres limites peuvent être des actes responsables de charité."
+      },
+      {
+        "title": "Une vie reliée aux autres",
+        "text": "La foi catholique comporte la prière et les sacrements, mais aussi une vie de communauté et un souci de justice. L’attention aux plus fragiles ne remplace pas la relation à Dieu ; elle en est une expression essentielle. À l’inverse, la pratique religieuse ne justifie jamais le mépris ou la malhonnêteté. Chacun peut examiner avec humilité la cohérence entre ce qu’il croit, ce qu’il dit et ce qu’il fait."
+      },
+      {
+        "title": "Avancer avec ses limites",
+        "text": "La fatigue, le doute ou les échecs ne font pas disparaître toute possibilité de chemin. On peut demander de l’aide, reprendre une démarche et reconnaître ce qui doit changer. Une petite habitude librement choisie peut soutenir cette vie, sans devenir une mesure de valeur personnelle. Cette application ne distribue ni score spirituel ni récompense ; elle propose des ressources pour découvrir une tradition et réfléchir à des choix concrets."
+      }
+    ],
+    "paragraphs": [
+      "La tradition catholique parle de foi, d’espérance et de charité. La foi est une confiance en Dieu et une réponse à ce qu’il révèle. L’espérance s’appuie sur sa fidélité et sa promesse, sans prédire un avenir matériel facile. La charité est l’amour de Dieu et du prochain reçu de Dieu et mis en actes. Ces dimensions ne se réduisent pas à être optimiste, à connaître des idées ou à se sentir généreux.",
+      "Dire la vérité, respecter une personne dont on ne partage pas les convictions, être juste dans son travail ou partager avec quelqu’un dans le besoin peuvent donner corps à la foi. Le récit du bon Samaritain invite à regarder celui qui est blessé et à devenir son prochain. Il ne demande pas de tout faire seul : appeler une aide compétente et accepter ses propres limites peuvent être des actes responsables de charité.",
+      "La foi catholique comporte la prière et les sacrements, mais aussi une vie de communauté et un souci de justice. L’attention aux plus fragiles ne remplace pas la relation à Dieu ; elle en est une expression essentielle. À l’inverse, la pratique religieuse ne justifie jamais le mépris ou la malhonnêteté. Chacun peut examiner avec humilité la cohérence entre ce qu’il croit, ce qu’il dit et ce qu’il fait.",
+      "La fatigue, le doute ou les échecs ne font pas disparaître toute possibilité de chemin. On peut demander de l’aide, reprendre une démarche et reconnaître ce qui doit changer. Une petite habitude librement choisie peut soutenir cette vie, sans devenir une mesure de valeur personnelle. Cette application ne distribue ni score spirituel ni récompense ; elle propose des ressources pour découvrir une tradition et réfléchir à des choix concrets."
+    ],
+    "examples": [
+      "Au travail, refuser de participer à une moquerie peut être une manière discrète de respecter la dignité de quelqu’un. Il est aussi possible de chercher une réponse collective si une injustice se répète.",
+      "Quand tu es épuisé, aider peut consister à mettre une personne en relation avec quelqu’un de disponible. La charité ne suppose pas de promettre une présence que tu ne peux pas tenir."
+    ],
+    "example": "Au travail, refuser de participer à une moquerie peut être une manière discrète de respecter la dignité de quelqu’un. Il est aussi possible de chercher une réponse collective si une injustice se répète.\n\nQuand tu es épuisé, aider peut consister à mettre une personne en relation avec quelqu’un de disponible. La charité ne suppose pas de promettre une présence que tu ne peux pas tenir.",
+    "summary": [
+      "La foi, l’espérance et la charité se soutiennent.",
+      "La prière et les actes de justice sont appelés à rester cohérents.",
+      "Avancer n’exige pas de nier ses limites ni de tout porter seul."
+    ],
+    "question": "Quel geste juste et réaliste pourrais-tu choisir dans une relation cette semaine ?",
+    "invitation": "Tu peux ouvrir Mes questions sur la foi ou discuter d’un exemple concret avec un accompagnateur.",
+    "source": "CEC 1812–1829 ; Luc 10, 25–37 ; Jacques 2, 14–18. Références : Louis Segond 1910.",
+    "references": [
+      {
+        "label": "CEC 1812–1829",
+        "url": "https://www.vatican.va/archive/FRA0013/__P60.HTM"
+      },
+      {
+        "label": "Luc 10, 25–37",
+        "url": "https://ebible.org/fraLSG/LUK10.htm"
+      },
+      {
+        "label": "Jacques 2, 14–18",
+        "url": "https://ebible.org/fraLSG/JAS02.htm"
+      }
+    ],
+    "review": "Vérifier les vertus théologales et le lien grâce, foi et actes ; ne pas réduire la foi à une morale ni présenter la pratique comme une performance."
+  }
+]);
+const FAITH_QUESTIONS=[
+  {
+    "id": "q-souffrance",
+    "title": "Pourquoi Dieu permet-il la souffrance ?",
+    "intro": "Une question difficile mérite d’abord d’être accueillie, surtout lorsqu’elle vient d’une blessure.",
+    "paragraphs": [
+      "La foi catholique reconnaît la réalité du mal et ne prétend pas donner la raison précise de chaque drame. Elle distingue notamment le mal lié aux actes humains et les souffrances de la condition créée. La liberté humaine compte dans cette réflexion, mais elle n’explique pas à elle seule la maladie d’un enfant ou une catastrophe. Il serait injuste de transformer une telle épreuve en accusation contre la personne qui souffre.",
+      "Les chrétiens regardent Jésus qui partage la souffrance humaine et s’engage contre ce qui écrase. Sa croix et sa Résurrection fondent leur espérance, sans rendre chaque événement intelligible. La présence, les soins, la protection et la recherche de justice demeurent nécessaires. On peut dire sa révolte dans la prière et chercher un interlocuteur capable d’écouter, sans accepter une réponse rapide qui ferait de la douleur un bien."
+    ],
+    "example": "Auprès d’un proche malade, tu peux demander ce qui lui serait utile aujourd’hui, plutôt que lui expliquer pourquoi Dieu aurait voulu sa maladie.",
+    "question": "De quelle présence ou de quelle aide aurais-tu besoin pour ne pas porter seul cette question ?",
+    "source": "CEC 309–314 ; Jean 11, 32–36 ; Romains 8, 22–27. Références : Louis Segond 1910.",
+    "references": [
+      {
+        "label": "CEC 309–314",
+        "url": "https://www.vatican.va/archive/FRA0013/__P1A.HTM"
+      },
+      {
+        "label": "Jean 11, 32–36",
+        "url": "https://ebible.org/fraLSG/JHN11.htm"
+      },
+      {
+        "label": "Romains 8, 22–27",
+        "url": "https://ebible.org/fraLSG/ROM08.htm"
+      }
+    ],
+    "review": "Prioritaire : providence et permission du mal, absence d’explication individuelle imposée, refus d’une faute supposée de la victime ; articulation avec les soins.",
+    "related": "souffrir"
+  },
+  {
+    "id": "q-retour",
+    "title": "Peut-on retrouver la foi après des années de doute ?",
+    "intro": "Un chemin peut reprendre sans effacer ce qui a été difficile ni jouer à être certain.",
+    "paragraphs": [
+      "Dans la perspective catholique, la rencontre avec Dieu reste possible après une longue distance. Revenir peut commencer par une question, un récit d’Évangile ou une conversation. Cela ne garantit ni une émotion immédiate ni le retour à une façon de croire identique à celle de l’enfance. Une foi adulte peut demander de relire des images de Dieu, des blessures ou des idées reçues.",
+      "Il est possible de distinguer un doute intellectuel, une déception liée à des personnes et une difficulté à faire confiance. Ces dimensions peuvent se mêler. Une paroisse, un prêtre ou un groupe d’accueil peut proposer une découverte adaptée sans t’obliger à tout raconter d’emblée. La liberté de la foi est essentielle : ni une pression familiale ni le désir de faire plaisir à quelqu’un ne peuvent remplacer une réponse personnelle."
+    ],
+    "example": "Tu peux demander un rendez-vous en disant simplement : Je voudrais comprendre où j’en suis. Cette première rencontre peut servir à poser des questions, sans engagement précipité.",
+    "question": "Quelle question ou quelle rencontre rendrait possible un premier pas libre ?",
+    "source": "CEC 160 et 166 ; Luc 15, 11–32. Références : Louis Segond 1910.",
+    "references": [
+      {
+        "label": "CEC 160",
+        "url": "https://www.vatican.va/archive/FRA0013/__PY.HTM"
+      },
+      {
+        "label": "CEC 166",
+        "url": "https://www.vatican.va/archive/FRA0013/__PZ.HTM"
+      },
+      {
+        "label": "Luc 15, 11–32",
+        "url": "https://ebible.org/fraLSG/LUK15.htm"
+      }
+    ],
+    "review": "Vérifier les références sur la liberté de la foi et sa dimension ecclésiale ; éviter toute promesse de conversion ou de retour automatique.",
+    "related": "ess-dieu"
+  },
+  {
+    "id": "q-messe",
+    "title": "Pourquoi les catholiques vont-ils à la messe ?",
+    "intro": "La messe a un sens communautaire et sacramentel, même quand une personne n’y ressent rien de particulier.",
+    "paragraphs": [
+      "Les catholiques s’y rassemblent pour écouter la Parole de Dieu et célébrer l’Eucharistie, en mémoire vivante de la mort et de la Résurrection de Jésus. Ils croient y recevoir le Christ et être unis plus profondément à lui et à l’Église. Cette démarche n’est pas seulement une réunion entre personnes qui pensent la même chose, ni une façon de prouver publiquement qu’elles seraient meilleures.",
+      "La tradition catholique demande la participation à la messe le dimanche et aux fêtes de précepte, sauf empêchement sérieux ou dispense. La maladie ou le soin d’une personne fragile peuvent notamment constituer des empêchements légitimes. Une situation concrète mérite un dialogue pastoral. Quelqu’un qui découvre peut venir écouter et prier sans communier ; regarder une célébration à distance peut aider une personne empêchée, sans être assimilé en toute situation à la participation sacramentelle."
+    ],
+    "example": "Si tu accompagnes un proche à la messe, tu peux choisir d’observer et poser ensuite une question. Il n’est pas nécessaire d’imiter un geste dont tu ne comprends pas encore le sens.",
+    "question": "Qu’aimerais-tu comprendre pour te sentir plus libre lors d’une visite ?",
+    "source": "CEC 1324–1327 et 2177–2183 ; Actes 2, 42–47. Références : Louis Segond 1910.",
+    "references": [
+      {
+        "label": "CEC 1324–1327",
+        "url": "https://www.vatican.va/archive/FRA0013/__P3S.HTM"
+      },
+      {
+        "label": "CEC 2177–2183",
+        "url": "https://www.vatican.va/archive/FRA0013/__P7J.HTM"
+      },
+      {
+        "label": "Actes 2, 42–47",
+        "url": "https://ebible.org/fraLSG/ACT02.htm"
+      }
+    ],
+    "review": "Relire obligation dominicale, dispenses, empêchements et différence entre écoute à distance et participation sacramentelle ; conditions de communion à accompagner individuellement.",
+    "related": "ess-messe"
+  },
+  {
+    "id": "q-mots",
+    "title": "Comment prier lorsqu’on ne sait pas quoi dire ?",
+    "intro": "Le silence et les mots hésitants peuvent avoir leur place dans une prière sincère.",
+    "paragraphs": [
+      "Tu peux commencer par nommer ce que tu vis devant Dieu : une inquiétude, un merci ou même l’impression de ne pas savoir croire. La tradition catholique reçoit aussi des prières communes, comme le Notre Père, qui offrent des mots lorsque les nôtres manquent. Les deux formes peuvent se soutenir : une formule connue n’est pas forcément mécanique et une parole spontanée n’est pas forcément plus profonde.",
+      "Il est possible de lire lentement un verset, puis de garder le silence. L’objectif n’est pas de remplir un temps ni d’obtenir une sensation particulière. Si les pensées s’éloignent, revenir doucement à une phrase peut suffire. Quand le silence devient angoissant, mieux vaut adapter ce moment, rester avec quelqu’un ou demander conseil. La prière ne doit pas devenir une épreuve que l’on s’impose pour mériter l’attention de Dieu."
+    ],
+    "example": "Tu peux dire : Mon Dieu, je ne trouve pas les mots ; voici ce qui me préoccupe. Puis t’arrêter, sans chercher à composer un discours.",
+    "question": "Un mot, un silence ou une prière connue te conviendrait-il le mieux aujourd’hui ?",
+    "source": "CEC 2700–2704 et 2729 ; Romains 8, 26–27 ; Luc 11, 1–4. Références : Louis Segond 1910.",
+    "references": [
+      {
+        "label": "CEC 2700–2704",
+        "url": "https://www.vatican.va/archive/FRA0013/__P9F.HTM"
+      },
+      {
+        "label": "CEC 2729",
+        "url": "https://www.vatican.va/archive/FRA0013/__P9L.HTM"
+      },
+      {
+        "label": "Romains 8, 26–27",
+        "url": "https://ebible.org/fraLSG/ROM08.htm"
+      },
+      {
+        "label": "Luc 11, 1–4",
+        "url": "https://ebible.org/fraLSG/LUK11.htm"
+      }
+    ],
+    "review": "Vérifier l’accueil des distractions et la distinction entre prière, exercice de relaxation et obligation de ressentir quelque chose.",
+    "related": "prier-mots-personnels"
+  },
+  {
+    "id": "q-pardon",
+    "title": "Dieu peut-il pardonner toutes nos fautes ?",
+    "intro": "La gravité d’une faute peut faire peur. La tradition catholique annonce une miséricorde plus grande que ce qui nous enferme.",
+    "paragraphs": [
+      "L’Église enseigne qu’aucun péché ne dépasse la miséricorde de Dieu pour celui qui se tourne vers lui avec repentir. Cela ne transforme pas le pardon en effacement automatique de la responsabilité. Reconnaître le mal, consentir à changer et chercher à réparer font partie du chemin. Dans la vie catholique, le sacrement de réconciliation donne une place concrète à l’aveu et à l’absolution.",
+      "Les paroles bibliques sur le péché contre l’Esprit Saint peuvent inquiéter. Le Catéchisme les relie au refus délibéré d’accueillir la miséricorde et le repentir, et non à une pensée involontaire ou à une question angoissée. Une peur persistante d’être impardonnable mérite un accompagnement attentif. Le pardon de Dieu n’oblige pas une victime à renouer une relation dangereuse et ne remplace pas les démarches de justice nécessaires."
+    ],
+    "example": "Une personne qui regrette une faute ancienne peut en parler à un prêtre sans attendre de savoir tout formuler. Si la culpabilité envahit chaque journée, un soutien professionnel peut aussi être utile.",
+    "question": "Qu’aurais-tu besoin de demander à un interlocuteur de confiance pour sortir de l’isolement ?",
+    "source": "CEC 982–983 et 1864 ; Luc 15, 11–32. Références : Louis Segond 1910.",
+    "references": [
+      {
+        "label": "CEC 982–983",
+        "url": "https://www.vatican.va/archive/FRA0013/__P29.HTM"
+      },
+      {
+        "label": "CEC 1864",
+        "url": "https://www.vatican.va/archive/FRA0013/__P66.HTM"
+      },
+      {
+        "label": "Luc 15, 11–32",
+        "url": "https://ebible.org/fraLSG/LUK15.htm"
+      }
+    ],
+    "review": "Prioritaire : vérifier le renvoi exact de CEC 1864, les dispositions de repentir, le péché contre l’Esprit et la prévention d’une culpabilité obsessionnelle.",
+    "related": "ess-reconciliation"
+  },
+  {
+    "id": "q-sans-reponse",
+    "title": "Pourquoi certaines prières semblent-elles sans réponse ?",
+    "intro": "Ce sentiment peut être douloureux ; il n’est pas nécessaire de le cacher pour parler de foi.",
+    "paragraphs": [
+      "Une demande sincère peut rester sans le résultat espéré : une maladie continue, une relation ne se répare pas ou une décision reste difficile. La foi catholique ne permet pas d’en conclure que la personne a mal prié ou manque forcément de foi. Elle invite à la confiance en Dieu tout en reconnaissant que nous ne savons pas expliquer chacune de ces situations.",
+      "L’Évangile montre Jésus priant dans l’angoisse à Gethsémani. La prière chrétienne peut donc porter un désir très fort, mais aussi une recherche de la volonté de Dieu. Il serait abusif de dire à une personne que le silence prouve qu’un drame était bon pour elle. On peut continuer à demander, exprimer sa déception, chercher du soutien et agir concrètement. Aucune formule et aucune répétition ne permettent de contraindre Dieu à un résultat."
+    ],
+    "example": "Si tu pries pour un proche sans constater d’amélioration, tu peux continuer à lui témoigner de l’attention et parler à quelqu’un de ta peine. Les soins et les aides utiles gardent toute leur place.",
+    "question": "Que voudrais-tu pouvoir dire à Dieu sans te censurer aujourd’hui ?",
+    "source": "CEC 2734–2741 ; Marc 14, 32–36. Références : Louis Segond 1910.",
+    "references": [
+      {
+        "label": "CEC 2734–2741",
+        "url": "https://www.vatican.va/archive/FRA0013/__P9M.HTM"
+      },
+      {
+        "label": "Marc 14, 32–36",
+        "url": "https://ebible.org/fraLSG/MRK14.htm"
+      }
+    ],
+    "review": "Relire la confiance filiale, la prière de demande et la volonté de Dieu ; refuser toute garantie de résultat ou accusation de manque de foi.",
+    "related": "ess-prier"
+  },
+  {
+    "id": "q-croire-pratiquer",
+    "title": "Quelle différence entre croire en Dieu et pratiquer sa religion ?",
+    "intro": "Les convictions intérieures et les gestes religieux sont liés, mais ils ne se confondent pas.",
+    "paragraphs": [
+      "Croire peut désigner une confiance en Dieu et l’accueil d’une parole reçue comme vraie. Pratiquer donne à cette foi des formes visibles : prier, participer à la vie de l’Église, célébrer les sacrements et servir son prochain. Dans le catholicisme, ces dimensions sont appelées à se nourrir ; la foi n’est pas seulement une opinion privée et la pratique n’est pas seulement l’exécution de gestes.",
+      "Une personne peut chercher Dieu tout en ayant pris ses distances avec une communauté, parfois à cause de blessures réelles. Une autre peut conserver des habitudes religieuses tout en traversant une période de doute. Ces situations invitent au dialogue plutôt qu’à classer les personnes. La tradition appelle à une cohérence entre la confession de foi, la célébration et la charité. Elle ne donne pas à l’application le pouvoir de mesurer la qualité spirituelle de quelqu’un."
+    ],
+    "example": "Si tu dis croire mais ne sais pas comment rejoindre une communauté, tu peux chercher d’abord un lieu où tes questions seront entendues. Si tu pratiques par habitude, un passage d’Évangile peut aider à en retrouver le sens.",
+    "question": "Quel lien aimerais-tu approfondir entre ce que tu crois et ce que tu vis ?",
+    "source": "CEC 166–169 et 1814–1816 ; Jacques 2, 14–18. Références : Louis Segond 1910.",
+    "references": [
+      {
+        "label": "CEC 166–167",
+        "url": "https://www.vatican.va/archive/FRA0013/__PZ.HTM"
+      },
+      {
+        "label": "CEC 168–169",
+        "url": "https://www.vatican.va/archive/FRA0013/__P10.HTM"
+      },
+      {
+        "label": "CEC 1814–1816",
+        "url": "https://www.vatican.va/archive/FRA0013/__P60.HTM"
+      },
+      {
+        "label": "Jacques 2, 14–18",
+        "url": "https://ebible.org/fraLSG/JAS02.htm"
+      }
+    ],
+    "review": "Vérifier la dimension personnelle et ecclésiale de la foi ; éviter de dissocier ou de confondre pratique, charité et foi.",
+    "related": "ess-quotidien"
+  },
+  {
+    "id": "q-doutes",
+    "title": "Peut-on avoir des doutes tout en étant croyant ?",
+    "intro": "Une interrogation n’est pas à elle seule le signe que tout ton chemin serait faux.",
+    "paragraphs": [
+      "La foi n’est pas la même chose qu’une évidence qui supprimerait toutes les questions. Un croyant peut chercher à comprendre un enseignement, traverser une épreuve ou ne plus ressentir la présence de Dieu. Il est utile de distinguer cette recherche, parfois involontaire, d’un refus délibéré de ce que l’on reconnaît comme venant de Dieu. L’application ne peut pas juger cette disposition intérieure à la place d’une personne.",
+      "Dans l’Évangile selon Jean, Thomas exprime sa difficulté devant l’annonce de la Résurrection. Le récit invite à regarder sa rencontre avec Jésus plutôt qu’à enfermer Thomas dans une étiquette. Une question peut être travaillée par la lecture, la réflexion et le dialogue. Quand le doute fait souffrir, un accompagnateur respectueux peut aider ; il n’a pas à exiger que tu fasses semblant d’être certain."
+    ],
+    "example": "Tu peux noter une question précise et la poser à un prêtre : J’ai du mal à comprendre cela, pouvez-vous m’aider à distinguer ce que l’Église enseigne et l’image que je m’en fais ?",
+    "question": "Quelle question pourrais-tu exprimer sans te sentir obligé de la résoudre aujourd’hui ?",
+    "source": "CEC 153–159 et 2088 ; Jean 20, 24–29. Références : Louis Segond 1910.",
+    "references": [
+      {
+        "label": "CEC 153–159",
+        "url": "https://www.vatican.va/archive/FRA0013/__PY.HTM"
+      },
+      {
+        "label": "CEC 2088",
+        "url": "https://www.vatican.va/archive/FRA0013/__P77.HTM"
+      },
+      {
+        "label": "Jean 20, 24–29",
+        "url": "https://ebible.org/fraLSG/JHN20.htm"
+      }
+    ],
+    "review": "Vérifier la distinction entre doute involontaire, recherche et refus volontaire ; ne pas faire du doute une condition ni une faute automatique.",
+    "related": "doutes"
+  }
+];
+const ESSENTIAL_LESSON_IDS=["ess-dieu","ess-trinite","ess-jesus","ess-paques","ess-esprit","ess-prier","ess-reconciliation","ess-messe","ess-sacrements","ess-quotidien"];
 // Lectures AELF : réponses éphémères, jamais dans les contenus locaux ou les favoris.
 const aelfView={date:'',status:'idle',data:null,error:'',mass:0,controller:null,token:0};
 function aelfToday(){const d=new Date();return `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`}
@@ -633,12 +1501,29 @@ const state={...defaults,...saved,route:'accueil',filter:'all',search:'',active:
 function persist(){try{localStorage.setItem(STORE,JSON.stringify({visualVersion:2,size:state.size,theme:state.theme,sizeOpen:state.sizeOpen,favorites:state.favorites,personal:state.personal}))}catch{showToast('Stockage indisponible : les changements peuvent ne pas être conservés.')}}
 function esc(v){return String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
 const main=document.querySelector('#main');
+// Suivi pédagogique local : identifiants et positions des seules leçons originales, jamais de texte AELF.
+const LEARNING_STORE='chemin-de-foi-learning-v1';
+const learning={enabled:true,entries:{},last:null,available:true};let learningCurrent=null,learningTimer;
+try{const saved=JSON.parse(localStorage.getItem(LEARNING_STORE)||'null');if(saved&&typeof saved==='object'){learning.enabled=saved.enabled!==false;if(learning.enabled){for(const l of LESSONS){const v=saved.entries?.[l.id];if(v&&Number.isFinite(v.ratio)&&Number.isFinite(v.seen))learning.entries[l.id]={ratio:Math.min(1,Math.max(0,v.ratio)),seen:v.seen}}if(LESSONS.some(l=>l.id===saved.last))learning.last=saved.last}}}catch{}
+function learningPersist(){try{localStorage.setItem(LEARNING_STORE,JSON.stringify({version:1,enabled:learning.enabled,entries:learning.entries,last:learning.last}))}catch{learning.available=false}}
+function learningRemember(){if(!learning.enabled||state.route!=='lesson'||!LESSONS.some(l=>l.id===state.active))return;const previous=learning.entries[state.active];if(!previous)return;const height=Math.max(0,document.documentElement.scrollHeight-innerHeight);previous.ratio=height?Math.min(1,Math.max(0,scrollY/height)):0;learningPersist()}
+function learningAfterRender(){const id=state.route==='lesson'&&LESSONS.some(l=>l.id===state.active)?state.active:null;if(learning.enabled&&id&&learningCurrent!==id){learning.entries[id]={ratio:learning.entries[id]?.ratio||0,seen:Date.now()};learning.last=id;learningPersist()}learningCurrent=id}
+function learningReset(){clearTimeout(learningTimer);learning.entries={};learning.last=null;learningCurrent=null;try{localStorage.removeItem(LEARNING_STORE)}catch{learning.available=false}}
+function learningLinks(){return `<div class="learning-links"><button class="action secondary" data-go="questions">Mes questions sur la foi</button><button class="action secondary" data-go="consulted">Mes lectures</button></div>`}
+function questionsPage(){return head('Mes questions sur la foi','Des repères catholiques pour réfléchir, sans réponse imposée à chaque épreuve.')+libraryBack('Découvrir la foi','decouvrir')+searchControls('Rechercher une question sur la foi')+`<div id="library-results">${libraryResults()}</div><p class="editorial-note">Réponses originales à soumettre à un prêtre ; aucune approbation officielle de l’Église n’est revendiquée.</p></div>`}
+function consultedLessons(){return LESSONS.filter(l=>learning.entries[l.id]).sort((a,b)=>learning.entries[b.id].seen-learning.entries[a.id].seen)}
+function consultedPage(){const last=LESSONS.find(l=>l.id===learning.last);return head('Mes lectures','Un repère facultatif sur cet appareil, sans compte et sans progression obligatoire.')+libraryBack('Découvrir la foi','decouvrir')+`<div class="panel"><label class="learning-opt"><input type="checkbox" id="learning-enabled" ${learning.enabled?'checked':''}> Conserver mes lectures sur cet appareil</label><p class="small">Seuls les titres consultés et la position de lecture sont repérés localement. Aucun suivi des lectures AELF. Désactiver efface ce suivi, sans toucher aux favoris ni aux prières personnelles.</p>${!learning.available?'<p role="status">Le stockage est indisponible : ce repère peut être perdu en fermant la page.</p>':''}${learning.enabled&&last?`<button class="action" data-resume-lesson="${esc(last.id)}">Reprendre : ${esc(last.title)}</button><button class="action secondary" data-clear-learning>Effacer ce suivi</button>`:''}</div>${searchControls('Rechercher une leçon consultée')}<div id="library-results">${libraryResults()}</div></div>`}
+function extendedLessonBody(p){return (p.sections?p.sections.map(s=>`<h2>${esc(s.title)}</h2><p>${esc(s.text)}</p>`).join(''):p.paragraphs.map(x=>`<p>${esc(x)}</p>`).join(''))+(p.examples?`<h2>Dans la vie quotidienne</h2>${p.examples.map(x=>`<p>${esc(x)}</p>`).join('')}`:p.example?`<p><strong>Exemple concret :</strong><br>${esc(p.example)}</p>`:'')+(p.summary?`<h2>À retenir</h2><ul>${p.summary.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'')+(p.invitation?`<h2>Pour poursuivre, librement</h2><p>${esc(p.invitation)}</p>`:'')}
+document.addEventListener('scroll',()=>{clearTimeout(learningTimer);learningTimer=setTimeout(learningRemember,250)},{passive:true});
+document.addEventListener('change',e=>{if(e.target.id!=='learning-enabled')return;learning.enabled=e.target.checked;if(!learning.enabled)learningReset();learningPersist();render()});
+document.addEventListener('click',e=>{if(e.target.closest('[data-clear-learning]')){learningReset();learningPersist();render();return}const resume=e.target.closest('[data-resume-lesson]');if(!resume)return;const id=resume.dataset.resumeLesson;const saved=learning.entries[id];if(!saved||!LESSONS.some(l=>l.id===id))return;const ratio=saved.ratio;go('lesson',id);const epoch=navigationEpoch;requestAnimationFrame(()=>requestAnimationFrame(()=>{if(state.route==='lesson'&&state.active===id&&epoch===navigationEpoch)window.scrollTo({top:ratio*Math.max(0,document.documentElement.scrollHeight-innerHeight),behavior:'instant'})}))});
+
 // Bibliothèques : métadonnées de classement uniquement, aucun texte religieux ajouté.
 const LIBRARY_PAGE_SIZE=10;
 const PSALM_THEMES={23:['Confiance','Espérance'],27:['Confiance','Peur'],46:['Détresse','Paix'],91:['Confiance','Protection'],121:['Chemin','Confiance']};
 const PRAYER_THEMES={matin:['Matin'],soir:['Soir'],courage:['Confiance','Courage'],souffrance:['Souffrance'],solitude:['Solitude'],pardon:['Pardon'],doute:['Doute'],paix:['Paix intérieure'],esperance:['Espérance'],merci:['Gratitude'],'petites-joies':['Gratitude'],proches:['Gratitude','Proches'],'famille-paix':['Famille','Paix intérieure'],amour:['Couple'],mariage:['Mariage'],ecoute:['Couple','Écoute'],'matin-attention':['Matin'],'soir-deposer':['Soir'],'merci-discret':['Gratitude'],'pardon-reparer':['Pardon'],'paix-attente':['Paix intérieure'],'confiance-choix':['Confiance'],'famille-quotidien':['Famille'],'epreuve-presence':['Souffrance','Espérance']};
 const BIBLE_BOOKS=[{id:'psaumes',name:'Les Psaumes',psalms:true},{id:'matthieu',name:'Évangile selon Matthieu',chapters:[{number:11,readings:['mat11'],range:'verset 28 uniquement'}]},{id:'jean',name:'Évangile selon Jean',chapters:[{number:14,readings:['jn14'],range:'verset 27 uniquement'}]}];
-const COURSES=[{id:'premiers',title:'Premiers repères',description:'Dieu, Jésus, la prière, les Évangiles et le doute.',lessons:BEGINNER_PATH},{id:'approfondir',title:'Pour aller plus loin',description:'La foi, les psaumes, la souffrance, le pardon et la charité.',lessons:COMPLEMENTARY_PATH}];
+const COURSES=[{id:'essentiels',title:'Les essentiels de la foi catholique',description:'Dieu, Jésus, la prière, la messe et les sacrements.',lessons:ESSENTIAL_LESSON_IDS},{id:'premiers',title:'Premiers repères',description:'Dieu, Jésus, la prière, les Évangiles et le doute.',lessons:BEGINNER_PATH},{id:'approfondir',title:'Pour aller plus loin',description:'La foi, les psaumes, la souffrance, le pardon et la charité.',lessons:COMPLEMENTARY_PATH}];
 const libraryViews=new Map(),navigationViews=new Map(),recentViews=new Map();
 let navigationCounter=0,currentNavigationId=null,navigationEpoch=0;
 const NAVIGATION_STORE='chemin-de-foi-navigation-v31';
@@ -649,21 +1534,21 @@ function viewKey(route=state.route,id=state.active){return route+'/'+(id||'')}
 function libraryView(){const key=viewKey();if(!libraryViews.has(key))libraryViews.set(key,{query:'',theme:'',page:1});return libraryViews.get(key)}
 function normalizeSearch(value){return String(value??'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^\p{L}\p{N}]+/gu,' ').trim()}
 function matchesSearch(text,query){const haystack=normalizeSearch(text);return normalizeSearch(query).split(/\s+/).filter(Boolean).every(word=>haystack.includes(word))}
-function rememberNavigation(){if(!currentNavigationId)return;const el=document.activeElement?.closest('[data-go]');const snapshot={route:state.route,active:state.active,scroll:window.scrollY,library:{...libraryView()},focus:el?{route:el.dataset.go,id:el.dataset.id||''}:null};navigationViews.set(currentNavigationId,snapshot);recentViews.set(viewKey(),snapshot);saveNavigationSession()}
+function rememberNavigation(){learningRemember();if(!currentNavigationId)return;const el=document.activeElement?.closest('[data-go]');const snapshot={route:state.route,active:state.active,scroll:window.scrollY,library:{...libraryView()},focus:el?{route:el.dataset.go,id:el.dataset.id||''}:null};navigationViews.set(currentNavigationId,snapshot);recentViews.set(viewKey(),snapshot);saveNavigationSession()}
 function restoreNavigation(snapshot){const epoch=++navigationEpoch;if(snapshot?.library)libraryViews.set(viewKey(),{...snapshot.library});render();requestAnimationFrame(()=>requestAnimationFrame(()=>{if(epoch!==navigationEpoch)return;if(snapshot?.focus){const target=[...main.querySelectorAll('[data-go]')].find(e=>e.dataset.go===snapshot.focus.route&&(e.dataset.id||'')===snapshot.focus.id);target?.focus({preventScroll:true})}window.scrollTo({top:snapshot?.scroll||0,behavior:'instant'})}))}
-function go(route,active=null){rememberNavigation();if('speechSynthesis'in window)window.speechSynthesis.cancel();const parent=currentNavigationId;state.route=route;state.active=active;state.search='';currentNavigationId='cdf-'+Date.now()+'-'+(++navigationCounter);history.pushState({cdfNavId:currentNavigationId,parent},'', '#'+route+(active?'/'+encodeURIComponent(active):''));const snapshot=['prayer','reading','lesson','view-personal'].includes(route)?null:recentViews.get(viewKey());restoreNavigation(snapshot)}
+function go(route,active=null){rememberNavigation();if('speechSynthesis'in window)window.speechSynthesis.cancel();const parent=currentNavigationId;state.route=route;state.active=active;state.search='';currentNavigationId='cdf-'+Date.now()+'-'+(++navigationCounter);history.pushState({cdfNavId:currentNavigationId,parent},'', '#'+route+(active?'/'+encodeURIComponent(active):''));const snapshot=['prayer','reading','lesson','question','view-personal'].includes(route)?null:recentViews.get(viewKey());restoreNavigation(snapshot)}
 function goBack(fallback='accueil',id=null){if(history.state?.parent){history.back()}else{go(fallback,id)}}
 function followAddress(){const [route,id]=location.hash.slice(1).split('/');const active=id?decodeURIComponent(id):null;if((route||'accueil')===state.route&&active===state.active&&history.state?.cdfNavId===currentNavigationId)return;rememberNavigation();if('speechSynthesis'in window)window.speechSynthesis.cancel();state.route=route||'accueil';state.active=active;state.search='';currentNavigationId=history.state?.cdfNavId||'cdf-'+Date.now()+'-'+(++navigationCounter);if(!history.state?.cdfNavId)history.replaceState({cdfNavId:currentNavigationId,parent:null},'');restoreNavigation(navigationViews.get(currentNavigationId)||recentViews.get(viewKey()))}
 function libraryBack(label,fallback,id=''){return `<button class="back" type="button" data-back data-fallback="${esc(fallback)}" data-fallback-id="${esc(id)}">← ${esc(label)}</button>`}
 function compactEntry(route,title,description,id='',badge=''){return `<button type="button" class="list-button compact-entry" data-go="${esc(route)}" ${id?`data-id="${esc(id)}"`:''}>${badge?`<span class="entry-badge" aria-hidden="true">${esc(badge)}</span>`:''}<span class="grow"><strong>${esc(title)}</strong><small>${esc(description)}</small></span><span class="chevron" aria-hidden="true">›</span></button>`}
 function filterCount(view=libraryView()){return [view.theme,view.bookId,view.courseId].filter(Boolean).length}
-function searchControls(label,themes=[]){const view=libraryView();const canFilter=themes.length>0||['prieres','bible','decouvrir'].includes(state.route);return `<form class="library-tools library-compact" id="library-search" role="search"><label class="visually-hidden" for="library-query">${esc(label)}</label><div class="library-search-line"><span class="library-search-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></span><input type="search" id="library-query" maxlength="120" autocomplete="off" value="${esc(view.query)}" placeholder="${state.route==='psalms'?'N° ou mot-clé…':state.route==='book'?'N° de chapitre…':state.route==='bible'?'Livre ou passage…':state.route==='decouvrir'||state.route==='course'?'Rechercher une leçon…':'Rechercher une prière…'}" aria-controls="library-results"><button type="button" class="library-query-clear" data-query-clear aria-label="Effacer les mots recherchés" ${view.query?'':'hidden'}>×</button>${canFilter?`<button type="button" class="action secondary library-filter-toggle" id="library-filter-toggle" data-filter-toggle aria-controls="library-filter-panel" aria-expanded="${!!view.filtersOpen}">Filtrer${filterCount(view)?' ('+filterCount(view)+')':''}</button>`:''}</div>${canFilter?`<div class="library-filter-panel" id="library-filter-panel" ${view.filtersOpen?'':'hidden'}>${state.route==='prieres'?`<nav class="library-category-nav" aria-label="Choisir une catégorie"><p>Catégories</p><div>${CATEGORY.map(c=>`<button type="button" class="action secondary library-category-option" data-go="category" data-id="${esc(c.id)}">${esc(c.name)}</button>`).join('')}</div></nav>`:''}${themes.length?`<div class="field"><label for="library-theme">${state.route==='psalms'?'Thème éditorial':'Thème'}</label><select id="library-theme" aria-controls="library-results"><option value="">Tous les thèmes</option>${themes.map(theme=>`<option ${view.theme===theme?'selected':''} value="${esc(theme)}">${esc(theme)}</option>`).join('')}</select></div>`:''}${state.route==='bible'?`<div class="field"><label for="library-book">Livre</label><select id="library-book"><option value="">Tous les livres disponibles</option>${availableBooks().map(book=>`<option value="${esc(book.id)}" ${view.bookId===book.id?'selected':''}>${esc(book.name)}</option>`).join('')}</select></div>`:''}${state.route==='decouvrir'?`<div class="field"><label for="library-course">Parcours</label><select id="library-course"><option value="">Tous les parcours</option>${COURSES.map(c=>`<option value="${esc(c.id)}" ${view.courseId===c.id?'selected':''}>${esc(c.title)}</option>`).join('')}</select></div>`:''}<button type="button" class="action secondary" data-filters-reset>Réinitialiser les filtres</button></div>`:''}${state.route==='psalms'?'<p class="small" id="psalm-jump-message" role="status"></p>':''}</form>`}
-function resultUnit(count){const route=state.route;if(['prieres','category','favorites'].includes(route))return count===1?'prière':'prières';if(route==='psalms')return count===1?'psaume':'psaumes';if(route==='course')return count===1?'leçon':'leçons';if(route==='book')return count===1?'chapitre':'chapitres';return count===1?'résultat':'résultats'}
+function searchControls(label,themes=[]){const view=libraryView();const canFilter=themes.length>0||['prieres','bible','decouvrir'].includes(state.route);return `<form class="library-tools library-compact" id="library-search" role="search"><label class="visually-hidden" for="library-query">${esc(label)}</label><div class="library-search-line"><span class="library-search-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></span><input type="search" id="library-query" maxlength="120" autocomplete="off" value="${esc(view.query)}" placeholder="${state.route==='psalms'?'N° ou mot-clé…':state.route==='book'?'N° de chapitre…':state.route==='bible'?'Livre ou passage…':state.route==='questions'?'Rechercher une question…':state.route==='decouvrir'||state.route==='course'||state.route==='consulted'?'Rechercher une leçon…':'Rechercher une prière…'}" aria-controls="library-results"><button type="button" class="library-query-clear" data-query-clear aria-label="Effacer les mots recherchés" ${view.query?'':'hidden'}>×</button>${canFilter?`<button type="button" class="action secondary library-filter-toggle" id="library-filter-toggle" data-filter-toggle aria-controls="library-filter-panel" aria-expanded="${!!view.filtersOpen}">Filtrer${filterCount(view)?' ('+filterCount(view)+')':''}</button>`:''}</div>${canFilter?`<div class="library-filter-panel" id="library-filter-panel" ${view.filtersOpen?'':'hidden'}>${state.route==='prieres'?`<nav class="library-category-nav" aria-label="Choisir une catégorie"><p>Catégories</p><div>${CATEGORY.map(c=>`<button type="button" class="action secondary library-category-option" data-go="category" data-id="${esc(c.id)}">${esc(c.name)}</button>`).join('')}</div></nav>`:''}${themes.length?`<div class="field"><label for="library-theme">${state.route==='psalms'?'Thème éditorial':'Thème'}</label><select id="library-theme" aria-controls="library-results"><option value="">Tous les thèmes</option>${themes.map(theme=>`<option ${view.theme===theme?'selected':''} value="${esc(theme)}">${esc(theme)}</option>`).join('')}</select></div>`:''}${state.route==='bible'?`<div class="field"><label for="library-book">Livre</label><select id="library-book"><option value="">Tous les livres disponibles</option>${availableBooks().map(book=>`<option value="${esc(book.id)}" ${view.bookId===book.id?'selected':''}>${esc(book.name)}</option>`).join('')}</select></div>`:''}${state.route==='decouvrir'?`<div class="field"><label for="library-course">Parcours</label><select id="library-course"><option value="">Tous les parcours</option>${COURSES.map(c=>`<option value="${esc(c.id)}" ${view.courseId===c.id?'selected':''}>${esc(c.title)}</option>`).join('')}</select></div>`:''}<button type="button" class="action secondary" data-filters-reset>Réinitialiser les filtres</button></div>`:''}${state.route==='psalms'?'<p class="small" id="psalm-jump-message" role="status"></p>':''}</form>`}
+function resultUnit(count){const route=state.route;if(['prieres','category','favorites'].includes(route))return count===1?'prière':'prières';if(route==='psalms')return count===1?'psaume':'psaumes';if(['course','consulted'].includes(route))return count===1?'leçon':'leçons';if(route==='questions')return count===1?'question':'questions';if(route==='book')return count===1?'chapitre':'chapitres';return count===1?'résultat':'résultats'}
 function pageEntries(items,draw,empty){const view=libraryView(),pages=Math.max(1,Math.ceil(items.length/LIBRARY_PAGE_SIZE));view.page=Math.max(1,Math.min(pages,view.page||1));const start=(view.page-1)*LIBRARY_PAGE_SIZE;const message=empty||'Aucun résultat pour cette recherche. Essaie un autre mot ou modifie les filtres.';const numberQuery=state.route==='psalms'&&/^\d+$/.test(view.query.trim());return `<div class="library-summary"><p class="library-status" id="library-status" role="status" tabindex="-1">${items.length} ${resultUnit(items.length)}${pages>1?' · '+(start+1)+'–'+Math.min(start+LIBRARY_PAGE_SIZE,items.length):''}</p>${numberQuery?`<button type="submit" form="library-search" class="action library-number-open" id="open-psalm-number" title="Accès direct, indépendamment du filtre">Ouvrir ${Number(view.query)}</button>`:''}</div>${items.length?`<div class="card-list compact-list">${items.slice(start,start+LIBRARY_PAGE_SIZE).map(draw).join('')}</div>`:`<div class="empty"><p>${esc(message)}</p><button type="button" class="action secondary" data-library-reset>Effacer la recherche</button></div>`}${pages>1?`<nav class="library-pagination" aria-label="Pages des résultats"><button class="action secondary" type="button" data-library-page="${view.page-1}" ${view.page===1?'disabled':''}>← Précédent</button><span>Page ${view.page} / ${pages}</span><button class="action secondary" type="button" data-library-page="${view.page+1}" ${view.page===pages?'disabled':''}>Suivant →</button></nav>`:''}`}
 function readingBookId(r){if(r.psalm)return 'psaumes';return BIBLE_BOOKS.find(b=>b.chapters?.some(c=>c.readings.includes(r.id)))?.id||''}
 function readingRow(r){if(r.psalm)return compactEntry('reading','Psaume '+r.psalm,'Repère éditorial : '+r.title.replace(/^Psaume \d+\s*[—–-]\s*/,''),r.id,String(r.psalm));const b=BIBLE_BOOKS.find(b=>b.id===readingBookId(r));const chapter=b?.chapters.find(c=>c.readings.includes(r.id));return compactEntry('reading',r.title,`${b?.name||'Extrait biblique'} ${chapter?.number||''} · ${chapter?.range||'Passage intégré'} · Louis Segond 1910`,r.id)}
-function lessonRow(l){return compactEntry('lesson',PATH_TITLES[l.id]||l.title,l.intro,l.id)}
-function libraryResults(){const view=libraryView();if(state.route==='prieres')return prayerRows(PRAYERS.filter(p=>prayerMatches(p,view)));if(state.route==='category')return prayerRows(PRAYERS.filter(p=>p.category===state.active&&prayerMatches(p,view)));if(state.route==='favorites')return prayerRows(PRAYERS.filter(p=>state.favorites.includes(p.id)&&prayerMatches(p,view)));if(state.route==='psalms'){const numeric=/^\d+$/.test(view.query.trim());const items=psalmItems().filter(r=>(!view.theme||psalmTags(r).includes(view.theme))&&(numeric?r.psalm===Number(view.query):matchesSearch([r.title,r.intro,r.text,psalmTags(r).join(' ')].join(' '),view.query))).sort((a,b)=>a.psalm-b.psalm);return pageEntries(items,readingRow,numeric?'Ce numéro n’est pas encore intégré, ou ne correspond pas au thème sélectionné. Modifie le filtre ou recherche un psaume disponible.':undefined)}if(state.route==='bible'){if(!view.query&&!view.bookId)return pageEntries(availableBooks(),book=>compactEntry(book.psalms?'psalms':'book',book.name,book.psalms?psalmItems().length+' psaumes complets · Louis Segond 1910':availableChapters(book).length+' chapitre avec un extrait · Louis Segond 1910',book.psalms?'':book.id,'▤'));const rows=[];if(!view.bookId){for(const book of availableBooks())if(matchesSearch(book.name,view.query))rows.push({book})}for(const reading of READINGS){if((!view.bookId||readingBookId(reading)===view.bookId)&&matchesSearch([reading.title,reading.intro,reading.source].join(' '),view.query))rows.push({reading})}return pageEntries(rows,row=>row.reading?readingRow(row.reading):compactEntry(row.book.psalms?'psalms':'book',row.book.name,'Ouvrir les passages disponibles · Louis Segond 1910',row.book.psalms?'':row.book.id,'▤'))}if(state.route==='book'){const book=BIBLE_BOOKS.find(b=>b.id===state.active);return pageEntries(availableChapters(book||{}).filter(c=>matchesSearch('Chapitre '+c.number+' '+c.range,view.query)),c=>compactEntry('reading','Chapitre '+c.number,'Extrait intégré : '+c.range+' · Louis Segond 1910',c.readings.find(id=>READINGS.some(r=>r.id===id&&r.text))))}if(state.route==='decouvrir'){if(!view.query&&!view.courseId)return pageEntries([...COURSES.map(c=>({course:c})),{lesson:BIBLE_GUIDE}],row=>row.lesson?lessonRow(row.lesson):compactEntry('course',row.course.title,row.course.lessons.length+' leçons · '+row.course.description,row.course.id,'✦'));const scope=view.courseId?COURSES.find(c=>c.id===view.courseId)?.lessons:LESSONS.map(l=>l.id).concat(BIBLE_GUIDE.id);return pageEntries([...LESSONS,BIBLE_GUIDE].filter(l=>scope?.includes(l.id)&&matchesSearch([l.title,PATH_TITLES[l.id],l.intro].join(' '),view.query)),lessonRow)}if(state.route==='course'){const course=COURSES.find(c=>c.id===state.active);return pageEntries((course?.lessons||[]).map(id=>LESSONS.find(l=>l.id===id)).filter(l=>l&&matchesSearch([l.title,PATH_TITLES[l.id],l.intro].join(' '),view.query)),lessonRow)}return ''}
+function lessonRow(l){return compactEntry('lesson',PATH_TITLES[l.id]||l.title,l.intro+(learning.enabled&&learning.entries[l.id]?' · Consultée sur cet appareil':''),l.id)}
+function libraryResults(){const view=libraryView();if(state.route==='questions')return pageEntries(FAITH_QUESTIONS.filter(q=>matchesSearch(q.title+' '+q.intro,view.query)),q=>compactEntry('question',q.title,q.intro,q.id),'Aucune question pour ces mots. Essaie par exemple doute, pardon ou messe.');if(state.route==='consulted')return pageEntries(consultedLessons().filter(l=>matchesSearch(l.title+' '+l.intro,view.query)),l=>lessonRow(l)+(learning.enabled?`<button class="action secondary learning-resume" data-resume-lesson="${esc(l.id)}">Reprendre la lecture</button>`:''),learning.enabled?'Aucune leçon consultée pour le moment, ou aucun résultat pour ces mots. Tu peux choisir librement une leçon dans Découvrir.':'Le suivi est désactivé. Tu peux toujours choisir librement toutes les leçons.');if(state.route==='prieres')return prayerRows(PRAYERS.filter(p=>prayerMatches(p,view)));if(state.route==='category')return prayerRows(PRAYERS.filter(p=>p.category===state.active&&prayerMatches(p,view)));if(state.route==='favorites')return prayerRows(PRAYERS.filter(p=>state.favorites.includes(p.id)&&prayerMatches(p,view)));if(state.route==='psalms'){const numeric=/^\d+$/.test(view.query.trim());const items=psalmItems().filter(r=>(!view.theme||psalmTags(r).includes(view.theme))&&(numeric?r.psalm===Number(view.query):matchesSearch([r.title,r.intro,r.text,psalmTags(r).join(' ')].join(' '),view.query))).sort((a,b)=>a.psalm-b.psalm);return pageEntries(items,readingRow,numeric?'Ce numéro n’est pas encore intégré, ou ne correspond pas au thème sélectionné. Modifie le filtre ou recherche un psaume disponible.':undefined)}if(state.route==='bible'){if(!view.query&&!view.bookId)return pageEntries(availableBooks(),book=>compactEntry(book.psalms?'psalms':'book',book.name,book.psalms?psalmItems().length+' psaumes complets · Louis Segond 1910':availableChapters(book).length+' chapitre avec un extrait · Louis Segond 1910',book.psalms?'':book.id,'▤'));const rows=[];if(!view.bookId){for(const book of availableBooks())if(matchesSearch(book.name,view.query))rows.push({book})}for(const reading of READINGS){if((!view.bookId||readingBookId(reading)===view.bookId)&&matchesSearch([reading.title,reading.intro,reading.source].join(' '),view.query))rows.push({reading})}return pageEntries(rows,row=>row.reading?readingRow(row.reading):compactEntry(row.book.psalms?'psalms':'book',row.book.name,'Ouvrir les passages disponibles · Louis Segond 1910',row.book.psalms?'':row.book.id,'▤'))}if(state.route==='book'){const book=BIBLE_BOOKS.find(b=>b.id===state.active);return pageEntries(availableChapters(book||{}).filter(c=>matchesSearch('Chapitre '+c.number+' '+c.range,view.query)),c=>compactEntry('reading','Chapitre '+c.number,'Extrait intégré : '+c.range+' · Louis Segond 1910',c.readings.find(id=>READINGS.some(r=>r.id===id&&r.text))))}if(state.route==='decouvrir'){if(!view.query&&!view.courseId)return pageEntries([...COURSES.map(c=>({course:c})),{lesson:BIBLE_GUIDE}],row=>row.lesson?lessonRow(row.lesson):compactEntry('course',row.course.title,row.course.lessons.length+' leçons · '+row.course.description,row.course.id,'✦'));const scope=view.courseId?COURSES.find(c=>c.id===view.courseId)?.lessons:LESSONS.map(l=>l.id).concat(BIBLE_GUIDE.id);return pageEntries([...LESSONS,BIBLE_GUIDE].filter(l=>scope?.includes(l.id)&&matchesSearch([l.title,PATH_TITLES[l.id],l.intro].join(' '),view.query)),lessonRow)}if(state.route==='course'){const course=COURSES.find(c=>c.id===state.active);return pageEntries((course?.lessons||[]).map(id=>LESSONS.find(l=>l.id===id)).filter(l=>l&&matchesSearch([l.title,PATH_TITLES[l.id],l.intro].join(' '),view.query)),lessonRow)}return ''}
 function refreshLibrary(){const region=document.querySelector('#library-results');if(region)region.innerHTML=libraryResults();const view=libraryView();const clear=document.querySelector('[data-query-clear]');if(clear)clear.hidden=!view.query;const toggle=document.querySelector('[data-filter-toggle]');if(toggle){toggle.textContent='Filtrer'+(filterCount(view)?' ('+filterCount(view)+')':'');toggle.setAttribute('aria-expanded',String(!!view.filtersOpen))}const panel=document.querySelector('#library-filter-panel');if(panel)panel.hidden=!view.filtersOpen}
 function handleLibraryClick(e){const back=e.target.closest('[data-back]');if(back){goBack(back.dataset.fallback||'accueil',back.dataset.fallbackId||null);return true}if(e.target.closest('[data-filter-toggle]')){libraryView().filtersOpen=!libraryView().filtersOpen;refreshLibrary();return true}if(e.target.closest('[data-query-clear]')){libraryView().query='';libraryView().page=1;const input=document.querySelector('#library-query');input.value='';refreshLibrary();input.focus();return true}if(e.target.closest('[data-filters-reset]')){Object.assign(libraryView(),{theme:'',bookId:'',courseId:'',page:1});for(const id of ['library-theme','library-book','library-course']){const select=document.getElementById(id);if(select)select.value=''}refreshLibrary();return true}const reset=e.target.closest('[data-library-reset]');if(reset){Object.assign(libraryView(),{query:'',theme:'',bookId:'',courseId:'',page:1});const input=document.querySelector('#library-query');if(input)input.value='';for(const id of ['library-theme','library-book','library-course']){const select=document.getElementById(id);if(select)select.value=''}refreshLibrary();const message=document.querySelector('#psalm-jump-message');if(message)message.textContent='';input?.focus();return true}const page=e.target.closest('[data-library-page]');if(page&&!page.disabled){libraryView().page=Number(page.dataset.libraryPage);refreshLibrary();const status=document.querySelector('#library-status');status?.focus({preventScroll:true});status?.scrollIntoView({block:'start',behavior:'instant'});return true}return false}
 
@@ -680,7 +1565,7 @@ function availableChapters(book){return (book.chapters||[]).filter(c=>c.readings
 function availableBooks(){return BIBLE_BOOKS.filter(book=>book.psalms?psalmItems().length:availableChapters(book).length)}
 function bible(){const books=availableBooks();return head('Bible et lecture','Choisir un livre, puis un chapitre réellement intégré.')+button('aelf','Lectures du jour','Lectures liturgiques AELF · En ligne','☀')+searchControls('Rechercher un livre ou un passage')+`<div id="library-results">${libraryResults()}</div><div class="notice small">Louis Segond 1910, domaine public. Les cinq psaumes sont complets ; Matthieu 11 et Jean 14 sont des extraits, pas des chapitres complets. Cette traduction n’est pas la traduction liturgique officielle catholique.</div></div>`}
 function book(){const book=BIBLE_BOOKS.find(b=>b.id===state.active);if(!book)return bible();if(book.psalms)return psalms();const chapters=availableChapters(book);return head(book.name,'Chapitres disponibles · Louis Segond 1910.')+libraryBack('Retour aux livres','bible')+`${searchControls("Rechercher un chapitre ou un passage")}<div id="library-results">${libraryResults()}</div><p class="editorial-note">Seul le passage indiqué est intégré. Aucun chapitre absent n’est activé.</p></div>`}
-function discover(){return head('Découvrir la foi','Choisir un parcours ou trouver une leçon, librement.')+searchControls('Rechercher une leçon ou un parcours')+`<div id="library-results">${libraryResults()}</div><p class="editorial-note">${LESSONS.length} leçons de découverte de la tradition chrétienne catholique. Propositions éditoriales à relire avec un prêtre. Aucun ordre ni progression obligatoire.</p></div>`}
+function discover(){return head('Découvrir la foi','Choisir un parcours ou trouver une leçon, librement.')+learningLinks()+searchControls('Rechercher une leçon ou un parcours')+`<div id="library-results">${libraryResults()}</div><p class="editorial-note">${LESSONS.length} leçons de découverte de la tradition chrétienne catholique. Propositions éditoriales à relire avec un prêtre. Aucun ordre ni progression obligatoire.</p></div>`}
 function course(){const c=COURSES.find(c=>c.id===state.active);if(!c)return discover();return head(c.title,c.description)+libraryBack('Retour aux parcours','decouvrir')+searchControls('Rechercher dans ce parcours')+`<div id="library-results">${libraryResults()}</div><p class="editorial-note library-note">Tu peux choisir n’importe quelle leçon et revenir à cette liste à tout moment.</p></div>`}
 function favorites(){const items=PRAYERS.filter(p=>state.favorites.includes(p.id));return head('Mes favoris','Ces préférences restent sur cet appareil.')+libraryBack('Retour aux prières','prieres')+(items.length?searchControls('Rechercher dans mes favoris',prayerThemes(items))+`<div id="library-results">${libraryResults()}</div>`:'<p class="empty">Aucun favori pour le moment. Ouvre une prière puis choisis « Ajouter aux favoris ».</p>')+'</div>'}
 document.addEventListener('input',e=>{if(e.target.id==='library-query'){const message=document.querySelector('#psalm-jump-message');if(message)message.textContent='';libraryView().query=e.target.value;libraryView().page=1;refreshLibrary()}});
@@ -695,17 +1580,17 @@ function textSizeControl(){return `<details class="text-size" id="text-size-pane
 function setReadingSize(value){state.size=Math.max(20,Math.min(36,Number(value)));document.documentElement.style.setProperty('--reading',state.size+'px');persist();const range=document.querySelector('#reading-size');if(range){range.value=state.size;range.setAttribute('aria-valuetext',state.size+' pixels');document.querySelector('#size-value').value=state.size+' px';document.querySelector('[data-size="-2"]').disabled=state.size<=20;document.querySelector('[data-size="2"]').disabled=state.size>=36;}}
 function psalmNoteText(p){const note=p.psalmNote;if(!note)return '';return ['Commentaire original de Chemin de Foi, distinct du texte biblique.','Contexte et thème. '+note.contextTheme,'Sentiments exprimés. '+note.feelings,'À retenir. '+note.takeaway,'Réflexion facultative. '+note.reflection,'Références. '+note.source].join('. ')}
 function psalmNoteMarkup(p){const note=p.psalmNote;if(!note)return '';return `<section class="lesson-body" aria-labelledby="psalm-note-title"><div class="divider"></div><h2 id="psalm-note-title">Pour comprendre ce psaume</h2><p class="small">Commentaire original de Chemin de Foi, distinct du texte biblique. Proposition éditoriale à relire avec un prêtre.</p><p><strong>Contexte et thème :</strong><br>${esc(note.contextTheme)}</p><p><strong>Sentiments exprimés :</strong><br>${esc(note.feelings)}</p><p><strong>À retenir :</strong><br>${esc(note.takeaway)}</p><p><strong>Réflexion facultative :</strong><br>${esc(note.reflection)}</p><p class="source">${esc(note.source)}<br>${note.references.map(r=>`<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.label)}</a>`).join(' · ')}</p></section>`}
-function reader(type){const p=(type==='prayer'?PRAYERS:type==='reading'?READINGS:[...LESSONS,BIBLE_GUIDE]).find(p=>p.id===state.active);if(!p)return type==='lesson'?discover():type==='reading'?bible():prayers();const own=type==='prayer';const isFav=state.favorites.includes(p.id);const contents=type==='lesson'?`<p class="small">Repères de tradition chrétienne catholique — proposition éditoriale à relire.</p>`+p.paragraphs.map(x=>`<p>${esc(x)}</p>`).join('')+(p.example?`<p><strong>Exemple concret :</strong><br>${esc(p.example)}</p>`:''):`<p>${esc(p.text)}</p>`;const parentCourse=type==='lesson'?COURSES.find(c=>c.lessons.includes(p.id)):null;const parentBook=type==='reading'&&!p.psalm?BIBLE_BOOKS.find(b=>b.chapters?.some(c=>c.readings.includes(p.id))):null;const back=type==='lesson'?(parentCourse?'course':'decouvrir'):type==='reading'?(p.psalm?'psalms':parentBook?'book':'bible'):'category';const backId=type==='prayer'?p.category:parentCourse?.id||parentBook?.id||'';return `<div class="content">${libraryBack("Retour à la liste",back,backId)}<section class="reading-stage">${textSizeControl()}<div class="reading-card"><p class="eyebrow">${type==='lesson'?'Découvrir la foi':type==='reading'?'La Bible':'Prière'}</p><h1>${esc(type==='lesson'?(PATH_TITLES[p.id]||p.title):p.title)}</h1>${p.psalm?`<p class="small">Titre thématique et introduction : repères éditoriaux de Chemin de Foi, distincts du texte biblique.</p>`:''}${p.intro?`<p class="small">${esc(p.intro)}</p>`:''}<div class="divider" style="background:#9b78546e"></div><div class="lesson-body">${contents}</div>${type==='lesson'?`<div class="notice"><strong>Pour réfléchir, sans obligation :</strong><br>${esc(p.question)}</div><p class="editorial-note">Texte de découverte à relire avec un prêtre avant publication.</p>`:''}${p.source?`<p class="source">${esc(p.source)}${p.references?'<br>'+p.references.map(r=>`<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.label)}</a>`).join(' · '):''}</p>`:''}${p.psalmNote?psalmNoteMarkup(p):''}${own?`<p class="source">Prière originale rédigée pour Chemin de Foi. Proposition éditoriale à relire avant publication.</p>`:''}</div><div class="reading-actions"><div class="actions"><button class="action" id="speak" type="button">▶ Écouter</button><button class="action secondary" id="stop-speak" type="button">■ Arrêter</button>${own?`<button class="heart-btn" data-fav="${esc(p.id)}" type="button" aria-pressed="${isFav}">${isFav?'★ Favori':'☆ Ajouter aux favoris'}</button>`:''}</div><p class="small" id="speech-message">La lecture vocale dépend des voix disponibles sur ton appareil.</p></div></section></div>`}
+function reader(type){const educational=['lesson','question'].includes(type);const p=(type==='prayer'?PRAYERS:type==='reading'?READINGS:type==='question'?FAITH_QUESTIONS:[...LESSONS,BIBLE_GUIDE]).find(p=>p.id===state.active);if(!p)return type==='question'?questionsPage():type==='lesson'?discover():type==='reading'?bible():prayers();const own=type==='prayer';const isFav=state.favorites.includes(p.id);const contents=educational?`<p class="small">Repères de tradition chrétienne catholique — proposition éditoriale à relire.</p>`+extendedLessonBody(p):`<p>${esc(p.text)}</p>`;const parentCourse=type==='lesson'?COURSES.find(c=>c.lessons.includes(p.id)):null;const parentBook=type==='reading'&&!p.psalm?BIBLE_BOOKS.find(b=>b.chapters?.some(c=>c.readings.includes(p.id))):null;const back=type==='question'?'questions':type==='lesson'?(parentCourse?'course':'decouvrir'):type==='reading'?(p.psalm?'psalms':parentBook?'book':'bible'):'category';const backId=type==='prayer'?p.category:parentCourse?.id||parentBook?.id||'';return `<div class="content">${libraryBack("Retour à la liste",back,backId)}<section class="reading-stage">${textSizeControl()}<div class="reading-card"><p class="eyebrow">${type==='question'?'Mes questions sur la foi':type==='lesson'?'Découvrir la foi':type==='reading'?'La Bible':'Prière'}</p><h1>${esc(type==='lesson'?(PATH_TITLES[p.id]||p.title):p.title)}</h1>${p.psalm?`<p class="small">Titre thématique et introduction : repères éditoriaux de Chemin de Foi, distincts du texte biblique.</p>`:''}${p.intro?`<p class="${p.sections||type==='question'?'':'small'}">${esc(p.intro)}</p>`:''}<div class="divider" style="background:#9b78546e"></div><div class="lesson-body ${p.sections||type==='question'?'extended-lesson':''}">${contents}</div>${educational?`<div class="notice"><strong>Pour réfléchir, sans obligation :</strong><br>${esc(p.question)}</div><p class="editorial-note">Texte de découverte à relire avec un prêtre avant publication.</p>`:''}${p.source?`<p class="source">${esc(p.source)}${p.references?'<br>'+p.references.map(r=>`<a href="${esc(r.url)}" target="_blank" rel="noopener noreferrer">${esc(r.label)}</a>`).join(' · '):''}</p>`:''}${p.related?`<button class="action secondary" data-go="lesson" data-id="${esc(p.related)}">Poursuivre avec une leçon liée</button>`:''}${p.psalmNote?psalmNoteMarkup(p):''}${own?`<p class="source">Prière originale rédigée pour Chemin de Foi. Proposition éditoriale à relire avant publication.</p>`:''}</div><div class="reading-actions"><div class="actions"><button class="action" id="speak" type="button">▶ Écouter</button><button class="action secondary" id="stop-speak" type="button">■ Arrêter</button>${own?`<button class="heart-btn" data-fav="${esc(p.id)}" type="button" aria-pressed="${isFav}">${isFav?'★ Favori':'☆ Ajouter aux favoris'}</button>`:''}</div><p class="small" id="speech-message">La lecture vocale dépend des voix disponibles sur ton appareil.</p></div></section></div>`}
 function personal(){return head('Mes prières personnelles','Tes textes restent uniquement dans ce navigateur. Aucun envoi à un serveur.')+`<button class="back" data-go="plus">← Mon espace</button><div class="actions"><button class="action" data-go="edit-personal">+ Écrire une prière</button></div>${state.personal.length?`<div class="card-list">${state.personal.map(x=>button('view-personal',x.title,'Prière personnelle • Sur cet appareil','✎',x.id)).join('')}</div>`:'<p class="empty">Tu n’as pas encore écrit de prière personnelle.</p>'}<div class="notice small">Attention : effacer les données du navigateur ou changer de téléphone peut supprimer ces textes. Ils ne sont pas synchronisés.</div></div>`}
 function editPersonal(){const p=state.personal.find(x=>x.id===state.editing)||{title:'',text:''};return head(state.editing?'Modifier ma prière':'Écrire une prière','Il n’y a pas de bonne ou de mauvaise façon d’exprimer tes pensées.')+`<button class="back" data-go="personal">← Retour</button><form id="personal-form"><div class="field"><label for="ptitle">Titre</label><input id="ptitle" maxlength="90" required value="${esc(p.title)}" placeholder="Une prière du soir…"></div><div class="field"><label for="ptext">Ma prière</label><textarea id="ptext" maxlength="8000" required placeholder="Seigneur…">${esc(p.text)}</textarea></div><button class="action" type="submit">Enregistrer sur cet appareil</button></form></div>`}
 function viewPersonal(){const p=state.personal.find(x=>x.id===state.active);if(!p)return personal();return `<div class="content"><button class="back" data-go="personal">← Mes prières personnelles</button><section class="reading-stage">${textSizeControl()}<div class="reading-card"><p class="eyebrow">Ma prière personnelle</p><h1>${esc(p.title)}</h1><div class="divider"></div><p>${esc(p.text)}</p></div><div class="reading-actions actions"><button class="action" id="speak">▶ Écouter</button><button class="action secondary" id="stop-speak">■ Arrêter</button><button class="action secondary" id="edit-this">✎ Modifier</button><button class="action secondary" id="delete-this">Supprimer</button></div></section></div>`}
 function settings(){return head('Réglages','Choisis ce qui rend la lecture confortable.')+`<section class="panel"><h2>Confort visuel</h2><div class="settings-option"><div><strong>Taille du texte de lecture</strong><p class="setting-description">Grand, clair et facile à suivre</p></div><select id="size-select" aria-label="Taille du texte de lecture">${[20,22,24,26,28,30,32,34,36].map(s=>`<option value="${s}" ${state.size===s?'selected':''}>${s} px</option>`).join('')}</select></div><div class="settings-option"><div><strong>Ambiance</strong><p class="setting-description">Choisir le contraste qui te convient</p></div><select id="theme-select" aria-label="Thème"><option value="dark" ${state.theme==='dark'?'selected':''}>Crème chaleureuse</option><option value="light" ${state.theme==='light'?'selected':''}>Ivoire lumineux</option></select></div><div class="notice small">Les deux ambiances restent claires pour faciliter la lecture. Tu peux également utiliser le zoom du navigateur.</div></section><section class="panel"><h2>Vie privée</h2><p>Les favoris, tes prières personnelles et les réglages sont conservés localement dans ton navigateur. Aucun compte, aucune publicité et aucun suivi d'utilisation.</p><button class="action secondary" id="clear-storage">Supprimer mes données locales</button></section></div>`}
 function plus(){return head('Mon espace','Tout est facultatif, tu es libre d’avancer à ton rythme.')+`<div class="card-list">${button('favorites','Mes favoris','Retrouver les prières sauvegardées','☆')}${button('personal','Mes prières personnelles','Écrire et conserver mes mots sur cet appareil','✎')}${button('settings','Confort de lecture','Taille des caractères et ambiance','⚙')}${button('about','À propos de Chemin de Foi','Notre intention et le statut de cette démonstration','✧')}</div><div class="panel"><h3>Famille et relations</h3><p class="subtle">Prières et réflexions pour la famille, l'écoute et le mariage.</p><button class="action secondary" data-go="category" data-id="famille">Voir ces prières</button></div></div>`}
 function about(){return head('À propos','Une application pour découvrir et approfondir la foi chrétienne.')+`<div class="panel"><h2>Une porte ouverte, jamais une obligation.</h2><p>Chemin de Foi est un projet indépendant d'inspiration chrétienne : des prières, des textes et de courtes explications proposés dans un cadre paisible et bienveillant.</p><p>La version actuelle est un prototype de démonstration. Les textes pédagogiques et les contenus religieux feront l'objet d'une relecture avec des accompagnateurs compétents avant une diffusion au public.</p><p>Aucune affiliation officielle avec l'Église n'est revendiquée. Cette application ne remplace pas un accompagnement spirituel, médical ou psychologique lorsque cela est nécessaire.</p></div></div>`}
-function render(){document.body.classList.add('theme-light');document.body.classList.toggle('theme-cream',state.theme==='dark');main.dataset.section=state.route;document.body.dataset.section=state.route;document.body.dataset.library=String(['prieres','category','favorites','psalms','bible','book','decouvrir','course'].includes(state.route));document.documentElement.style.setProperty('--reading',state.size+'px');main.innerHTML=({accueil:home,prieres:prayers,category,bible,aelf:aelfPage,psalms,book,course,decouvrir:discover,prayer:()=>reader('prayer'),reading:()=>reader('reading'),lesson:()=>reader('lesson'),favorites,personal,'edit-personal':editPersonal,'view-personal':viewPersonal,settings,plus,about}[state.route]||home)();document.querySelectorAll('.nav-button').forEach(b=>{const r=b.dataset.route;const active=state.route===r||(['prayer','category','favorites','personal','edit-personal','view-personal'].includes(state.route)&&r==='prieres')||(['reading','psalms','book','aelf'].includes(state.route)&&r==='bible')||(['lesson','course'].includes(state.route)&&r==='decouvrir')||(['settings','about'].includes(state.route)&&r==='plus');b.classList.toggle('selected',active);if(active)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});aelfAfterRender();}
+function render(){document.body.classList.add('theme-light');document.body.classList.toggle('theme-cream',state.theme==='dark');main.dataset.section=state.route;document.body.dataset.section=state.route;document.body.dataset.library=String(['prieres','category','favorites','psalms','bible','book','decouvrir','course','questions','consulted'].includes(state.route));document.documentElement.style.setProperty('--reading',state.size+'px');main.innerHTML=({accueil:home,prieres:prayers,category,bible,aelf:aelfPage,questions:questionsPage,consulted:consultedPage,question:()=>reader('question'),psalms,book,course,decouvrir:discover,prayer:()=>reader('prayer'),reading:()=>reader('reading'),lesson:()=>reader('lesson'),favorites,personal,'edit-personal':editPersonal,'view-personal':viewPersonal,settings,plus,about}[state.route]||home)();document.querySelectorAll('.nav-button').forEach(b=>{const r=b.dataset.route;const active=state.route===r||(['prayer','category','favorites','personal','edit-personal','view-personal'].includes(state.route)&&r==='prieres')||(['reading','psalms','book','aelf'].includes(state.route)&&r==='bible')||(['lesson','course','questions','question','consulted'].includes(state.route)&&r==='decouvrir')||(['settings','about'].includes(state.route)&&r==='plus');b.classList.toggle('selected',active);if(active)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});aelfAfterRender();learningAfterRender();}
 let toastTimer;function showToast(msg){let n=document.querySelector('#toast');if(!n){n=document.createElement('div');n.id='toast';n.setAttribute('role','status');n.style.cssText='position:fixed;left:50%;transform:translateX(-50%);bottom:93px;z-index:30;max-width:min(90vw,500px);padding:12px 18px;border-radius:15px;color:#213145;background:#ffe7bd;box-shadow:0 6px 30px #0008;text-align:center';document.body.append(n)}n.textContent=msg;clearTimeout(toastTimer);toastTimer=setTimeout(()=>n.remove(),3400)}
-function speak(){if(state.route==='aelf'){showToast('La synthèse vocale n’est pas autorisée pour les textes AELF.');return;}if(!('speechSynthesis'in window)){showToast('La lecture vocale n’est pas disponible sur cet appareil.');return;}let p=(state.route==='prayer'?PRAYERS:state.route==='reading'?READINGS:state.route==='lesson'?[...LESSONS,BIBLE_GUIDE]:state.personal).find(x=>x.id===state.active);if(!p)return;window.speechSynthesis.cancel();const text=state.route==='lesson'?[...(p.paragraphs||[]),p.example?'Exemple concret. '+p.example:'',p.question?'Pour réfléchir, sans obligation. '+p.question:'',p.source||''].filter(Boolean).join('. '):state.route==='reading'?[p.intro,p.text,p.source,psalmNoteText(p)].filter(Boolean).join('. '):p.text;const u=new SpeechSynthesisUtterance(p.title+'. '+text);u.lang='fr-FR';u.rate=.86;u.pitch=1;u.onerror=()=>showToast('Lecture vocale indisponible : vérifier les voix françaises installées.');window.speechSynthesis.speak(u);showToast('Lecture vocale démarrée si une voix française est disponible.');}
-document.addEventListener('click',e=>{if(handleLibraryClick(e))return;if(e.target.closest('#text-size-panel summary')){e.preventDefault();const panel=document.querySelector('#text-size-panel');panel.open=!panel.open;state.sizeOpen=panel.open;persist();return}const goEl=e.target.closest('[data-go]');if(goEl){if(goEl.dataset.go!=='edit-personal')state.editing=null;go(goEl.dataset.go,goEl.dataset.id||null);return}const nav=e.target.closest('[data-route]');if(nav){go(nav.dataset.route);return}const f=e.target.closest('[data-fav]');if(f){let id=f.dataset.fav;state.favorites=state.favorites.includes(id)?state.favorites.filter(x=>x!==id):[...state.favorites,id];persist();render();return}const siz=e.target.closest('[data-size]');if(siz){setReadingSize(state.size+Number(siz.dataset.size));return}if(e.target.closest('#speak')){speak();return}if(e.target.closest('#stop-speak')){if('speechSynthesis' in window)window.speechSynthesis.cancel();return}if(e.target.closest('#header-settings')){go('settings');return}if(e.target.closest('#edit-this')){state.editing=state.active;go('edit-personal');return}if(e.target.closest('#delete-this')){if(confirm('Supprimer définitivement cette prière personnelle de cet appareil ?')){state.personal=state.personal.filter(x=>x.id!==state.active);persist();go('personal')}return}if(e.target.closest('#clear-storage')){if(confirm('Supprimer tous les favoris, prières personnelles et réglages de ce navigateur ?')){state.personal=[];state.favorites=[];state.size=24;state.theme='light';libraryViews.clear();navigationViews.clear();recentViews.clear();try{sessionStorage.removeItem(NAVIGATION_STORE)}catch{}persist();go('settings');showToast('Données locales effacées.')}return}});
+function speak(){if(state.route==='aelf'){showToast('La synthèse vocale n’est pas autorisée pour les textes AELF.');return;}if(!('speechSynthesis'in window)){showToast('La lecture vocale n’est pas disponible sur cet appareil.');return;}let p=(state.route==='prayer'?PRAYERS:state.route==='reading'?READINGS:state.route==='lesson'?[...LESSONS,BIBLE_GUIDE]:state.route==='question'?FAITH_QUESTIONS:state.personal).find(x=>x.id===state.active);if(!p)return;window.speechSynthesis.cancel();const text=['lesson','question'].includes(state.route)?[p.intro||'',...(p.sections?p.sections.flatMap(s=>[s.title,s.text]):p.paragraphs||[]),p.example?'Exemple concret. '+p.example:'',p.summary?'À retenir. '+p.summary.join('. '):'',p.invitation?'Pour poursuivre. '+p.invitation:'',p.question?'Pour réfléchir, sans obligation. '+p.question:'',p.source||''].filter(Boolean).join('. '):state.route==='reading'?[p.intro,p.text,p.source,psalmNoteText(p)].filter(Boolean).join('. '):p.text;const u=new SpeechSynthesisUtterance(p.title+'. '+text);u.lang='fr-FR';u.rate=.86;u.pitch=1;u.onerror=()=>showToast('Lecture vocale indisponible : vérifier les voix françaises installées.');window.speechSynthesis.speak(u);showToast('Lecture vocale démarrée si une voix française est disponible.');}
+document.addEventListener('click',e=>{if(handleLibraryClick(e))return;if(e.target.closest('#text-size-panel summary')){e.preventDefault();const panel=document.querySelector('#text-size-panel');panel.open=!panel.open;state.sizeOpen=panel.open;persist();return}const goEl=e.target.closest('[data-go]');if(goEl){if(goEl.dataset.go!=='edit-personal')state.editing=null;go(goEl.dataset.go,goEl.dataset.id||null);return}const nav=e.target.closest('[data-route]');if(nav){go(nav.dataset.route);return}const f=e.target.closest('[data-fav]');if(f){let id=f.dataset.fav;state.favorites=state.favorites.includes(id)?state.favorites.filter(x=>x!==id):[...state.favorites,id];persist();render();return}const siz=e.target.closest('[data-size]');if(siz){setReadingSize(state.size+Number(siz.dataset.size));return}if(e.target.closest('#speak')){speak();return}if(e.target.closest('#stop-speak')){if('speechSynthesis' in window)window.speechSynthesis.cancel();return}if(e.target.closest('#header-settings')){go('settings');return}if(e.target.closest('#edit-this')){state.editing=state.active;go('edit-personal');return}if(e.target.closest('#delete-this')){if(confirm('Supprimer définitivement cette prière personnelle de cet appareil ?')){state.personal=state.personal.filter(x=>x.id!==state.active);persist();go('personal')}return}if(e.target.closest('#clear-storage')){if(confirm('Supprimer tous les favoris, prières personnelles et réglages de ce navigateur ?')){learningReset();state.personal=[];state.favorites=[];state.size=24;state.theme='light';libraryViews.clear();navigationViews.clear();recentViews.clear();try{sessionStorage.removeItem(NAVIGATION_STORE)}catch{}persist();go('settings');showToast('Données locales effacées.')}return}});
 document.addEventListener('toggle',e=>{if(e.target.id==='text-size-panel'&&e.target.isConnected){state.sizeOpen=e.target.open;persist()}},true);
 document.addEventListener('input',e=>{if(e.target.id==='reading-size')setReadingSize(e.target.value)});
 document.addEventListener('change',e=>{if(e.target.id==='size-select'){state.size=Number(e.target.value);persist();render()}if(e.target.id==='theme-select'){state.theme=e.target.value;persist();render()}});
