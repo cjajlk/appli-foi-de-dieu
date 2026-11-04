@@ -23,3 +23,6 @@ Pour un psaume, saisir un numéro puis choisir Ouvrir [numéro] ou appuyer sur E
 
 
 Lot 3.3 — Six prières originales de 122 à 130 mots, trois leçons pratiques et cinq fiches de compréhension des psaumes. Total : 30 prières, 13 leçons, 5 psaumes complets et 2 extraits évangéliques. Les textes antérieurs sont conservés mot pour mot. Les commentaires sont distincts de la Bible, à l’écran et dans la lecture vocale. Aucune nouvelle traduction ni nouvelle fonctionnalité. Sources complémentaires : Sources_Lot3.3.json. Dossier de relecture religieuse actualisé, sans approbation officielle revendiquée.
+
+
+4 novembre 2026 — Lectures du jour AELF, sous l’identité CJAJLK : ouvrir Bible et lecture > Lectures du jour. Consultation en ligne uniquement, source AELF visible, aucune synthèse vocale sur ces textes. Aucun cache persistant des réponses AELF. Les autres contenus locaux et leurs voix sont conservés. Conditions et documentation : INTEGRATION_AELF.md. Ne pas publier sans accord de CJ.
