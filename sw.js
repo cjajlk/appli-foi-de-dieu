@@ -1,4 +1,4 @@
-const CACHE='chemin-de-foi-essentiels-20261104-v1';const FILES=['./','./index.html','./styles.css','./app.js','./manifest.webmanifest','./assets/icon.svg','./assets/accueil-cinema.webp','./assets/hero.webp','./assets/ambiance.webp'];
+const CACHE='chemin-de-foi-lot4-20261105-v1';const FILES=['./','./index.html','./styles.css','./app.js','./manifest.webmanifest','./assets/icon.svg','./assets/accueil-cinema.webp','./assets/hero.webp','./assets/ambiance.webp'];
 const STATIC=new Set(FILES.map(p=>new URL(p,self.location.href).href));
 self.addEventListener('install',ev=>{ev.waitUntil(caches.open(CACHE).then(c=>c.addAll(FILES)).then(()=>self.skipWaiting()))});
 self.addEventListener('activate',ev=>{ev.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k.startsWith('chemin-de-foi-')&&k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim()))});

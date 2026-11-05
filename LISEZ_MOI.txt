@@ -32,3 +32,6 @@ Lot 3.3 — Six prières originales de 122 à 130 mots, trois leçons pratiques 
 Mes lectures : historique facultatif des leçons originales sur cet appareil, avec reprise de position. Aucune progression exigée. On peut désactiver ou effacer ce suivi sans supprimer les favoris, réglages ni prières personnelles. Le suivi conserve uniquement des identifiants, positions et dates de consultation sous chemin-de-foi-learning-v1 ; aucun texte AELF ni réponse personnelle. Aucun envoi à un serveur.
 Relecture : relecture/Relecture_Enrichissement_12_novembre_2026.pdf et version Markdown ; ce complément contient les nouveaux textes, leurs références et points doctrinaux. Les dossiers antérieurs sont conservés. Sources_Enrichissement_2026-11-04.json recense les 55 pages vérifiées.
 Livraison locale sous CJAJLK, distincte de CJAJLK Games. Aucun commit, push ou publication pour cet enrichissement sans validation.
+
+
+5 novembre 2026 — Lot 4. Bible et lecture → Découvrir la Bible propose 12 récits, six thèmes autour des psaumes et une première séance guidée. Les fiches originales peuvent être mises en favoris ou reprises depuis Mes lectures. Les références et le dossier à soumettre au prêtre sont dans Sources_Bible_Lot4.json et relecture/Relecture_Bible_Lot4.pdf.

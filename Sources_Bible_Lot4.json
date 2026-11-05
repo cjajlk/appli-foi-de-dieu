@@ -1,0 +1,291 @@
+{
+  "checked": [
+    {
+      "url": "https://ebible.org/fraLSG/1SA16.htm",
+      "labels": [
+        "1 Samuel 16, 1–13"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/1SA17.htm",
+      "labels": [
+        "1 Samuel 17, 40–51"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/2SA07.htm",
+      "labels": [
+        "2 Samuel 7, 8–16"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/ACT02.htm",
+      "labels": [
+        "Actes 2, 1–13",
+        "Actes 2, 14–21",
+        "Actes 2, 37–47"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/AMO05.htm",
+      "labels": [
+        "Amos 5, 10–24"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/EXO03.htm",
+      "labels": [
+        "Exode 3, 1–15"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/EXO12.htm",
+      "labels": [
+        "Exode 12, 1–14"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/EXO14.htm",
+      "labels": [
+        "Exode 14, 10–31"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/GEN01.htm",
+      "labels": [
+        "Genèse 1, 1–31"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/GEN02.htm",
+      "labels": [
+        "Genèse 2, 1–25"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/GEN03.htm",
+      "labels": [
+        "Genèse 3, 1–24"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/GEN06.htm",
+      "labels": [
+        "Genèse 6, 5–22"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/GEN08.htm",
+      "labels": [
+        "Genèse 8, 6–22"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/GEN09.htm",
+      "labels": [
+        "Genèse 9, 8–17"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/GEN12.htm",
+      "labels": [
+        "Genèse 12, 1–9"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/GEN15.htm",
+      "labels": [
+        "Genèse 15, 1–6"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/GEN21.htm",
+      "labels": [
+        "Genèse 21, 1–7"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/ISA40.htm",
+      "labels": [
+        "Ésaïe 40, 1–11"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/LUK02.htm",
+      "labels": [
+        "Luc 2, 1–20"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/LUK10.htm",
+      "labels": [
+        "Luc 10, 25–37"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/LUK15.htm",
+      "labels": [
+        "Luc 15, 1–3",
+        "Luc 15, 11–32"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/LUK22.htm",
+      "labels": [
+        "Luc 22, 39–53"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/LUK23.htm",
+      "labels": [
+        "Luc 23, 13–56"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/LUK24.htm",
+      "labels": [
+        "Luc 24, 1–35"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/MAT02.htm",
+      "labels": [
+        "Matthieu 2, 1–12"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/MAT03.htm",
+      "labels": [
+        "Matthieu 3, 1–17"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/PSA023.htm",
+      "labels": [
+        "Psaume 23, 1–6"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/PSA027.htm",
+      "labels": [
+        "Psaume 27, 1–14"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/PSA046.htm",
+      "labels": [
+        "Psaume 46, 1–12"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/PSA051.htm",
+      "labels": [
+        "Psaume 51, 1–21"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/PSA091.htm",
+      "labels": [
+        "Psaume 91, 1–16"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/PSA103.htm",
+      "labels": [
+        "Psaume 103, 1–22"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/PSA121.htm",
+      "labels": [
+        "Psaume 121, 1–8"
+      ]
+    },
+    {
+      "url": "https://ebible.org/fraLSG/PSA130.htm",
+      "labels": [
+        "Psaume 130, 1–8"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P1C.HTM",
+      "labels": [
+        "CEC 355–357"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P1D.HTM",
+      "labels": [
+        "CEC 390"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P1I.HTM",
+      "labels": [
+        "CEC 525–526",
+        "CEC 535–537"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P1L.HTM",
+      "labels": [
+        "CEC 597–598"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P1P.HTM",
+      "labels": [
+        "CEC 638–647"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P1Y.HTM",
+      "labels": [
+        "CEC 731–733"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P46.HTM",
+      "labels": [
+        "CEC 1439"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P60.HTM",
+      "labels": [
+        "CEC 1822–1829"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__P8W.HTM",
+      "labels": [
+        "CEC 2574–2577",
+        "CEC 2578–2580",
+        "CEC 2581–2584",
+        "CEC 2585–2589"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__PH.HTM",
+      "labels": [
+        "CEC 56–58",
+        "CEC 59–61",
+        "CEC 62–64",
+        "CEC 64"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__PR.HTM",
+      "labels": [
+        "CEC 117",
+        "CEC 109–114"
+      ]
+    },
+    {
+      "url": "https://www.vatican.va/archive/FRA0013/__PT.HTM",
+      "labels": [
+        "CEC 131–133"
+      ]
+    }
+  ]
+}

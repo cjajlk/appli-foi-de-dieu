@@ -1501,22 +1501,705 @@ const state={...defaults,...saved,route:'accueil',filter:'all',search:'',active:
 function persist(){try{localStorage.setItem(STORE,JSON.stringify({visualVersion:2,size:state.size,theme:state.theme,sizeOpen:state.sizeOpen,favorites:state.favorites,personal:state.personal}))}catch{showToast('Stockage indisponible : les changements peuvent ne pas être conservés.')}}
 function esc(v){return String(v??'').replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
 const main=document.querySelector('#main');
+const BIBLE_STORIES = [
+  {
+    "id": "recit-creation",
+    "category": "ancien",
+    "title": "La Création et Adam et Ève",
+    "intro": "Deux récits des origines, puis un récit de confiance rompue.",
+    "scripture": [
+      {
+        "label": "Genèse 1, 1–31",
+        "url": "https://ebible.org/fraLSG/GEN01.htm#V1"
+      },
+      {
+        "label": "Genèse 2, 1–25",
+        "url": "https://ebible.org/fraLSG/GEN02.htm#V1"
+      },
+      {
+        "label": "Genèse 3, 1–24",
+        "url": "https://ebible.org/fraLSG/GEN03.htm#V1"
+      }
+    ],
+    "doctrine": [
+      {
+        "label": "CEC 355–357",
+        "url": "https://www.vatican.va/archive/FRA0013/__P1C.HTM"
+      },
+      {
+        "label": "CEC 390",
+        "url": "https://www.vatican.va/archive/FRA0013/__P1D.HTM"
+      }
+    ],
+    "context": "La Genèse ouvre la Torah et la Bible chrétienne. Ces pages des origines parlent dans les formes littéraires du Proche-Orient ancien. Elles donnent des repères sur Dieu et la condition humaine plutôt qu’une chronologie à confronter à la géologie.",
+    "summary": "Le premier récit ordonne la création et place l’être humain, homme et femme, à l’image de Dieu. Le second décrit le jardin confié à l’être humain et la rencontre de l’homme et de la femme. Au chapitre 3, ils mangent du fruit défendu, se cachent et sont éloignés du jardin.",
+    "explanation": "Le texte laisse le fruit sans nom. La question centrale est la confiance face à une limite. La honte et les accusations montrent que le geste touche aussi les relations.",
+    "teaching": "La lecture catholique reconnaît la dignité de chaque personne créée à l’image de Dieu. Elle comprend le langage imagé de la chute comme l’expression d’une rupture originelle avec Dieu.",
+    "example": "Confier un jardin à quelqu’un lui donne une responsabilité plutôt qu’un droit de tout épuiser.",
+    "question": "Qu’est-ce qui t’aide à prendre soin de ce qui t’est confié ?"
+  },
+  {
+    "id": "recit-noe",
+    "category": "ancien",
+    "title": "Noé et l’Alliance",
+    "intro": "Après le déluge, un engagement qui concerne tous les vivants.",
+    "scripture": [
+      {
+        "label": "Genèse 6, 5–22",
+        "url": "https://ebible.org/fraLSG/GEN06.htm#V5"
+      },
+      {
+        "label": "Genèse 8, 6–22",
+        "url": "https://ebible.org/fraLSG/GEN08.htm#V6"
+      },
+      {
+        "label": "Genèse 9, 8–17",
+        "url": "https://ebible.org/fraLSG/GEN09.htm#V8"
+      }
+    ],
+    "doctrine": [
+      {
+        "label": "CEC 56–58",
+        "url": "https://www.vatican.va/archive/FRA0013/__PH.HTM"
+      }
+    ],
+    "context": "La Genèse situe Noé avant Abraham. Le déluge appartient aux récits des origines, dans un monde ancien où circulaient des récits de grandes inondations. La portée religieuse de ce récit se lit dans sa conclusion.",
+    "summary": "Le récit présente une humanité violente et Noé chargé de construire une arche. Après la décrue, Noé sort et offre un sacrifice. Dieu établit une alliance avec Noé, ses descendants et les êtres vivants, dont l’arc dans la nuée devient le signe.",
+    "explanation": "Une alliance désigne ici un engagement durable. Regarder qui est inclus dans la promesse aide à comprendre pourquoi l’histoire ne s’arrête pas au sauvetage d’une famille.",
+    "teaching": "Le Catéchisme présente l’alliance avec Noé comme une étape qui embrasse les nations. Elle invite à reconnaître la fidélité de Dieu. Le récit ne permet pas d’attribuer une catastrophe actuelle à la faute de ses victimes.",
+    "example": "Après une inondation, une commune peut rebâtir en prévoyant aussi les besoins des personnes les plus isolées.",
+    "question": "Quelle attention pourrais-tu porter à la vie autour de toi ?"
+  },
+  {
+    "id": "recit-abraham",
+    "category": "ancien",
+    "title": "Abraham, partir sur une promesse",
+    "intro": "Une vocation, une terre et une bénédiction destinée aux familles de la terre.",
+    "scripture": [
+      {
+        "label": "Genèse 12, 1–9",
+        "url": "https://ebible.org/fraLSG/GEN12.htm#V1"
+      },
+      {
+        "label": "Genèse 15, 1–6",
+        "url": "https://ebible.org/fraLSG/GEN15.htm#V1"
+      },
+      {
+        "label": "Genèse 21, 1–7",
+        "url": "https://ebible.org/fraLSG/GEN21.htm#V1"
+      }
+    ],
+    "doctrine": [
+      {
+        "label": "CEC 59–61",
+        "url": "https://www.vatican.va/archive/FRA0013/__PH.HTM"
+      }
+    ],
+    "context": "Les récits des patriarches mettent en scène des familles, leurs déplacements et leurs liens avec la terre. Ils occupent la seconde grande partie de la Genèse. Une datation biographique précise d’Abraham ne découle pas de ces pages.",
+    "summary": "Abram quitte son pays avec Saraï et Lot à l’appel de Dieu. La promesse lui annonce une descendance et une bénédiction qui atteindra d’autres familles. Malgré l’attente, Abram fait confiance. Plus loin, Sara donne naissance à Isaac.",
+    "explanation": "La promesse ouvre un avenir sans livrer d’avance chaque étape. La durée de l’attente fait partie de l’histoire.",
+    "teaching": "Pour la tradition catholique, Abraham est un témoin de la foi et le commencement d’un peuple appelé par Dieu. Son élection porte une bénédiction destinée à dépasser son cercle familial.",
+    "example": "On peut s’engager à accompagner quelqu’un sans savoir exactement comment la relation évoluera.",
+    "question": "Dans cette histoire, qu’est-ce qui distingue la confiance de la certitude de tout prévoir ?"
+  },
+  {
+    "id": "recit-exode",
+    "category": "ancien",
+    "title": "Moïse et la sortie d’Égypte",
+    "intro": "Du travail forcé à la traversée, un récit fondateur de libération.",
+    "scripture": [
+      {
+        "label": "Exode 3, 1–15",
+        "url": "https://ebible.org/fraLSG/EXO03.htm#V1"
+      },
+      {
+        "label": "Exode 12, 1–14",
+        "url": "https://ebible.org/fraLSG/EXO12.htm#V1"
+      },
+      {
+        "label": "Exode 14, 10–31",
+        "url": "https://ebible.org/fraLSG/EXO14.htm#V10"
+      }
+    ],
+    "doctrine": [
+      {
+        "label": "CEC 62–64",
+        "url": "https://www.vatican.va/archive/FRA0013/__PH.HTM"
+      },
+      {
+        "label": "CEC 2574–2577",
+        "url": "https://www.vatican.va/archive/FRA0013/__P8W.HTM"
+      },
+      {
+        "label": "CEC 117",
+        "url": "https://www.vatican.va/archive/FRA0013/__PR.HTM"
+      }
+    ],
+    "context": "L’Exode raconte les origines d’Israël comme peuple libéré. L’Égypte royale, le travail forcé et le désert en forment le cadre narratif. Les données historiques ne permettent pas de fixer avec certitude la date et l’itinéraire de la traversée racontée.",
+    "summary": "Au buisson ardent, Dieu appelle Moïse après avoir entendu la détresse du peuple. La Pâque prépare le départ. Poursuivi par les forces de Pharaon, Israël traverse la mer et voit la menace disparaître.",
+    "explanation": "La libération est vécue ensemble. La mémoire du départ se transmet par des gestes et un récit, ce que montre le repas pascal dans Exode 12.",
+    "teaching": "L’Église lit l’Exode comme une étape de l’alliance avec Israël. Elle y reconnaît aussi un éclairage sur le salut et le baptême, tout en respectant la portée propre de la Pâque juive.",
+    "example": "Une famille peut garder la mémoire d’une libération en racontant les événements à la génération suivante.",
+    "question": "Quel détail du récit te fait percevoir la peur ou le courage du peuple ?"
+  },
+  {
+    "id": "recit-david",
+    "category": "ancien",
+    "title": "David, du berger au roi",
+    "intro": "Le choix inattendu de David et la promesse liée à sa maison.",
+    "scripture": [
+      {
+        "label": "1 Samuel 16, 1–13",
+        "url": "https://ebible.org/fraLSG/1SA16.htm#V1"
+      },
+      {
+        "label": "1 Samuel 17, 40–51",
+        "url": "https://ebible.org/fraLSG/1SA17.htm#V40"
+      },
+      {
+        "label": "2 Samuel 7, 8–16",
+        "url": "https://ebible.org/fraLSG/2SA07.htm#V8"
+      }
+    ],
+    "doctrine": [
+      {
+        "label": "CEC 2578–2580",
+        "url": "https://www.vatican.va/archive/FRA0013/__P8W.HTM"
+      }
+    ],
+    "context": "Les livres de Samuel racontent la mise en place de la royauté en Israël. Le récit passe de Saül à David et relit la royauté à la lumière de l’alliance.",
+    "summary": "Samuel reçoit la mission d’oindre un fils de Jessé. David, le plus jeune, est appelé depuis le troupeau. Il affronte ensuite Goliath avec une fronde. Plus tard, le prophète Nathan transmet à David une promesse concernant sa maison, c’est-à-dire sa dynastie.",
+    "explanation": "Les trois épisodes mettent en regard l’apparence, la confiance et la durée d’une promesse. La victoire sur Goliath ne résume pas toute la vie de David.",
+    "teaching": "La tradition catholique retient David comme figure de prière et de confiance. Elle lit la promesse dynastique dans l’histoire qui conduit au Christ, appelé fils de David.",
+    "example": "Dans une équipe, le membre qu’on remarque le moins peut être celui dont le jugement fait avancer la situation.",
+    "question": "Qu’est-ce qui te fait changer d’avis sur quelqu’un que tu connais peu ?"
+  },
+  {
+    "id": "recit-prophetes",
+    "category": "ancien",
+    "title": "Les prophètes, justice et espérance",
+    "intro": "Deux voix pour entendre la critique de l’injustice et l’annonce d’un avenir.",
+    "scripture": [
+      {
+        "label": "Amos 5, 10–24",
+        "url": "https://ebible.org/fraLSG/AMO05.htm#V10"
+      },
+      {
+        "label": "Ésaïe 40, 1–11",
+        "url": "https://ebible.org/fraLSG/ISA40.htm#V1"
+      }
+    ],
+    "doctrine": [
+      {
+        "label": "CEC 64",
+        "url": "https://www.vatican.va/archive/FRA0013/__PH.HTM"
+      },
+      {
+        "label": "CEC 2581–2584",
+        "url": "https://www.vatican.va/archive/FRA0013/__P8W.HTM"
+      }
+    ],
+    "context": "Amos s’adresse au royaume du Nord au VIIIe siècle avant notre ère. Ésaïe 40 ouvre une section généralement lue sur l’horizon de l’exil à Babylone, bien après l’époque d’Amos.",
+    "summary": "Amos dénonce les abus qui écartent les pauvres et critique des célébrations dissociées de la justice. Ésaïe 40 s’ouvre sur une parole de consolation et annonce une venue de Dieu auprès de son peuple.",
+    "explanation": "Un prophète ne se réduit pas à quelqu’un qui prévoit l’avenir. Ces deux textes s’adressent à des situations différentes. L’un dénonce, l’autre relève, et tous deux appellent à entendre ce que la situation demande.",
+    "teaching": "Le Catéchisme voit dans les prophètes des témoins qui forment le peuple à l’espérance et à la conversion. Le culte et l’attention à la justice ont ainsi vocation à se rejoindre.",
+    "example": "Une collecte ne règle pas à elle seule une pratique injuste. Une communauté peut aider et corriger ce qui produit le besoin.",
+    "question": "Quelle différence vois-tu entre consoler et promettre que tout ira vite mieux ?"
+  },
+  {
+    "id": "recit-naissance",
+    "category": "jesus",
+    "title": "La naissance de Jésus",
+    "intro": "Bethléem, les bergers et le signe d’un enfant.",
+    "scripture": [
+      {
+        "label": "Luc 2, 1–20",
+        "url": "https://ebible.org/fraLSG/LUK02.htm#V1"
+      },
+      {
+        "label": "Matthieu 2, 1–12",
+        "url": "https://ebible.org/fraLSG/MAT02.htm#V1"
+      }
+    ],
+    "doctrine": [
+      {
+        "label": "CEC 525–526",
+        "url": "https://www.vatican.va/archive/FRA0013/__P1I.HTM"
+      }
+    ],
+    "context": "Les évangiles de Luc et de Matthieu proposent des récits distincts de l’enfance. Luc évoque un recensement sous domination romaine et Matthieu situe les mages au temps d’Hérode. Le rapprochement de leurs repères chronologiques est discuté.",
+    "summary": "Dans Luc, Marie met au monde Jésus à Bethléem et le couche dans une mangeoire. Des bergers entendent l’annonce de la naissance et viennent voir l’enfant. Dans Matthieu, des mages venus d’Orient cherchent le roi des Juifs et offrent leurs présents.",
+    "explanation": "Les bergers appartiennent au récit de Luc et les mages à celui de Matthieu. Une crèche réunit souvent les deux scènes, ce qui relève de la tradition de représentation.",
+    "teaching": "Pour la foi catholique, Noël célèbre le Fils de Dieu devenu véritablement humain. La petitesse de l’enfant et la simplicité de son accueil éclairent la manière dont Dieu se rend proche.",
+    "example": "Pour lire une crèche, on peut chercher de quel évangile vient chaque groupe de personnages.",
+    "question": "Quel détail de Luc ou de Matthieu aimerais-tu relire à part ?"
+  },
+  {
+    "id": "recit-bapteme",
+    "category": "jesus",
+    "title": "Le baptême de Jésus",
+    "intro": "Le Jourdain et le début de la vie publique.",
+    "scripture": [
+      {
+        "label": "Matthieu 3, 1–17",
+        "url": "https://ebible.org/fraLSG/MAT03.htm#V1"
+      }
+    ],
+    "doctrine": [
+      {
+        "label": "CEC 535–537",
+        "url": "https://www.vatican.va/archive/FRA0013/__P1I.HTM"
+      }
+    ],
+    "context": "Jean appelle à la conversion près du Jourdain. Le baptême de Jean s’inscrit dans un contexte juif où des lavages pouvaient exprimer la purification. Matthieu le place avant la mission publique de Jésus.",
+    "summary": "Jean baptise ceux qui viennent à lui. Quand Jésus se présente, Jean hésite, puis accepte. Jésus remonte de l’eau, l’Esprit descend comme une colombe et une voix le désigne comme le Fils bien-aimé.",
+    "explanation": "Le récit associe un geste visible et une révélation sur l’identité de Jésus. La comparaison avec la colombe est une image du récit.",
+    "teaching": "La lecture catholique comprend la démarche de Jésus, tenu pour sans péché, comme une entrée solidaire dans sa mission. Elle distingue le baptême donné par Jean du sacrement chrétien, éclairé par la mort et la Résurrection du Christ.",
+    "example": "Sur une image du Jourdain, on peut repérer séparément l’eau, Jésus, la colombe et le signe de la voix.",
+    "question": "Pourquoi la réaction de Jean donne-t-elle du relief au geste de Jésus ?"
+  },
+  {
+    "id": "recit-samaritain",
+    "category": "jesus",
+    "title": "Le Bon Samaritain",
+    "intro": "Une parabole qui déplace la question du prochain.",
+    "scripture": [
+      {
+        "label": "Luc 10, 25–37",
+        "url": "https://ebible.org/fraLSG/LUK10.htm#V25"
+      }
+    ],
+    "doctrine": [
+      {
+        "label": "CEC 1822–1829",
+        "url": "https://www.vatican.va/archive/FRA0013/__P60.HTM"
+      }
+    ],
+    "context": "Luc présente une discussion avec un spécialiste de la Loi. Juifs et Samaritains partageaient des racines religieuses et avaient des lieux et pratiques de culte distincts. Leur relation pouvait être tendue. Le récit du voyageur est une parabole.",
+    "summary": "Un homme attaqué est laissé à terre sur la route de Jérusalem à Jéricho. Un prêtre et un lévite passent. Un Samaritain s’arrête, soigne le blessé, le conduit à une auberge et prévoit ses frais. Jésus demande qui s’est fait le prochain de l’homme blessé.",
+    "explanation": "La question passe des personnes qui entreraient dans un cercle de solidarité au comportement de celui qui prend soin. Le texte ne donne pas les motifs des deux premiers passants.",
+    "teaching": "La tradition catholique relie cette attention à la charité, amour de Dieu et du prochain qui se manifeste dans des actes. Elle appelle à porter secours avec discernement.",
+    "example": "Face à une personne tombée dans la rue, appeler une aide compétente peut être le premier geste de proximité.",
+    "question": "Quel geste du Samaritain montre que son aide se prolonge au-delà de l’urgence ?"
+  },
+  {
+    "id": "recit-fils",
+    "category": "jesus",
+    "title": "Le fils prodigue et son frère",
+    "intro": "Une parabole à relire du point de vue des deux fils.",
+    "scripture": [
+      {
+        "label": "Luc 15, 1–3",
+        "url": "https://ebible.org/fraLSG/LUK15.htm#V1"
+      },
+      {
+        "label": "Luc 15, 11–32",
+        "url": "https://ebible.org/fraLSG/LUK15.htm#V11"
+      }
+    ],
+    "doctrine": [
+      {
+        "label": "CEC 1439",
+        "url": "https://www.vatican.va/archive/FRA0013/__P46.HTM"
+      }
+    ],
+    "context": "Luc introduit ce groupe de paraboles par des critiques sur l’accueil des pécheurs par Jésus. Le récit emploie des scènes de maisonnée, d’héritage et de fête familières à son auditoire.",
+    "summary": "Le fils cadet part avec sa part, la dépense et connaît la faim. Il rentre en préparant un aveu. Son père court l’accueillir et fait préparer une fête. Le fils aîné proteste. Le père sort lui parler et lui rappelle la joie du retour de son frère.",
+    "explanation": "Le père se déplace vers chacun. Le récit se termine sur sa parole à l’aîné, dont la réaction finale demeure ouverte.",
+    "teaching": "Le Catéchisme lit cette parabole comme une image de la conversion et de la miséricorde. L’accueil ouvre un chemin de retour et la parole du père invite chacun à retrouver une relation.",
+    "example": "Dans une histoire familiale, deux personnes peuvent avoir besoin d’être écoutées avant de comprendre le même événement.",
+    "question": "Avec quel personnage aimerais-tu reprendre le récit, et à quel moment ?"
+  },
+  {
+    "id": "recit-passion",
+    "category": "jesus",
+    "title": "La Passion et la Résurrection",
+    "intro": "Lire le passage de la mort de Jésus à l’annonce de Pâques dans Luc.",
+    "scripture": [
+      {
+        "label": "Luc 22, 39–53",
+        "url": "https://ebible.org/fraLSG/LUK22.htm#V39"
+      },
+      {
+        "label": "Luc 23, 13–56",
+        "url": "https://ebible.org/fraLSG/LUK23.htm#V13"
+      },
+      {
+        "label": "Luc 24, 1–35",
+        "url": "https://ebible.org/fraLSG/LUK24.htm#V1"
+      }
+    ],
+    "doctrine": [
+      {
+        "label": "CEC 597–598",
+        "url": "https://www.vatican.va/archive/FRA0013/__P1L.HTM"
+      },
+      {
+        "label": "CEC 638–647",
+        "url": "https://www.vatican.va/archive/FRA0013/__P1P.HTM"
+      }
+    ],
+    "context": "Le récit se situe à Jérusalem, autour de la Pâque, sous l’administration romaine de Ponce Pilate. Les Évangiles relatent la Passion et les rencontres pascales avec leurs propres accents. Cette fiche suit Luc.",
+    "summary": "Après sa prière au mont des Oliviers, Jésus est arrêté. Luc raconte sa condamnation, la crucifixion et la mise au tombeau. Des femmes trouvent ensuite le tombeau ouvert et entendent l’annonce de la Résurrection. Sur le chemin d’Emmaüs, deux disciples reconnaissent Jésus au partage du pain.",
+    "explanation": "La lecture d’Emmaüs suit une progression. Les disciples parlent de leur déception, écoutent une lecture des Écritures, reconnaissent Jésus puis retournent vers les autres.",
+    "teaching": "L’Église confesse la mort réelle et la Résurrection corporelle du Christ comme le cœur de Pâques. Elle refuse d’imputer collectivement sa mort au peuple juif. La croix ne justifie pas de maintenir une personne dans la violence.",
+    "example": "Quand un récit paraît trop dense, on peut suivre un seul personnage, puis reprendre le passage du point de vue d’un autre.",
+    "question": "Quel changement remarques-tu entre le départ et le retour des disciples d’Emmaüs ?"
+  },
+  {
+    "id": "recit-pentecote",
+    "category": "actes",
+    "title": "La Pentecôte",
+    "intro": "Des langues diverses et une annonce entendue à Jérusalem.",
+    "scripture": [
+      {
+        "label": "Actes 2, 1–13",
+        "url": "https://ebible.org/fraLSG/ACT02.htm#V1"
+      },
+      {
+        "label": "Actes 2, 14–21",
+        "url": "https://ebible.org/fraLSG/ACT02.htm#V14"
+      },
+      {
+        "label": "Actes 2, 37–47",
+        "url": "https://ebible.org/fraLSG/ACT02.htm#V37"
+      }
+    ],
+    "doctrine": [
+      {
+        "label": "CEC 731–733",
+        "url": "https://www.vatican.va/archive/FRA0013/__P1Y.HTM"
+      }
+    ],
+    "context": "Les Actes prolongent le récit de Luc. La Pentecôte se déroule à Jérusalem lors d’une fête juive déjà existante, qui rassemble des personnes venues de lieux différents.",
+    "summary": "Un bruit comme un souffle et des langues comme de feu accompagnent la venue de l’Esprit. Les personnes rassemblées entendent les disciples parler dans leurs langues. Pierre prend la parole, cite Joël et appelle à la conversion. Le récit montre ensuite une communauté qui apprend, prie et partage.",
+    "explanation": "La diversité des langues reste perceptible. Ce que le récit met en avant, c’est la possibilité d’entendre une annonce commune au milieu de cette diversité.",
+    "teaching": "La foi catholique reconnaît dans la Pentecôte un don de l’Esprit Saint et un élan pour la mission de l’Église. L’Esprit est une Personne divine. Le vent et le feu sont des images de sa manifestation.",
+    "example": "Dans un groupe multilingue, traduire un message permet à chacun de le recevoir dans sa langue.",
+    "question": "Qu’est-ce qui aide un groupe à s’écouter quand ses membres parlent ou pensent différemment ?"
+  }
+];
+const BIBLE_PSALM_THEMES = [
+  {
+    "id": "theme-psaume-confiance",
+    "title": "Confiance",
+    "numbers": [
+      23,
+      91
+    ],
+    "summary": "Le berger du psaume 23 accompagne jusque dans la vallée. Le psaume 91 emploie des images d’abri et de refuge.",
+    "teaching": "La confiance biblique peut se dire au milieu d’un danger. Ces images expriment l’appui cherché auprès de Dieu et laissent toute leur place à la prudence et au soin.",
+    "question": "Quelle image évoque pour toi un appui au milieu d’une difficulté ?",
+    "scripture": [
+      {
+        "label": "Psaume 23, 1–6",
+        "url": "https://ebible.org/fraLSG/PSA023.htm#V1"
+      },
+      {
+        "label": "Psaume 91, 1–16",
+        "url": "https://ebible.org/fraLSG/PSA091.htm#V1"
+      }
+    ],
+    "doctrine": [
+      {
+        "label": "CEC 2585–2589",
+        "url": "https://www.vatican.va/archive/FRA0013/__P8W.HTM"
+      }
+    ]
+  },
+  {
+    "id": "theme-psaume-gratitude",
+    "title": "Gratitude",
+    "numbers": [
+      103
+    ],
+    "summary": "Le psaume 103 invite le priant à se rappeler les bienfaits de Dieu, sa compassion et la fragilité humaine.",
+    "teaching": "La gratitude du psaume naît d’une mémoire. On peut reconnaître un bien reçu tout en restant lucide sur ce qui est pénible.",
+    "question": "Quel bien discret aimerais-tu garder en mémoire ?",
+    "scripture": [
+      {
+        "label": "Psaume 103, 1–22",
+        "url": "https://ebible.org/fraLSG/PSA103.htm#V1"
+      }
+    ],
+    "doctrine": [
+      {
+        "label": "CEC 2585–2589",
+        "url": "https://www.vatican.va/archive/FRA0013/__P8W.HTM"
+      }
+    ]
+  },
+  {
+    "id": "theme-psaume-peur",
+    "title": "Peur",
+    "numbers": [
+      27
+    ],
+    "summary": "Le psaume 27 s’ouvre sur la confiance, puis fait entendre une demande d’aide et la peur d’être abandonné.",
+    "teaching": "Ces deux voix appartiennent au même poème. Elles permettent au priant de dire sa peur avec honnêteté et de chercher une présence.",
+    "question": "Quelle phrase du poème te semble assez vraie pour être reprise aujourd’hui ?",
+    "scripture": [
+      {
+        "label": "Psaume 27, 1–14",
+        "url": "https://ebible.org/fraLSG/PSA027.htm#V1"
+      }
+    ],
+    "doctrine": [
+      {
+        "label": "CEC 2585–2589",
+        "url": "https://www.vatican.va/archive/FRA0013/__P8W.HTM"
+      }
+    ]
+  },
+  {
+    "id": "theme-psaume-souffrance",
+    "title": "Souffrance",
+    "numbers": [
+      46,
+      130
+    ],
+    "summary": "Le psaume 46 présente un monde bouleversé et une communauté qui cherche refuge. Le psaume 130 fait entendre un appel depuis les profondeurs.",
+    "teaching": "La prière biblique laisse parler l’épreuve, collectivement ou personnellement. Ces textes peuvent accompagner une recherche de soutien concret.",
+    "question": "Aurais-tu plutôt besoin de mots pour dire l’épreuve ou d’une personne à qui en parler ?",
+    "scripture": [
+      {
+        "label": "Psaume 46, 1–12",
+        "url": "https://ebible.org/fraLSG/PSA046.htm#V1"
+      },
+      {
+        "label": "Psaume 130, 1–8",
+        "url": "https://ebible.org/fraLSG/PSA130.htm#V1"
+      }
+    ],
+    "doctrine": [
+      {
+        "label": "CEC 2585–2589",
+        "url": "https://www.vatican.va/archive/FRA0013/__P8W.HTM"
+      }
+    ]
+  },
+  {
+    "id": "theme-psaume-pardon",
+    "title": "Pardon",
+    "numbers": [
+      51,
+      130
+    ],
+    "summary": "Le psaume 51 demande la purification et un cœur renouvelé. Le psaume 130 associe l’appel des profondeurs, le pardon et l’attente.",
+    "teaching": "La tradition catholique les reçoit comme des psaumes pénitentiels. Ils offrent des mots pour reconnaître une faute et demander la miséricorde, dans un chemin qui peut aussi demander réparation et accompagnement.",
+    "question": "Quel pas de vérité ou de réparation serait juste et possible ?",
+    "scripture": [
+      {
+        "label": "Psaume 51, 1–21",
+        "url": "https://ebible.org/fraLSG/PSA051.htm#V1"
+      },
+      {
+        "label": "Psaume 130, 1–8",
+        "url": "https://ebible.org/fraLSG/PSA130.htm#V1"
+      }
+    ],
+    "doctrine": [
+      {
+        "label": "CEC 2585–2589",
+        "url": "https://www.vatican.va/archive/FRA0013/__P8W.HTM"
+      }
+    ]
+  },
+  {
+    "id": "theme-psaume-esperance",
+    "title": "Espérance",
+    "numbers": [
+      121,
+      130
+    ],
+    "summary": "Le psaume 121 emploie l’image du chemin et de la veille. Le psaume 130 compare l’attente à celle de veilleurs qui guettent le matin.",
+    "teaching": "L’espérance de ces poèmes donne des mots à l’attente. Leur langage de protection et de veille peut soutenir le priant pendant un chemin dont il ne connaît pas toutes les étapes.",
+    "question": "Qu’est-ce qui peut t’aider à traverser une attente sans la porter seul ?",
+    "scripture": [
+      {
+        "label": "Psaume 121, 1–8",
+        "url": "https://ebible.org/fraLSG/PSA121.htm#V1"
+      },
+      {
+        "label": "Psaume 130, 1–8",
+        "url": "https://ebible.org/fraLSG/PSA130.htm#V1"
+      }
+    ],
+    "doctrine": [
+      {
+        "label": "CEC 2585–2589",
+        "url": "https://www.vatican.va/archive/FRA0013/__P8W.HTM"
+      }
+    ]
+  }
+];
+const BIBLE_START = {
+  "id": "recit-commencer",
+  "title": "Je commence la Bible",
+  "intro": "Une méthode simple pour choisir et lire un premier passage à ton rythme.",
+  "context": "Pour cette première séance, prends la scène du Bon Samaritain dans Luc. Elle commence par une question adressée à Jésus au sujet de la vie éternelle et du prochain. Garde aussi le psaume 23 à portée de main si tu préfères commencer par un poème.",
+  "summary": "Choisis une scène courte, par exemple Luc 10, 25–37. Dans une référence, le premier nombre désigne le chapitre et les suivants les versets. Lis quelques phrases avant et après le passage, puis repère qui parle, à qui et dans quelle situation.",
+  "explanation": "Sur une feuille, écris une action que tu observes dans le passage, puis une question qu’elle te laisse. Relis ensuite la dernière réplique de Jésus. Regarde si elle change ta question. Cette méthode garde la lecture du passage et ta réaction personnelle bien distinctes.",
+  "teaching": "L’Église catholique invite à tenir compte des genres littéraires et du contexte, et à lire les Écritures dans l’unité de la Bible et de la foi de l’Église.",
+  "example": "Tu peux alterner un récit évangélique et un psaume, en gardant une seule question par lecture.",
+  "question": "Quel premier passage te paraît abordable aujourd’hui ?",
+  "scripture": [
+    {
+      "label": "Luc 10, 25–37",
+      "url": "https://ebible.org/fraLSG/LUK10.htm#V25"
+    },
+    {
+      "label": "Psaume 23, 1–6",
+      "url": "https://ebible.org/fraLSG/PSA023.htm#V1"
+    }
+  ],
+  "doctrine": [
+    {
+      "label": "CEC 109–114",
+      "url": "https://www.vatican.va/archive/FRA0013/__PR.HTM"
+    },
+    {
+      "label": "CEC 131–133",
+      "url": "https://www.vatican.va/archive/FRA0013/__PT.HTM"
+    }
+  ]
+};
+const BIBLE_CATEGORIES = {
+  ancien: 'Ancien Testament',
+  jesus: 'Vie de Jésus',
+  actes: 'Actes des Apôtres'
+};
+const BIBLE_DISCOVERY_ITEMS = [...BIBLE_STORIES, ...BIBLE_PSALM_THEMES, BIBLE_START];
+const LEARNING_ITEMS = [...LESSONS, ...BIBLE_DISCOVERY_ITEMS];
+
+function learningRoute(id) {
+  if (BIBLE_PSALM_THEMES.some(item => item.id === id)) return 'bible-theme';
+  if (BIBLE_DISCOVERY_ITEMS.some(item => item.id === id)) return 'bible-story';
+  return LESSONS.some(item => item.id === id) ? 'lesson' : null;
+}
+
+function bibleDiscoveryEntry(item) {
+  return compactEntry(learningRoute(item.id), item.title, item.intro || item.numbers.map(n => 'Psaume ' + n).join(' · '), item.id);
+}
+
+function bibleDiscoveryFavorites() {
+  const items = BIBLE_DISCOVERY_ITEMS.filter(item => state.favorites.includes(item.id));
+  if (!items.length) return '';
+  return '<section class="panel"><h2>Découverte de la Bible</h2><div class="card-list">' +
+    items.map(bibleDiscoveryEntry).join('') + '</div></section>';
+}
+
+function bibleDiscovery() {
+  const last = consultedLessons().find(item => BIBLE_DISCOVERY_ITEMS.includes(item));
+  const resume = learning.enabled && last
+    ? `<div class="learning-links"><button type="button" class="action secondary" data-resume-lesson="${esc(last.id)}">Reprendre : ${esc(last.title)}</button></div>` : '';
+  return head('Découvrir la Bible', 'Choisis un point de départ, sans ordre imposé.') +
+    libraryBack('Bible et lecture', 'bible') + resume +
+    '<div class="card-list">' +
+    compactEntry('bible-story', BIBLE_START.title, BIBLE_START.intro, BIBLE_START.id, '▤') +
+    compactEntry('bible-stories', 'Les grands récits de la Bible', 'Douze fiches de la Genèse aux Actes.', '', '✦') +
+    compactEntry('bible-stories', BIBLE_CATEGORIES.ancien, 'Six récits sur les origines et l’histoire d’Israël.', 'ancien') +
+    compactEntry('bible-stories', BIBLE_CATEGORIES.jesus, 'Cinq récits des Évangiles.', 'jesus') +
+    compactEntry('bible-stories', BIBLE_CATEGORIES.actes, 'La Pentecôte et les débuts de l’Église.', 'actes') +
+    compactEntry('bible-themes', 'Psaumes', 'Six thèmes pour découvrir huit psaumes.') +
+    '</div></div>';
+}
+
+function bibleStories() {
+  const category = BIBLE_CATEGORIES[state.active];
+  return head(typeof category === 'string' ? category : 'Les grands récits de la Bible',
+    'Des fiches pour suivre le texte et découvrir une lecture catholique.') +
+    libraryBack('Découvrir la Bible', 'bible-discovery') +
+    searchControls('Rechercher un récit biblique') +
+    `<div id="library-results">${libraryResults()}</div></div>`;
+}
+
+function bibleStoryResults(view) {
+  const items = BIBLE_STORIES.filter(item =>
+    (!Object.hasOwn(BIBLE_CATEGORIES, state.active) || item.category === state.active) &&
+    matchesSearch([item.title, item.intro, ...item.scripture.map(ref => ref.label)].join(' '), view.query)
+  );
+  return pageEntries(items, bibleDiscoveryEntry, 'Aucun récit trouvé pour ces mots.');
+}
+
+function bibleThemes() {
+  return head('Les psaumes par thème', 'Des repères pour choisir un psaume selon ce que tu traverses. Numérotation Louis Segond.') +
+    libraryBack('Découvrir la Bible', 'bible-discovery') +
+    '<div class="card-list">' +
+    BIBLE_PSALM_THEMES.map(bibleDiscoveryEntry).join('') +
+    compactEntry('psalms', 'Psaumes disponibles dans l’application', 'Retrouver les cinq textes intégraux et la recherche par numéro.') +
+    '</div></div>';
+}
+
+function bibleReferenceLinks(references) {
+  return references.map(ref =>
+    `<a href="${esc(ref.url)}" target="_blank" rel="noopener noreferrer">${esc(ref.label)}</a>`
+  ).join(' · ');
+}
+
+function bibleReadingSection(title, text) {
+  return `<h2>${esc(title)}</h2><p>${esc(text)}</p>`;
+}
+
+function bibleDiscoveryReader() {
+  const isTheme = state.route === 'bible-theme';
+  const item = (isTheme ? BIBLE_PSALM_THEMES : [...BIBLE_STORIES, BIBLE_START]).find(x => x.id === state.active);
+  if (!item) return bibleDiscovery();
+  const back = isTheme ? 'bible-themes' : item === BIBLE_START ? 'bible-discovery' : 'bible-stories';
+  const isFavorite = state.favorites.includes(item.id);
+  const sections = isTheme
+    ? [['Repères dans les psaumes', item.summary], ['Lecture catholique', item.teaching]]
+    : [
+        ['Contexte historique et religieux', item.context],
+        [item === BIBLE_START ? 'Une première lecture' : 'Résumé du passage', item.summary],
+        ['Pour comprendre', item.explanation],
+        ['Lecture catholique', item.teaching],
+        ['Illustration pédagogique', item.example]
+      ];
+  const localPsalms = (item.numbers || []).map(n => psalmItems().find(p => p.psalm === n)).filter(Boolean);
+  return `<div class="content">
+    ${libraryBack('Retour à la découverte biblique', back, item.category || '')}
+    <section class="reading-stage">
+      ${textSizeControl()}
+      <div class="reading-card">
+        <p class="eyebrow">${isTheme ? 'Psaumes par thème' : 'Découvrir la Bible'}</p>
+        <h1>${esc(item.title)}</h1>
+        ${item.intro ? `<p class="small">${esc(item.intro)}</p>` : ''}
+        <p class="source">Passages bibliques · Louis Segond 1910 sur eBible<br>${bibleReferenceLinks(item.scripture)}</p>
+        <div class="lesson-body extended-lesson">
+          ${sections.map(([title, value]) => bibleReadingSection(title, value)).join('')}
+        </div>
+        <div class="notice"><strong>Pour réfléchir, si tu le souhaites</strong><br>${esc(item.question)}</div>
+        <p class="source">Références catholiques · Catéchisme de l’Église catholique<br>${bibleReferenceLinks(item.doctrine)}</p>
+        <p class="editorial-note">Fiche originale de Chemin de Foi, à relire par un prêtre.</p>
+        ${item === BIBLE_START ? '<button type="button" class="action secondary" data-go="lesson" data-id="bible">Retrouver le repère « Comment commencer la Bible ? »</button>' : ''}
+        ${localPsalms.length ? '<div class="actions">' + localPsalms.map(p =>
+          `<button type="button" class="action secondary" data-go="reading" data-id="${esc(p.id)}">Lire le psaume ${p.psalm} ici</button>`
+        ).join('') + '</div>' : ''}
+      </div>
+      <div class="reading-actions">
+        <button type="button" class="heart-btn" data-fav="${esc(item.id)}" aria-pressed="${isFavorite}">${isFavorite ? '★ Favori' : '☆ Ajouter aux favoris'}</button>
+      </div>
+    </section>
+  </div>`;
+}
+
 // Suivi pédagogique local : identifiants et positions des seules leçons originales, jamais de texte AELF.
 const LEARNING_STORE='chemin-de-foi-learning-v1';
 const learning={enabled:true,entries:{},last:null,available:true};let learningCurrent=null,learningTimer;
-try{const saved=JSON.parse(localStorage.getItem(LEARNING_STORE)||'null');if(saved&&typeof saved==='object'){learning.enabled=saved.enabled!==false;if(learning.enabled){for(const l of LESSONS){const v=saved.entries?.[l.id];if(v&&Number.isFinite(v.ratio)&&Number.isFinite(v.seen))learning.entries[l.id]={ratio:Math.min(1,Math.max(0,v.ratio)),seen:v.seen}}if(LESSONS.some(l=>l.id===saved.last))learning.last=saved.last}}}catch{}
+try{const saved=JSON.parse(localStorage.getItem(LEARNING_STORE)||'null');if(saved&&typeof saved==='object'){learning.enabled=saved.enabled!==false;if(learning.enabled){for(const l of LEARNING_ITEMS){const v=saved.entries?.[l.id];if(v&&Number.isFinite(v.ratio)&&Number.isFinite(v.seen))learning.entries[l.id]={ratio:Math.min(1,Math.max(0,v.ratio)),seen:v.seen}}if(learningRoute(saved.last))learning.last=saved.last}}}catch{}
 function learningPersist(){try{localStorage.setItem(LEARNING_STORE,JSON.stringify({version:1,enabled:learning.enabled,entries:learning.entries,last:learning.last}))}catch{learning.available=false}}
-function learningRemember(){if(!learning.enabled||state.route!=='lesson'||!LESSONS.some(l=>l.id===state.active))return;const previous=learning.entries[state.active];if(!previous)return;const height=Math.max(0,document.documentElement.scrollHeight-innerHeight);previous.ratio=height?Math.min(1,Math.max(0,scrollY/height)):0;learningPersist()}
-function learningAfterRender(){const id=state.route==='lesson'&&LESSONS.some(l=>l.id===state.active)?state.active:null;if(learning.enabled&&id&&learningCurrent!==id){learning.entries[id]={ratio:learning.entries[id]?.ratio||0,seen:Date.now()};learning.last=id;learningPersist()}learningCurrent=id}
+function learningRemember(){if(!learning.enabled||state.route!==learningRoute(state.active))return;const previous=learning.entries[state.active];if(!previous)return;const height=Math.max(0,document.documentElement.scrollHeight-innerHeight);previous.ratio=height?Math.min(1,Math.max(0,scrollY/height)):0;learningPersist()}
+function learningAfterRender(){const id=state.route===learningRoute(state.active)?state.active:null;if(learning.enabled&&id&&learningCurrent!==id){learning.entries[id]={ratio:learning.entries[id]?.ratio||0,seen:Date.now()};learning.last=id;learningPersist()}learningCurrent=id}
 function learningReset(){clearTimeout(learningTimer);learning.entries={};learning.last=null;learningCurrent=null;try{localStorage.removeItem(LEARNING_STORE)}catch{learning.available=false}}
 function learningLinks(){return `<div class="learning-links"><button class="action secondary" data-go="questions">Mes questions sur la foi</button><button class="action secondary" data-go="consulted">Mes lectures</button></div>`}
 function questionsPage(){return head('Mes questions sur la foi','Des repères catholiques pour réfléchir, sans réponse imposée à chaque épreuve.')+libraryBack('Découvrir la foi','decouvrir')+searchControls('Rechercher une question sur la foi')+`<div id="library-results">${libraryResults()}</div><p class="editorial-note">Réponses originales à soumettre à un prêtre ; aucune approbation officielle de l’Église n’est revendiquée.</p></div>`}
-function consultedLessons(){return LESSONS.filter(l=>learning.entries[l.id]).sort((a,b)=>learning.entries[b.id].seen-learning.entries[a.id].seen)}
-function consultedPage(){const last=LESSONS.find(l=>l.id===learning.last);return head('Mes lectures','Un repère facultatif sur cet appareil, sans compte et sans progression obligatoire.')+libraryBack('Découvrir la foi','decouvrir')+`<div class="panel"><label class="learning-opt"><input type="checkbox" id="learning-enabled" ${learning.enabled?'checked':''}> Conserver mes lectures sur cet appareil</label><p class="small">Seuls les titres consultés et la position de lecture sont repérés localement. Aucun suivi des lectures AELF. Désactiver efface ce suivi, sans toucher aux favoris ni aux prières personnelles.</p>${!learning.available?'<p role="status">Le stockage est indisponible : ce repère peut être perdu en fermant la page.</p>':''}${learning.enabled&&last?`<button class="action" data-resume-lesson="${esc(last.id)}">Reprendre : ${esc(last.title)}</button><button class="action secondary" data-clear-learning>Effacer ce suivi</button>`:''}</div>${searchControls('Rechercher une leçon consultée')}<div id="library-results">${libraryResults()}</div></div>`}
+function consultedLessons(){return LEARNING_ITEMS.filter(l=>learning.entries[l.id]).sort((a,b)=>learning.entries[b.id].seen-learning.entries[a.id].seen)}
+function consultedPage(){const last=LEARNING_ITEMS.find(l=>l.id===learning.last);return head('Mes lectures','Un repère facultatif sur cet appareil, sans compte et sans progression obligatoire.')+libraryBack('Découvrir la foi','decouvrir')+`<div class="panel"><label class="learning-opt"><input type="checkbox" id="learning-enabled" ${learning.enabled?'checked':''}> Conserver mes lectures sur cet appareil</label><p class="small">Seuls les titres consultés et la position de lecture sont repérés localement. Aucun suivi des lectures AELF. Désactiver efface ce suivi, sans toucher aux favoris ni aux prières personnelles.</p>${!learning.available?'<p role="status">Le stockage est indisponible : ce repère peut être perdu en fermant la page.</p>':''}${learning.enabled&&last?`<button class="action" data-resume-lesson="${esc(last.id)}">Reprendre : ${esc(last.title)}</button><button class="action secondary" data-clear-learning>Effacer ce suivi</button>`:''}</div>${searchControls('Rechercher une lecture consultée')}<div id="library-results">${libraryResults()}</div></div>`}
 function extendedLessonBody(p){return (p.sections?p.sections.map(s=>`<h2>${esc(s.title)}</h2><p>${esc(s.text)}</p>`).join(''):p.paragraphs.map(x=>`<p>${esc(x)}</p>`).join(''))+(p.examples?`<h2>Dans la vie quotidienne</h2>${p.examples.map(x=>`<p>${esc(x)}</p>`).join('')}`:p.example?`<p><strong>Exemple concret :</strong><br>${esc(p.example)}</p>`:'')+(p.summary?`<h2>À retenir</h2><ul>${p.summary.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`:'')+(p.invitation?`<h2>Pour poursuivre, librement</h2><p>${esc(p.invitation)}</p>`:'')}
 document.addEventListener('scroll',()=>{clearTimeout(learningTimer);learningTimer=setTimeout(learningRemember,250)},{passive:true});
 document.addEventListener('change',e=>{if(e.target.id!=='learning-enabled')return;learning.enabled=e.target.checked;if(!learning.enabled)learningReset();learningPersist();render()});
-document.addEventListener('click',e=>{if(e.target.closest('[data-clear-learning]')){learningReset();learningPersist();render();return}const resume=e.target.closest('[data-resume-lesson]');if(!resume)return;const id=resume.dataset.resumeLesson;const saved=learning.entries[id];if(!saved||!LESSONS.some(l=>l.id===id))return;const ratio=saved.ratio;go('lesson',id);const epoch=navigationEpoch;requestAnimationFrame(()=>requestAnimationFrame(()=>{if(state.route==='lesson'&&state.active===id&&epoch===navigationEpoch)window.scrollTo({top:ratio*Math.max(0,document.documentElement.scrollHeight-innerHeight),behavior:'instant'})}))});
+document.addEventListener('click',e=>{if(e.target.closest('[data-clear-learning]')){learningReset();learningPersist();render();return}const resume=e.target.closest('[data-resume-lesson]');if(!resume)return;const id=resume.dataset.resumeLesson;const saved=learning.entries[id];const route=learningRoute(id);if(!saved||!route)return;const ratio=saved.ratio;go(route,id);const epoch=navigationEpoch;requestAnimationFrame(()=>requestAnimationFrame(()=>{if(state.route===route&&state.active===id&&epoch===navigationEpoch)window.scrollTo({top:ratio*Math.max(0,document.documentElement.scrollHeight-innerHeight),behavior:'instant'})}))});
 
 // Bibliothèques : métadonnées de classement uniquement, aucun texte religieux ajouté.
 const LIBRARY_PAGE_SIZE=10;
@@ -1536,19 +2219,19 @@ function normalizeSearch(value){return String(value??'').normalize('NFD').replac
 function matchesSearch(text,query){const haystack=normalizeSearch(text);return normalizeSearch(query).split(/\s+/).filter(Boolean).every(word=>haystack.includes(word))}
 function rememberNavigation(){learningRemember();if(!currentNavigationId)return;const el=document.activeElement?.closest('[data-go]');const snapshot={route:state.route,active:state.active,scroll:window.scrollY,library:{...libraryView()},focus:el?{route:el.dataset.go,id:el.dataset.id||''}:null};navigationViews.set(currentNavigationId,snapshot);recentViews.set(viewKey(),snapshot);saveNavigationSession()}
 function restoreNavigation(snapshot){const epoch=++navigationEpoch;if(snapshot?.library)libraryViews.set(viewKey(),{...snapshot.library});render();requestAnimationFrame(()=>requestAnimationFrame(()=>{if(epoch!==navigationEpoch)return;if(snapshot?.focus){const target=[...main.querySelectorAll('[data-go]')].find(e=>e.dataset.go===snapshot.focus.route&&(e.dataset.id||'')===snapshot.focus.id);target?.focus({preventScroll:true})}window.scrollTo({top:snapshot?.scroll||0,behavior:'instant'})}))}
-function go(route,active=null){rememberNavigation();if('speechSynthesis'in window)window.speechSynthesis.cancel();const parent=currentNavigationId;state.route=route;state.active=active;state.search='';currentNavigationId='cdf-'+Date.now()+'-'+(++navigationCounter);history.pushState({cdfNavId:currentNavigationId,parent},'', '#'+route+(active?'/'+encodeURIComponent(active):''));const snapshot=['prayer','reading','lesson','question','view-personal'].includes(route)?null:recentViews.get(viewKey());restoreNavigation(snapshot)}
+function go(route,active=null){rememberNavigation();if('speechSynthesis'in window)window.speechSynthesis.cancel();const parent=currentNavigationId;state.route=route;state.active=active;state.search='';currentNavigationId='cdf-'+Date.now()+'-'+(++navigationCounter);history.pushState({cdfNavId:currentNavigationId,parent},'', '#'+route+(active?'/'+encodeURIComponent(active):''));const snapshot=['prayer','reading','lesson','question','bible-story','bible-theme','view-personal'].includes(route)?null:recentViews.get(viewKey());restoreNavigation(snapshot)}
 function goBack(fallback='accueil',id=null){if(history.state?.parent){history.back()}else{go(fallback,id)}}
 function followAddress(){const [route,id]=location.hash.slice(1).split('/');const active=id?decodeURIComponent(id):null;if((route||'accueil')===state.route&&active===state.active&&history.state?.cdfNavId===currentNavigationId)return;rememberNavigation();if('speechSynthesis'in window)window.speechSynthesis.cancel();state.route=route||'accueil';state.active=active;state.search='';currentNavigationId=history.state?.cdfNavId||'cdf-'+Date.now()+'-'+(++navigationCounter);if(!history.state?.cdfNavId)history.replaceState({cdfNavId:currentNavigationId,parent:null},'');restoreNavigation(navigationViews.get(currentNavigationId)||recentViews.get(viewKey()))}
 function libraryBack(label,fallback,id=''){return `<button class="back" type="button" data-back data-fallback="${esc(fallback)}" data-fallback-id="${esc(id)}">← ${esc(label)}</button>`}
 function compactEntry(route,title,description,id='',badge=''){return `<button type="button" class="list-button compact-entry" data-go="${esc(route)}" ${id?`data-id="${esc(id)}"`:''}>${badge?`<span class="entry-badge" aria-hidden="true">${esc(badge)}</span>`:''}<span class="grow"><strong>${esc(title)}</strong><small>${esc(description)}</small></span><span class="chevron" aria-hidden="true">›</span></button>`}
 function filterCount(view=libraryView()){return [view.theme,view.bookId,view.courseId].filter(Boolean).length}
-function searchControls(label,themes=[]){const view=libraryView();const canFilter=themes.length>0||['prieres','bible','decouvrir'].includes(state.route);return `<form class="library-tools library-compact" id="library-search" role="search"><label class="visually-hidden" for="library-query">${esc(label)}</label><div class="library-search-line"><span class="library-search-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></span><input type="search" id="library-query" maxlength="120" autocomplete="off" value="${esc(view.query)}" placeholder="${state.route==='psalms'?'N° ou mot-clé…':state.route==='book'?'N° de chapitre…':state.route==='bible'?'Livre ou passage…':state.route==='questions'?'Rechercher une question…':state.route==='decouvrir'||state.route==='course'||state.route==='consulted'?'Rechercher une leçon…':'Rechercher une prière…'}" aria-controls="library-results"><button type="button" class="library-query-clear" data-query-clear aria-label="Effacer les mots recherchés" ${view.query?'':'hidden'}>×</button>${canFilter?`<button type="button" class="action secondary library-filter-toggle" id="library-filter-toggle" data-filter-toggle aria-controls="library-filter-panel" aria-expanded="${!!view.filtersOpen}">Filtrer${filterCount(view)?' ('+filterCount(view)+')':''}</button>`:''}</div>${canFilter?`<div class="library-filter-panel" id="library-filter-panel" ${view.filtersOpen?'':'hidden'}>${state.route==='prieres'?`<nav class="library-category-nav" aria-label="Choisir une catégorie"><p>Catégories</p><div>${CATEGORY.map(c=>`<button type="button" class="action secondary library-category-option" data-go="category" data-id="${esc(c.id)}">${esc(c.name)}</button>`).join('')}</div></nav>`:''}${themes.length?`<div class="field"><label for="library-theme">${state.route==='psalms'?'Thème éditorial':'Thème'}</label><select id="library-theme" aria-controls="library-results"><option value="">Tous les thèmes</option>${themes.map(theme=>`<option ${view.theme===theme?'selected':''} value="${esc(theme)}">${esc(theme)}</option>`).join('')}</select></div>`:''}${state.route==='bible'?`<div class="field"><label for="library-book">Livre</label><select id="library-book"><option value="">Tous les livres disponibles</option>${availableBooks().map(book=>`<option value="${esc(book.id)}" ${view.bookId===book.id?'selected':''}>${esc(book.name)}</option>`).join('')}</select></div>`:''}${state.route==='decouvrir'?`<div class="field"><label for="library-course">Parcours</label><select id="library-course"><option value="">Tous les parcours</option>${COURSES.map(c=>`<option value="${esc(c.id)}" ${view.courseId===c.id?'selected':''}>${esc(c.title)}</option>`).join('')}</select></div>`:''}<button type="button" class="action secondary" data-filters-reset>Réinitialiser les filtres</button></div>`:''}${state.route==='psalms'?'<p class="small" id="psalm-jump-message" role="status"></p>':''}</form>`}
-function resultUnit(count){const route=state.route;if(['prieres','category','favorites'].includes(route))return count===1?'prière':'prières';if(route==='psalms')return count===1?'psaume':'psaumes';if(['course','consulted'].includes(route))return count===1?'leçon':'leçons';if(route==='questions')return count===1?'question':'questions';if(route==='book')return count===1?'chapitre':'chapitres';return count===1?'résultat':'résultats'}
+function searchControls(label,themes=[]){const view=libraryView();const canFilter=themes.length>0||['prieres','bible','decouvrir'].includes(state.route);return `<form class="library-tools library-compact" id="library-search" role="search"><label class="visually-hidden" for="library-query">${esc(label)}</label><div class="library-search-line"><span class="library-search-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg></span><input type="search" id="library-query" maxlength="120" autocomplete="off" value="${esc(view.query)}" placeholder="${state.route==='psalms'?'N° ou mot-clé…':state.route==='book'?'N° de chapitre…':state.route==='bible'?'Livre ou passage…':state.route==='questions'?'Rechercher une question…':state.route==='decouvrir'||state.route==='course'?'Rechercher une leçon…':state.route==='consulted'?'Rechercher une lecture…':state.route==='bible-stories'?'Rechercher un récit…':'Rechercher une prière…'}" aria-controls="library-results"><button type="button" class="library-query-clear" data-query-clear aria-label="Effacer les mots recherchés" ${view.query?'':'hidden'}>×</button>${canFilter?`<button type="button" class="action secondary library-filter-toggle" id="library-filter-toggle" data-filter-toggle aria-controls="library-filter-panel" aria-expanded="${!!view.filtersOpen}">Filtrer${filterCount(view)?' ('+filterCount(view)+')':''}</button>`:''}</div>${canFilter?`<div class="library-filter-panel" id="library-filter-panel" ${view.filtersOpen?'':'hidden'}>${state.route==='prieres'?`<nav class="library-category-nav" aria-label="Choisir une catégorie"><p>Catégories</p><div>${CATEGORY.map(c=>`<button type="button" class="action secondary library-category-option" data-go="category" data-id="${esc(c.id)}">${esc(c.name)}</button>`).join('')}</div></nav>`:''}${themes.length?`<div class="field"><label for="library-theme">${state.route==='psalms'?'Thème éditorial':'Thème'}</label><select id="library-theme" aria-controls="library-results"><option value="">Tous les thèmes</option>${themes.map(theme=>`<option ${view.theme===theme?'selected':''} value="${esc(theme)}">${esc(theme)}</option>`).join('')}</select></div>`:''}${state.route==='bible'?`<div class="field"><label for="library-book">Livre</label><select id="library-book"><option value="">Tous les livres disponibles</option>${availableBooks().map(book=>`<option value="${esc(book.id)}" ${view.bookId===book.id?'selected':''}>${esc(book.name)}</option>`).join('')}</select></div>`:''}${state.route==='decouvrir'?`<div class="field"><label for="library-course">Parcours</label><select id="library-course"><option value="">Tous les parcours</option>${COURSES.map(c=>`<option value="${esc(c.id)}" ${view.courseId===c.id?'selected':''}>${esc(c.title)}</option>`).join('')}</select></div>`:''}<button type="button" class="action secondary" data-filters-reset>Réinitialiser les filtres</button></div>`:''}${state.route==='psalms'?'<p class="small" id="psalm-jump-message" role="status"></p>':''}</form>`}
+function resultUnit(count){const route=state.route;if(['prieres','category','favorites'].includes(route))return count===1?'prière':'prières';if(route==='psalms')return count===1?'psaume':'psaumes';if(route==='course')return count===1?'leçon':'leçons';if(route==='consulted')return count===1?'lecture':'lectures';if(route==='bible-stories')return count===1?'récit':'récits';if(route==='questions')return count===1?'question':'questions';if(route==='book')return count===1?'chapitre':'chapitres';return count===1?'résultat':'résultats'}
 function pageEntries(items,draw,empty){const view=libraryView(),pages=Math.max(1,Math.ceil(items.length/LIBRARY_PAGE_SIZE));view.page=Math.max(1,Math.min(pages,view.page||1));const start=(view.page-1)*LIBRARY_PAGE_SIZE;const message=empty||'Aucun résultat pour cette recherche. Essaie un autre mot ou modifie les filtres.';const numberQuery=state.route==='psalms'&&/^\d+$/.test(view.query.trim());return `<div class="library-summary"><p class="library-status" id="library-status" role="status" tabindex="-1">${items.length} ${resultUnit(items.length)}${pages>1?' · '+(start+1)+'–'+Math.min(start+LIBRARY_PAGE_SIZE,items.length):''}</p>${numberQuery?`<button type="submit" form="library-search" class="action library-number-open" id="open-psalm-number" title="Accès direct, indépendamment du filtre">Ouvrir ${Number(view.query)}</button>`:''}</div>${items.length?`<div class="card-list compact-list">${items.slice(start,start+LIBRARY_PAGE_SIZE).map(draw).join('')}</div>`:`<div class="empty"><p>${esc(message)}</p><button type="button" class="action secondary" data-library-reset>Effacer la recherche</button></div>`}${pages>1?`<nav class="library-pagination" aria-label="Pages des résultats"><button class="action secondary" type="button" data-library-page="${view.page-1}" ${view.page===1?'disabled':''}>← Précédent</button><span>Page ${view.page} / ${pages}</span><button class="action secondary" type="button" data-library-page="${view.page+1}" ${view.page===pages?'disabled':''}>Suivant →</button></nav>`:''}`}
 function readingBookId(r){if(r.psalm)return 'psaumes';return BIBLE_BOOKS.find(b=>b.chapters?.some(c=>c.readings.includes(r.id)))?.id||''}
 function readingRow(r){if(r.psalm)return compactEntry('reading','Psaume '+r.psalm,'Repère éditorial : '+r.title.replace(/^Psaume \d+\s*[—–-]\s*/,''),r.id,String(r.psalm));const b=BIBLE_BOOKS.find(b=>b.id===readingBookId(r));const chapter=b?.chapters.find(c=>c.readings.includes(r.id));return compactEntry('reading',r.title,`${b?.name||'Extrait biblique'} ${chapter?.number||''} · ${chapter?.range||'Passage intégré'} · Louis Segond 1910`,r.id)}
 function lessonRow(l){return compactEntry('lesson',PATH_TITLES[l.id]||l.title,l.intro+(learning.enabled&&learning.entries[l.id]?' · Consultée sur cet appareil':''),l.id)}
-function libraryResults(){const view=libraryView();if(state.route==='questions')return pageEntries(FAITH_QUESTIONS.filter(q=>matchesSearch(q.title+' '+q.intro,view.query)),q=>compactEntry('question',q.title,q.intro,q.id),'Aucune question pour ces mots. Essaie par exemple doute, pardon ou messe.');if(state.route==='consulted')return pageEntries(consultedLessons().filter(l=>matchesSearch(l.title+' '+l.intro,view.query)),l=>lessonRow(l)+(learning.enabled?`<button class="action secondary learning-resume" data-resume-lesson="${esc(l.id)}">Reprendre la lecture</button>`:''),learning.enabled?'Aucune leçon consultée pour le moment, ou aucun résultat pour ces mots. Tu peux choisir librement une leçon dans Découvrir.':'Le suivi est désactivé. Tu peux toujours choisir librement toutes les leçons.');if(state.route==='prieres')return prayerRows(PRAYERS.filter(p=>prayerMatches(p,view)));if(state.route==='category')return prayerRows(PRAYERS.filter(p=>p.category===state.active&&prayerMatches(p,view)));if(state.route==='favorites')return prayerRows(PRAYERS.filter(p=>state.favorites.includes(p.id)&&prayerMatches(p,view)));if(state.route==='psalms'){const numeric=/^\d+$/.test(view.query.trim());const items=psalmItems().filter(r=>(!view.theme||psalmTags(r).includes(view.theme))&&(numeric?r.psalm===Number(view.query):matchesSearch([r.title,r.intro,r.text,psalmTags(r).join(' ')].join(' '),view.query))).sort((a,b)=>a.psalm-b.psalm);return pageEntries(items,readingRow,numeric?'Ce numéro n’est pas encore intégré, ou ne correspond pas au thème sélectionné. Modifie le filtre ou recherche un psaume disponible.':undefined)}if(state.route==='bible'){if(!view.query&&!view.bookId)return pageEntries(availableBooks(),book=>compactEntry(book.psalms?'psalms':'book',book.name,book.psalms?psalmItems().length+' psaumes complets · Louis Segond 1910':availableChapters(book).length+' chapitre avec un extrait · Louis Segond 1910',book.psalms?'':book.id,'▤'));const rows=[];if(!view.bookId){for(const book of availableBooks())if(matchesSearch(book.name,view.query))rows.push({book})}for(const reading of READINGS){if((!view.bookId||readingBookId(reading)===view.bookId)&&matchesSearch([reading.title,reading.intro,reading.source].join(' '),view.query))rows.push({reading})}return pageEntries(rows,row=>row.reading?readingRow(row.reading):compactEntry(row.book.psalms?'psalms':'book',row.book.name,'Ouvrir les passages disponibles · Louis Segond 1910',row.book.psalms?'':row.book.id,'▤'))}if(state.route==='book'){const book=BIBLE_BOOKS.find(b=>b.id===state.active);return pageEntries(availableChapters(book||{}).filter(c=>matchesSearch('Chapitre '+c.number+' '+c.range,view.query)),c=>compactEntry('reading','Chapitre '+c.number,'Extrait intégré : '+c.range+' · Louis Segond 1910',c.readings.find(id=>READINGS.some(r=>r.id===id&&r.text))))}if(state.route==='decouvrir'){if(!view.query&&!view.courseId)return pageEntries([...COURSES.map(c=>({course:c})),{lesson:BIBLE_GUIDE}],row=>row.lesson?lessonRow(row.lesson):compactEntry('course',row.course.title,row.course.lessons.length+' leçons · '+row.course.description,row.course.id,'✦'));const scope=view.courseId?COURSES.find(c=>c.id===view.courseId)?.lessons:LESSONS.map(l=>l.id).concat(BIBLE_GUIDE.id);return pageEntries([...LESSONS,BIBLE_GUIDE].filter(l=>scope?.includes(l.id)&&matchesSearch([l.title,PATH_TITLES[l.id],l.intro].join(' '),view.query)),lessonRow)}if(state.route==='course'){const course=COURSES.find(c=>c.id===state.active);return pageEntries((course?.lessons||[]).map(id=>LESSONS.find(l=>l.id===id)).filter(l=>l&&matchesSearch([l.title,PATH_TITLES[l.id],l.intro].join(' '),view.query)),lessonRow)}return ''}
+function libraryResults(){const view=libraryView();if(state.route==='bible-stories')return bibleStoryResults(view);if(state.route==='questions')return pageEntries(FAITH_QUESTIONS.filter(q=>matchesSearch(q.title+' '+q.intro,view.query)),q=>compactEntry('question',q.title,q.intro,q.id),'Aucune question pour ces mots. Essaie par exemple doute, pardon ou messe.');if(state.route==='consulted')return pageEntries(consultedLessons().filter(l=>matchesSearch(l.title+' '+(l.intro||''),view.query)),l=>(learningRoute(l.id)==='lesson'?lessonRow(l):bibleDiscoveryEntry(l))+(learning.enabled?`<button class="action secondary learning-resume" data-resume-lesson="${esc(l.id)}">Reprendre la lecture</button>`:''),learning.enabled?'Aucune lecture consultée pour ces mots. Tu peux ouvrir une leçon ou une fiche biblique.':'Le suivi est désactivé. Tu peux toujours choisir librement toutes les leçons.');if(state.route==='prieres')return prayerRows(PRAYERS.filter(p=>prayerMatches(p,view)));if(state.route==='category')return prayerRows(PRAYERS.filter(p=>p.category===state.active&&prayerMatches(p,view)));if(state.route==='favorites')return prayerRows(PRAYERS.filter(p=>state.favorites.includes(p.id)&&prayerMatches(p,view)));if(state.route==='psalms'){const numeric=/^\d+$/.test(view.query.trim());const items=psalmItems().filter(r=>(!view.theme||psalmTags(r).includes(view.theme))&&(numeric?r.psalm===Number(view.query):matchesSearch([r.title,r.intro,r.text,psalmTags(r).join(' ')].join(' '),view.query))).sort((a,b)=>a.psalm-b.psalm);return pageEntries(items,readingRow,numeric?'Ce numéro n’est pas encore intégré, ou ne correspond pas au thème sélectionné. Modifie le filtre ou recherche un psaume disponible.':undefined)}if(state.route==='bible'){if(!view.query&&!view.bookId)return pageEntries(availableBooks(),book=>compactEntry(book.psalms?'psalms':'book',book.name,book.psalms?psalmItems().length+' psaumes complets · Louis Segond 1910':availableChapters(book).length+' chapitre avec un extrait · Louis Segond 1910',book.psalms?'':book.id,'▤'));const rows=[];if(!view.bookId){for(const book of availableBooks())if(matchesSearch(book.name,view.query))rows.push({book})}for(const reading of READINGS){if((!view.bookId||readingBookId(reading)===view.bookId)&&matchesSearch([reading.title,reading.intro,reading.source].join(' '),view.query))rows.push({reading})}return pageEntries(rows,row=>row.reading?readingRow(row.reading):compactEntry(row.book.psalms?'psalms':'book',row.book.name,'Ouvrir les passages disponibles · Louis Segond 1910',row.book.psalms?'':row.book.id,'▤'))}if(state.route==='book'){const book=BIBLE_BOOKS.find(b=>b.id===state.active);return pageEntries(availableChapters(book||{}).filter(c=>matchesSearch('Chapitre '+c.number+' '+c.range,view.query)),c=>compactEntry('reading','Chapitre '+c.number,'Extrait intégré : '+c.range+' · Louis Segond 1910',c.readings.find(id=>READINGS.some(r=>r.id===id&&r.text))))}if(state.route==='decouvrir'){if(!view.query&&!view.courseId)return pageEntries([...COURSES.map(c=>({course:c})),{lesson:BIBLE_GUIDE}],row=>row.lesson?lessonRow(row.lesson):compactEntry('course',row.course.title,row.course.lessons.length+' leçons · '+row.course.description,row.course.id,'✦'));const scope=view.courseId?COURSES.find(c=>c.id===view.courseId)?.lessons:LESSONS.map(l=>l.id).concat(BIBLE_GUIDE.id);return pageEntries([...LESSONS,BIBLE_GUIDE].filter(l=>scope?.includes(l.id)&&matchesSearch([l.title,PATH_TITLES[l.id],l.intro].join(' '),view.query)),lessonRow)}if(state.route==='course'){const course=COURSES.find(c=>c.id===state.active);return pageEntries((course?.lessons||[]).map(id=>LESSONS.find(l=>l.id===id)).filter(l=>l&&matchesSearch([l.title,PATH_TITLES[l.id],l.intro].join(' '),view.query)),lessonRow)}return ''}
 function refreshLibrary(){const region=document.querySelector('#library-results');if(region)region.innerHTML=libraryResults();const view=libraryView();const clear=document.querySelector('[data-query-clear]');if(clear)clear.hidden=!view.query;const toggle=document.querySelector('[data-filter-toggle]');if(toggle){toggle.textContent='Filtrer'+(filterCount(view)?' ('+filterCount(view)+')':'');toggle.setAttribute('aria-expanded',String(!!view.filtersOpen))}const panel=document.querySelector('#library-filter-panel');if(panel)panel.hidden=!view.filtersOpen}
 function handleLibraryClick(e){const back=e.target.closest('[data-back]');if(back){goBack(back.dataset.fallback||'accueil',back.dataset.fallbackId||null);return true}if(e.target.closest('[data-filter-toggle]')){libraryView().filtersOpen=!libraryView().filtersOpen;refreshLibrary();return true}if(e.target.closest('[data-query-clear]')){libraryView().query='';libraryView().page=1;const input=document.querySelector('#library-query');input.value='';refreshLibrary();input.focus();return true}if(e.target.closest('[data-filters-reset]')){Object.assign(libraryView(),{theme:'',bookId:'',courseId:'',page:1});for(const id of ['library-theme','library-book','library-course']){const select=document.getElementById(id);if(select)select.value=''}refreshLibrary();return true}const reset=e.target.closest('[data-library-reset]');if(reset){Object.assign(libraryView(),{query:'',theme:'',bookId:'',courseId:'',page:1});const input=document.querySelector('#library-query');if(input)input.value='';for(const id of ['library-theme','library-book','library-course']){const select=document.getElementById(id);if(select)select.value=''}refreshLibrary();const message=document.querySelector('#psalm-jump-message');if(message)message.textContent='';input?.focus();return true}const page=e.target.closest('[data-library-page]');if(page&&!page.disabled){libraryView().page=Number(page.dataset.libraryPage);refreshLibrary();const status=document.querySelector('#library-status');status?.focus({preventScroll:true});status?.scrollIntoView({block:'start',behavior:'instant'});return true}return false}
 
@@ -1560,14 +2243,14 @@ function prayerThemes(items){return [...new Set(items.flatMap(p=>prayerTags(p)))
 function psalmItems(){return READINGS.filter(r=>Number.isInteger(r.psalm)&&r.psalm>=1&&r.psalm<=150&&r.text)}
 function prayers(){return head('Prières','Rechercher une prière ou choisir une intention.')+searchControls('Rechercher par titre ou thème',prayerThemes(PRAYERS))+`<div id="library-results">${libraryResults()}</div><div class="library-shortcuts">${compactEntry('favorites','Mes prières favorites','Retrouver les textes enregistrés')}${compactEntry('personal','Mes prières personnelles','Mes propres mots, sur cet appareil')}</div></div>`}
 function category(){const c=CATEGORY.find(c=>c.id===state.active);if(!c)return prayers();const items=PRAYERS.filter(p=>p.category===c.id);return head(c.name,c.desc)+libraryBack('Retour aux catégories','prieres')+searchControls('Rechercher dans cette catégorie',prayerThemes(items))+`<div id="library-results">${libraryResults()}</div></div>`}
-function psalms(){const available=psalmItems();return head('Les Psaumes',available.length+' psaumes disponibles · Louis Segond 1910.')+libraryBack('Retour à Bible et lecture','bible')+searchControls('Numéro ou mots-clés',[...new Set(available.flatMap(r=>psalmTags(r)))].sort((a,b)=>a.localeCompare(b,'fr')))+`<div id="library-results">${libraryResults()}</div><p class="editorial-note library-note">Les titres thématiques et les thèmes sont des repères éditoriaux. Pour un accès direct, saisis un numéro de 1 à 150 puis choisis « Ouvrir le numéro ». Aucun texte n’est créé pour les psaumes absents.</p></div>`}
+function psalms(){const available=psalmItems();return head('Les Psaumes',available.length+' psaumes disponibles · Louis Segond 1910.')+libraryBack('Retour à Bible et lecture','bible')+'<div class="learning-links"><button type="button" class="action secondary" data-go="bible-themes">Explorer les psaumes par thème</button></div>'+searchControls('Numéro ou mots-clés',[...new Set(available.flatMap(r=>psalmTags(r)))].sort((a,b)=>a.localeCompare(b,'fr')))+`<div id="library-results">${libraryResults()}</div><p class="editorial-note library-note">Les titres thématiques et les thèmes sont des repères éditoriaux. Pour un accès direct, saisis un numéro de 1 à 150 puis choisis « Ouvrir le numéro ». Aucun texte n’est créé pour les psaumes absents.</p></div>`}
 function availableChapters(book){return (book.chapters||[]).filter(c=>c.readings.some(id=>READINGS.some(r=>r.id===id&&r.text)))}
 function availableBooks(){return BIBLE_BOOKS.filter(book=>book.psalms?psalmItems().length:availableChapters(book).length)}
-function bible(){const books=availableBooks();return head('Bible et lecture','Choisir un livre, puis un chapitre réellement intégré.')+button('aelf','Lectures du jour','Lectures liturgiques AELF · En ligne','☀')+searchControls('Rechercher un livre ou un passage')+`<div id="library-results">${libraryResults()}</div><div class="notice small">Louis Segond 1910, domaine public. Les cinq psaumes sont complets ; Matthieu 11 et Jean 14 sont des extraits, pas des chapitres complets. Cette traduction n’est pas la traduction liturgique officielle catholique.</div></div>`}
+function bible(){const books=availableBooks();return head('Bible et lecture','Choisir un livre, puis un chapitre réellement intégré.')+button('aelf','Lectures du jour','Lectures liturgiques AELF · En ligne','☀')+'<div class="learning-links"><button type="button" class="action secondary" data-go="bible-discovery">Découvrir la Bible</button></div>'+searchControls('Rechercher un livre ou un passage')+`<div id="library-results">${libraryResults()}</div><div class="notice small">Louis Segond 1910, domaine public. Les cinq psaumes sont complets ; Matthieu 11 et Jean 14 sont des extraits, pas des chapitres complets. Cette traduction n’est pas la traduction liturgique officielle catholique.</div></div>`}
 function book(){const book=BIBLE_BOOKS.find(b=>b.id===state.active);if(!book)return bible();if(book.psalms)return psalms();const chapters=availableChapters(book);return head(book.name,'Chapitres disponibles · Louis Segond 1910.')+libraryBack('Retour aux livres','bible')+`${searchControls("Rechercher un chapitre ou un passage")}<div id="library-results">${libraryResults()}</div><p class="editorial-note">Seul le passage indiqué est intégré. Aucun chapitre absent n’est activé.</p></div>`}
 function discover(){return head('Découvrir la foi','Choisir un parcours ou trouver une leçon, librement.')+learningLinks()+searchControls('Rechercher une leçon ou un parcours')+`<div id="library-results">${libraryResults()}</div><p class="editorial-note">${LESSONS.length} leçons de découverte de la tradition chrétienne catholique. Propositions éditoriales à relire avec un prêtre. Aucun ordre ni progression obligatoire.</p></div>`}
 function course(){const c=COURSES.find(c=>c.id===state.active);if(!c)return discover();return head(c.title,c.description)+libraryBack('Retour aux parcours','decouvrir')+searchControls('Rechercher dans ce parcours')+`<div id="library-results">${libraryResults()}</div><p class="editorial-note library-note">Tu peux choisir n’importe quelle leçon et revenir à cette liste à tout moment.</p></div>`}
-function favorites(){const items=PRAYERS.filter(p=>state.favorites.includes(p.id));return head('Mes favoris','Ces préférences restent sur cet appareil.')+libraryBack('Retour aux prières','prieres')+(items.length?searchControls('Rechercher dans mes favoris',prayerThemes(items))+`<div id="library-results">${libraryResults()}</div>`:'<p class="empty">Aucun favori pour le moment. Ouvre une prière puis choisis « Ajouter aux favoris ».</p>')+'</div>'}
+function favorites(){const items=PRAYERS.filter(p=>state.favorites.includes(p.id));return head('Mes favoris','Ces préférences restent sur cet appareil.')+libraryBack('Retour aux prières','prieres')+(items.length?searchControls('Rechercher dans mes favoris',prayerThemes(items))+`<div id="library-results">${libraryResults()}</div>`:'<p class="empty">Aucune prière en favoris pour le moment.</p>')+bibleDiscoveryFavorites()+'</div>'}
 document.addEventListener('input',e=>{if(e.target.id==='library-query'){const message=document.querySelector('#psalm-jump-message');if(message)message.textContent='';libraryView().query=e.target.value;libraryView().page=1;refreshLibrary()}});
 document.addEventListener('change',e=>{const fields={'library-theme':'theme','library-book':'bookId','library-course':'courseId'};if(fields[e.target.id]){libraryView()[fields[e.target.id]]=e.target.value;libraryView().page=1;refreshLibrary()}});
 document.addEventListener('submit',e=>{if(e.target.id!=='library-search')return;e.preventDefault();refreshLibrary();if(state.route==='psalms'){const query=libraryView().query.trim();const number=Number(query);const message=document.querySelector('#psalm-jump-message');if(!/^\d+$/.test(query))return;if(number<1||number>150){message.textContent='Choisis un numéro de psaume de 1 à 150.';return}const item=psalmItems().find(r=>r.psalm===number);if(item)go('reading',item.id);else message.textContent=`Le psaume ${number} n’est pas encore intégré. Aucun texte n’a été créé.`}});
@@ -1587,7 +2270,7 @@ function viewPersonal(){const p=state.personal.find(x=>x.id===state.active);if(!
 function settings(){return head('Réglages','Choisis ce qui rend la lecture confortable.')+`<section class="panel"><h2>Confort visuel</h2><div class="settings-option"><div><strong>Taille du texte de lecture</strong><p class="setting-description">Grand, clair et facile à suivre</p></div><select id="size-select" aria-label="Taille du texte de lecture">${[20,22,24,26,28,30,32,34,36].map(s=>`<option value="${s}" ${state.size===s?'selected':''}>${s} px</option>`).join('')}</select></div><div class="settings-option"><div><strong>Ambiance</strong><p class="setting-description">Choisir le contraste qui te convient</p></div><select id="theme-select" aria-label="Thème"><option value="dark" ${state.theme==='dark'?'selected':''}>Crème chaleureuse</option><option value="light" ${state.theme==='light'?'selected':''}>Ivoire lumineux</option></select></div><div class="notice small">Les deux ambiances restent claires pour faciliter la lecture. Tu peux également utiliser le zoom du navigateur.</div></section><section class="panel"><h2>Vie privée</h2><p>Les favoris, tes prières personnelles et les réglages sont conservés localement dans ton navigateur. Aucun compte, aucune publicité et aucun suivi d'utilisation.</p><button class="action secondary" id="clear-storage">Supprimer mes données locales</button></section></div>`}
 function plus(){return head('Mon espace','Tout est facultatif, tu es libre d’avancer à ton rythme.')+`<div class="card-list">${button('favorites','Mes favoris','Retrouver les prières sauvegardées','☆')}${button('personal','Mes prières personnelles','Écrire et conserver mes mots sur cet appareil','✎')}${button('settings','Confort de lecture','Taille des caractères et ambiance','⚙')}${button('about','À propos de Chemin de Foi','Notre intention et le statut de cette démonstration','✧')}</div><div class="panel"><h3>Famille et relations</h3><p class="subtle">Prières et réflexions pour la famille, l'écoute et le mariage.</p><button class="action secondary" data-go="category" data-id="famille">Voir ces prières</button></div></div>`}
 function about(){return head('À propos','Une application pour découvrir et approfondir la foi chrétienne.')+`<div class="panel"><h2>Une porte ouverte, jamais une obligation.</h2><p>Chemin de Foi est un projet indépendant d'inspiration chrétienne : des prières, des textes et de courtes explications proposés dans un cadre paisible et bienveillant.</p><p>La version actuelle est un prototype de démonstration. Les textes pédagogiques et les contenus religieux feront l'objet d'une relecture avec des accompagnateurs compétents avant une diffusion au public.</p><p>Aucune affiliation officielle avec l'Église n'est revendiquée. Cette application ne remplace pas un accompagnement spirituel, médical ou psychologique lorsque cela est nécessaire.</p></div></div>`}
-function render(){document.body.classList.add('theme-light');document.body.classList.toggle('theme-cream',state.theme==='dark');main.dataset.section=state.route;document.body.dataset.section=state.route;document.body.dataset.library=String(['prieres','category','favorites','psalms','bible','book','decouvrir','course','questions','consulted'].includes(state.route));document.documentElement.style.setProperty('--reading',state.size+'px');main.innerHTML=({accueil:home,prieres:prayers,category,bible,aelf:aelfPage,questions:questionsPage,consulted:consultedPage,question:()=>reader('question'),psalms,book,course,decouvrir:discover,prayer:()=>reader('prayer'),reading:()=>reader('reading'),lesson:()=>reader('lesson'),favorites,personal,'edit-personal':editPersonal,'view-personal':viewPersonal,settings,plus,about}[state.route]||home)();document.querySelectorAll('.nav-button').forEach(b=>{const r=b.dataset.route;const active=state.route===r||(['prayer','category','favorites','personal','edit-personal','view-personal'].includes(state.route)&&r==='prieres')||(['reading','psalms','book','aelf'].includes(state.route)&&r==='bible')||(['lesson','course','questions','question','consulted'].includes(state.route)&&r==='decouvrir')||(['settings','about'].includes(state.route)&&r==='plus');b.classList.toggle('selected',active);if(active)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});aelfAfterRender();learningAfterRender();}
+function render(){document.body.classList.add('theme-light');document.body.classList.toggle('theme-cream',state.theme==='dark');main.dataset.section=state.route;document.body.dataset.section=state.route;document.body.dataset.library=String(['prieres','category','favorites','psalms','bible','book','decouvrir','course','questions','consulted'].includes(state.route));document.documentElement.style.setProperty('--reading',state.size+'px');main.innerHTML=({accueil:home,prieres:prayers,category,bible,'bible-discovery':bibleDiscovery,'bible-stories':bibleStories,'bible-themes':bibleThemes,'bible-story':bibleDiscoveryReader,'bible-theme':bibleDiscoveryReader,aelf:aelfPage,questions:questionsPage,consulted:consultedPage,question:()=>reader('question'),psalms,book,course,decouvrir:discover,prayer:()=>reader('prayer'),reading:()=>reader('reading'),lesson:()=>reader('lesson'),favorites,personal,'edit-personal':editPersonal,'view-personal':viewPersonal,settings,plus,about}[state.route]||home)();document.querySelectorAll('.nav-button').forEach(b=>{const r=b.dataset.route;const active=state.route===r||(['prayer','category','favorites','personal','edit-personal','view-personal'].includes(state.route)&&r==='prieres')||(['reading','psalms','book','aelf','bible-discovery','bible-stories','bible-themes','bible-story','bible-theme'].includes(state.route)&&r==='bible')||(['lesson','course','questions','question','consulted'].includes(state.route)&&r==='decouvrir')||(['settings','about'].includes(state.route)&&r==='plus');b.classList.toggle('selected',active);if(active)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current')});aelfAfterRender();learningAfterRender();}
 let toastTimer;function showToast(msg){let n=document.querySelector('#toast');if(!n){n=document.createElement('div');n.id='toast';n.setAttribute('role','status');n.style.cssText='position:fixed;left:50%;transform:translateX(-50%);bottom:93px;z-index:30;max-width:min(90vw,500px);padding:12px 18px;border-radius:15px;color:#213145;background:#ffe7bd;box-shadow:0 6px 30px #0008;text-align:center';document.body.append(n)}n.textContent=msg;clearTimeout(toastTimer);toastTimer=setTimeout(()=>n.remove(),3400)}
 function speak(){if(state.route==='aelf'){showToast('La synthèse vocale n’est pas autorisée pour les textes AELF.');return;}if(!('speechSynthesis'in window)){showToast('La lecture vocale n’est pas disponible sur cet appareil.');return;}let p=(state.route==='prayer'?PRAYERS:state.route==='reading'?READINGS:state.route==='lesson'?[...LESSONS,BIBLE_GUIDE]:state.route==='question'?FAITH_QUESTIONS:state.personal).find(x=>x.id===state.active);if(!p)return;window.speechSynthesis.cancel();const text=['lesson','question'].includes(state.route)?[p.intro||'',...(p.sections?p.sections.flatMap(s=>[s.title,s.text]):p.paragraphs||[]),p.example?'Exemple concret. '+p.example:'',p.summary?'À retenir. '+p.summary.join('. '):'',p.invitation?'Pour poursuivre. '+p.invitation:'',p.question?'Pour réfléchir, sans obligation. '+p.question:'',p.source||''].filter(Boolean).join('. '):state.route==='reading'?[p.intro,p.text,p.source,psalmNoteText(p)].filter(Boolean).join('. '):p.text;const u=new SpeechSynthesisUtterance(p.title+'. '+text);u.lang='fr-FR';u.rate=.86;u.pitch=1;u.onerror=()=>showToast('Lecture vocale indisponible : vérifier les voix françaises installées.');window.speechSynthesis.speak(u);showToast('Lecture vocale démarrée si une voix française est disponible.');}
 document.addEventListener('click',e=>{if(handleLibraryClick(e))return;if(e.target.closest('#text-size-panel summary')){e.preventDefault();const panel=document.querySelector('#text-size-panel');panel.open=!panel.open;state.sizeOpen=panel.open;persist();return}const goEl=e.target.closest('[data-go]');if(goEl){if(goEl.dataset.go!=='edit-personal')state.editing=null;go(goEl.dataset.go,goEl.dataset.id||null);return}const nav=e.target.closest('[data-route]');if(nav){go(nav.dataset.route);return}const f=e.target.closest('[data-fav]');if(f){let id=f.dataset.fav;state.favorites=state.favorites.includes(id)?state.favorites.filter(x=>x!==id):[...state.favorites,id];persist();render();return}const siz=e.target.closest('[data-size]');if(siz){setReadingSize(state.size+Number(siz.dataset.size));return}if(e.target.closest('#speak')){speak();return}if(e.target.closest('#stop-speak')){if('speechSynthesis' in window)window.speechSynthesis.cancel();return}if(e.target.closest('#header-settings')){go('settings');return}if(e.target.closest('#edit-this')){state.editing=state.active;go('edit-personal');return}if(e.target.closest('#delete-this')){if(confirm('Supprimer définitivement cette prière personnelle de cet appareil ?')){state.personal=state.personal.filter(x=>x.id!==state.active);persist();go('personal')}return}if(e.target.closest('#clear-storage')){if(confirm('Supprimer tous les favoris, prières personnelles et réglages de ce navigateur ?')){learningReset();state.personal=[];state.favorites=[];state.size=24;state.theme='light';libraryViews.clear();navigationViews.clear();recentViews.clear();try{sessionStorage.removeItem(NAVIGATION_STORE)}catch{}persist();go('settings');showToast('Données locales effacées.')}return}});
