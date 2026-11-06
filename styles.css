@@ -205,3 +205,62 @@ body[data-library="true"] main>.content:before{height:32px;margin:0}
 /* Découverte : nouveaux accès et confort des leçons, sans retouche des écrans existants. */
 .learning-links{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.learning-links .action{flex:1 1 130px;font-size:16px;padding:10px;line-height:1.4;min-height:48px}.learning-opt{display:flex;align-items:center;gap:12px;min-height:48px;font-size:18px}.learning-opt input{width:24px;height:24px;flex-shrink:0}.learning-resume{width:100%;text-align:left;margin:0 0 12px}.reading-card .extended-lesson h2{font-size:max(1em,26px);line-height:1.35;margin:30px 0 15px}.reading-card .extended-lesson ul{padding-left:1.2em}.reading-card .extended-lesson li{margin:0 0 14px;line-height:1.75}
 body.theme-light .learning-links .action.secondary{background:linear-gradient(125deg,#634a36ed,#282e3eeb);color:#fff8eb;border-color:#ecd4a6b3}
+
+/* Proportions des écrans étroits. Le corps de lecture reste réglé par Aa. */
+@media (max-width: 699px) {
+  main .content { padding-bottom: 20px; }
+  main[data-section="plus"] > .content::before { height: 64px; }
+  body[data-library="true"] main > .content::before { height: 24px; }
+
+  .home-scene { height: 350px; }
+  .home-welcome { bottom: 58px; }
+  .home-wordmark h1 { font-size: 33px; }
+  .home-welcome h2 { font-size: 22px; }
+  .home-card { min-height: 126px; padding-block: 10px; gap: 6px; }
+  .home-card strong, .home-card:nth-child(5) strong { font-size: 16px; }
+
+  .section-intro, body[data-library="true"] .section-intro {
+    padding: 12px 15px;
+    margin-bottom: 9px;
+  }
+  .section-intro h1 { font-size: clamp(27px, 7.5vw, 30px); }
+  .section-intro h1, .reading-card h1, .reading-card h2 {
+    overflow-wrap: anywhere;
+    text-wrap: balance;
+  }
+  .section-intro .eyebrow { margin-bottom: 5px; }
+  .section-intro .subtle { line-height: 1.42; }
+  .panel { margin-block: 9px; padding: 16px; }
+  .card-list { gap: 8px; }
+  .learning-links, .library-pagination { margin-block: 9px; }
+
+  body.theme-light .list-button {
+    min-height: 66px;
+    padding: 9px 12px !important;
+    gap: 9px !important;
+  }
+  body.theme-light:not([data-section="accueil"]) .list-button.compact-entry { min-height: 62px; }
+  .list-button .round-icon { min-width: 44px; min-height: 44px; }
+  .list-button strong, .compact-entry strong { font-size: 19px !important; line-height: 1.24; }
+  .list-button small { margin-top: 3px; }
+
+  .reading-stage { margin-top: 10px; }
+  .reading-card h1 { font-size: clamp(27px, 1em, 34px); }
+  .reading-card .extended-lesson h2, .aelf-page .aelf-part h2 {
+    font-size: clamp(25px, .95em, 34px);
+  }
+  .reading-card .extended-lesson h2 { margin: 22px 0 10px; }
+
+  body.theme-light .bottom-nav { min-height: 66px; padding-block: 5px; }
+  body.theme-light .nav-button { min-height: 54px; }
+  .nav-icon { font-size: 23px; }
+}
+
+/* Ma première messe et Dictionnaire de la foi */
+.mass-guide-step { border-top: 1px solid #c9bba3; margin: 12px 0; }
+.mass-guide-step summary { cursor: pointer; min-height: 44px; padding: 8px 0; font-weight: 700; line-height: 1.35; font-size: clamp(21px, .9em, 30px); overflow-wrap: anywhere; }
+.mass-guide-step[open] summary { margin-bottom: 12px; }
+.faith-lexicon-size { padding: 0 0 5px; }
+.faith-term { margin-top: 0; }
+.faith-term h2 { font-size: clamp(23px, 1em, 34px); }
+.faith-term .source { margin-bottom: 0; }
